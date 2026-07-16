@@ -1,0 +1,36 @@
+[gd_resource type="Theme" format=3 uid="uid://cfe7ds3bklnj5"]
+
+[ext_resource type="Texture2D" uid="uid://d2y6fy74i8cgb" path="res://SPRITES/UI/Icons/12.png" id="1_j07op"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_21tff"]
+bg_color = Color(0.3101359, 0.6656246, 0.67169946, 1)
+corner_radius_top_left = 4
+corner_radius_bottom_left = 4
+expand_margin_top = 2.0
+expand_margin_bottom = 2.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jpi7h"]
+bg_color = Color(0.5923612, 0.86635303, 0.8379189, 1)
+corner_radius_top_left = 4
+corner_radius_bottom_left = 4
+expand_margin_top = 2.0
+expand_margin_bottom = 2.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j07op"]
+bg_color = Color(0.2509804, 0.3254902, 0.3254902, 1)
+border_width_top = 8
+border_width_bottom = 8
+border_color = Color(0.24917585, 0.3238493, 0.325177, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[resource]
+HSlider/icons/grabber = ExtResource("1_j07op")
+HSlider/icons/grabber_disabled = ExtResource("1_j07op")
+HSlider/icons/grabber_highlight = ExtResource("1_j07op")
+HSlider/icons/tick = ExtResource("1_j07op")
+HSlider/styles/grabber_area = SubResource("StyleBoxFlat_21tff")
+HSlider/styles/grabber_area_highlight = SubResource("StyleBoxFlat_jpi7h")
+HSlider/styles/slider = SubResource("StyleBoxFlat_j07op")

@@ -1,0 +1,32 @@
+[gd_resource type="Theme" format=3 uid="uid://p0n4tv8rgdp6"]
+
+[ext_resource type="Texture2D" uid="uid://dk63qamci0ir4" path="res://SPRITES/UI/Button 1/Button Disable.png" id="1_rxes3"]
+[ext_resource type="Texture2D" uid="uid://cij3qy4t7y6kd" path="res://SPRITES/UI/Button 1/Button Normal.png" id="2_u2u1v"]
+[ext_resource type="Texture2D" uid="uid://bu6pbvj7cgbip" path="res://SPRITES/UI/Button 1/Button Hover.png" id="3_favtc"]
+[ext_resource type="Texture2D" uid="uid://duuo5mu0inytv" path="res://SPRITES/UI/Button 1/Button Active.png" id="4_rsgi7"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jp2c4"]
+texture = ExtResource("1_rxes3")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_un5te"]
+texture = ExtResource("2_u2u1v")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ojiwa"]
+texture = ExtResource("3_favtc")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_kyhr2"]
+texture = ExtResource("2_u2u1v")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_2kdsv"]
+texture = ExtResource("4_rsgi7")
+
+[resource]
+Button/colors/font_color = Color(0, 0.7019608, 0.98039216, 1)
+Button/colors/font_outline_color = Color(0.45012802, 0.8624874, 0.9064635, 1)
+Button/constants/outline_size = 3
+Button/font_sizes/font_size = 32
+Button/styles/disabled = SubResource("StyleBoxTexture_jp2c4")
+Button/styles/focus = SubResource("StyleBoxTexture_un5te")
+Button/styles/hover = SubResource("StyleBoxTexture_ojiwa")
+Button/styles/normal = SubResource("StyleBoxTexture_kyhr2")
+Button/styles/pressed = SubResource("StyleBoxTexture_2kdsv")
