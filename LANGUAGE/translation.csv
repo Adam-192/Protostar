@@ -1,0 +1,303 @@
+keys,en,sl
+#GLOBAL
+_back, BACK, NAZAJ
+_options,OPTIONS,OPCIJE
+
+#SCENE MAIN
+_credits, CREDITS, ZASLUGE
+_shop, SHOP, TRGOVINA
+_start, START, ZAČNI
+_ship, SPACESHIP, VESOLJSKA LADJA
+_missions_battlepass, MISSIONS  &&\nBATTLEPASS, MISIJE &&\n BOJNA SEZONA
+_lootbox, LOOTBOX, SKRINJA NAGRAD
+_enemy_list, ENEMY LIST, SEZNAM \nSOVRAŽNIKOV
+_energy, ENERGY, ENERGIJA
+_energy_main,{energy}/100\n +1E in {time}s,{energy}/100\n +1E v {time}s
+_energy_full_main,{energy}/100\n,{energy}/100\n
+_season_timer, SEASON ENDS IN:    10D 8H , DO KONCA SEZONE:    10D 8H
+_exit, EXIT, IZHOD
+
+#SCENE SHIP
+_select, SELECT, IZBERI
+_selected, SELECTED \nSPACE SHIP:, IZBRANA\nVESOLJSKA LADJA:
+
+#SCENE ENEMY SHIP
+_easy_list, Nautolan - EASY, Nautolan - LAHKO
+_normal_list, Klaed - NORMAL, Klaed - SREDNJE
+_hard_list, Nairan - HARD, Nairan - TEŽKO
+_destroyed_label, Destroyed: {count}, Uničeno: {count}
+_fighter, Fighter, Bojevnik 
+_scout, Scout, Skavt
+_dreadnought, Dreadnought, Drednot 
+_battlecruiser, Battlecruiser, Križarnik
+_frigate, Frigate, Frigata
+_bomber, Bomber, Bombnik
+
+# MISSIONS #
+_survive_60_desc, SURVIVE 60s, PREŽIVI 60s
+_survive_120_desc, SURVIVE 120s, PREŽIVI 120s
+_score_5000_desc, GET A TOTAL SCORE OF \n5000 POINTS, DOSEŽI SKUPNO\n5000 TOČK
+_score_2000_desc, GET A TOTAL SCORE OF \n2000 POINTS, DOSEŽI SKUPNO\n2000 TOČK
+_kill_20_desc, DESTROY 20 ENEMIES, UNIČI 20 NASPROTNIKOV
+_kill_60_desc, DESTROY 60 ENEMIES, UNIČI 60 NASPROTNIKOV
+_kill_20_fighter_desc, DESTROY 20 FIGHTERS, UNIČI 20 BOJEVNIKOV
+_kill_20_scout_desc, DESTROY 20 SCOUTS, UNIČI 20 SKAVTOV
+_kill_5_dreadnought_desc, DESTROY 5 DREADNOUGHTS, UNIČI 5 DREDNOTOV
+_kill_5_battlecruiser_desc, DESTROY 5 BATTLECRUISERS, UNIČI 5 KRIŽARNIKOV
+_kill_20_easy_desc, DESTROY 20 ENEMIES \nON EASY, UNIČI 20 NASPROTNIKOV\nNA TEŽAVNOSTI LAHKO
+_kill_20_normal_desc, DESTROY 20 ENEMIES \nON NORMAL, UNIČI 20 NASPROTNIKOV\nNA TEŽAVNOSTI SREDNJE
+_kill_20_hard_desc, DESTROY 20 ENEMIES \nON HARD, UNIČI 20 NASPROTNIKOV\nNA TEŽAVNOSTI TEŽKO
+
+#SCENE MISSIONS BATTLEPASS
+_missions_mb, MISSIONS, MISIJE
+_mission1, MISSION 1, MISIJA 1
+_mission2, MISSION 2, MISIJA 2
+_mission3, MISSION 3, MISIJA 3
+_claim, CLAIM, POBERI
+_mission_progress, Progress: {progress}/{target}   (+{exp}exp),Napredek: {progress}/{target}   (+{exp}exp)
+_level_max,LEVEL {current}/{total} - MAX LEVEL\nTOTAL EXP: {xp}/{max_xp},STOPNJA {current}/{total} - NAJVIŠJA STOPNJA\nSKUPNI EXP: {xp}/{max_xp}
+_level_progress,-UNLOCKED {current}/{total} - NEXT LEVEL: {cur_exp}/{need_exp} EXP ({percent}%)-\nTOTAL EXP: {total_cur}/{total_need},-ODKLENJENO {current}/{total} - NASLEDNJA STOPNJA: {cur_exp}/{need_exp} EXP ({percent}%)-\nSKUPNI EXP: {total_cur}/{total_need}
+
+_battle_pass, BATTLE PASS, BOJNA SEZONA
+_cadet_pass, CADET PASS:, KADETSKA:
+_captain_pass, CAPTAIN PASS:, KAPITANSKA:
+_admiral_pass, ADMIRAL PASS:, ADMIRALSKA:
+
+_captain_pass_buy, CAPTAIN PASS:\nBUY IT IN PREMIUM SHOP! - Even more Amazing gifts! Worth the money!, KAPITANSKA:\nKUPI V PREMIUM TRGOVINI -  Še več odličnih nagrad! Splača se nakupa!
+_admiral_pass_buy, ADMIRAL PASS:\nBUY IT IN PREMIUM SHOP! - The best of the best ! ! ! Yes - you want this ! ! !, ADMIRALSKA:\nKUPI V PREMIUM TRGOVINI - Le naj najboljše nagrade! ! ! Da - hočeš to! ! !
+
+_cadet_reward_1, + 250 GOLD, + 250 ZLATA
+_cadet_reward_2, + 2 SCORE\nBOOSTER, + 2\nOJAČEVALCA\nTOČK
+_cadet_reward_3, + 600 GOLD, + 600 ZLATA
+_cadet_reward_4, + 1 COMMON\nKEY, + 1 NAVADEN\nKLJUČ
+_cadet_reward_5, + 1500 GOLD\n+ 50 CRYSTALS, + 1500 ZLATA\n+ 50 KRISTALOV
+_cadet_reward_6, + 2 RARE\nKEYS, + 2 REDKA\nKLJUČA
+_cadet_reward_7, + 1x ALL\nBOOSTERS, + 1x VSEH\nOJAČEVALCEV
+_cadet_reward_8, + 1 MYTHICAL\nKEY, + 1 MISTIČEN\nKLJUČ
+_cadet_reward_9, + 199 CRYSTALS, + 199 KRISTALOV
+
+_captain_reward_1, + 750 GOLD, + 750 ZLATA
+_captain_reward_2, + 3 COMMON\nKEYS, + 3 NAVADNIH\nKLJUČEV
+_captain_reward_3, + 115 CRYSTALS, + 115 KRISTALOV
+_captain_reward_4, + 1x ALL\nBOOSTERS, + 1x VSEH\nOJAČEVALCEV
+_captain_reward_5, + 1 MYTHICAL\nKEY, + 1 MISTIČEN\nKLJUČ
+_captain_reward_6, + 1475 GOLD\n+ 75 CRYSTALS, + 1475 ZLATA\n+ 75 KRISTALOV
+_captain_reward_7, + 3 RARE\nKEYS, +3 REDKIH\nKLJUČEV
+_captain_reward_8, + 2500 GOLD\n+150 CRYSTALS, + 2500 ZLATA\n+ 150 KRISTALOV
+_captain_reward_9, + 3 MYTHICAL\nKEYS, + 3 MISTIČNIH\nKLJUČEV
+
+_admiral_reward_1, + 1x ALL\nKEYS, + 1x VSEH\nKLJUČEV
+_admiral_reward_2, + 1500 GOLD\n+ 150 CRYSTALS, + 1500 ZLATA\n+ 150 KRISTALOV
+_admiral_reward_3, + 15 COMMON\nKEYS, + 15 NAVADNIH\nKLJUČEV
+_admiral_reward_4, + 3 MYTHICAL\nKEYS, + 3 MISTIČNIH\nKLJUČEV
+_admiral_reward_5, + 3x ALL\nBOOSTERS, + 3x VSEH\nOJAČEVALCEV
+_admiral_reward_6, + 8 RARE\nKEYS, + 8 REDKIH\nKLJUČEV
+_admiral_reward_7, + 2500 GOLD\n+ 150 CRYSTALS, + 2500 ZLATA\n+ 150 KRISTALOV
+_admiral_reward_8, + 5x ALL\nBOOSTERS, + 5x VSEH\nOJAČEVALCEV
+_admiral_reward_9, + 4x ALL\nKEYS, + 4 VSEH\nKLJUČEV
+
+#SCENE LOOTBOX
+_common_loot_box, COMMON\nLOOT BOX, NAVADNA\nSKRINJA NAGRAD
+_rare_loot_box, RARE\nLOOT BOX, REDKA\nSKRINJA NAGRAD
+_mythical_loot_box, MYTHICAL\nLOOT BOX, MISTIČNA\nSKRINJA NAGRAD
+_common_loot_desc, 20% chance for SKIN\n25-200 GOLD\n1-3 BOOSTERS, 20% možnosti za IZGLED\n25-200 ZLATA\n1-3 OJAČEVALCEV
+_rare_loot_desc, 60% chance for SKIN\n75-500 GOLD\n2-5 BOOSTERS, 60% možnosti za IZGLED\n75-500 ZLATA\n2-5 OJAČEVALCEV
+_mythical_loot_desc, 100% chance for SKIN\n250-1000 GOLD\n3-9 BOOSTERS, 100% možnosti za IZGLED\n250-1000 ZLATA\n3-9 OJAČEVALCEV
+_open, OPEN, ODPRI
+_all_booster_1, 2x DAMAGE, 2x MOČ
+_all_booster_2, METEOR\nDESTROYER, UNIČEVALEC\nMETEOROV
+_all_booster_3, +2 HP, +2 ŽT
+_all_booster_4, SCORE\nBOOSTER, OJAČEVALEC\nTOČK
+_all_booster_5, LEFT\nTURRET, LEVA\nLADJICA
+_all_booster_6, RIGHT\nTURRET, DESNA\nLADJICA
+
+
+#SCENE LOOTBOX OPENING SCENE
+_common_keys, COMMON KEYS -, NAVADNI KLJUČI - 
+_rare_keys, RARE KEYS -, REDKI KLJUČI - 
+_mythical_keys, MYTHICAL KEYS -, MISTIČNI KLJUČI - 
+_coins, \nGOLD, \nZLATA
+_new_skin, ! NEW SKIN !, ! NOV IZGLED !
+_duplicate, ! DUPLICATE !\n+199 GOLD, ! DUPLIKAT !\n+199 ZLATA
+_buy_more_keys, BUY MORE KEYS, KUPI VEČ KLJUČEV
+_nice, NICE !, SUPER !
+_open_again, !!! OPEN AGAIN !!!, !!! ODPRI ZNOVA !!!
+_keys, KEYS:, KLJUČI:
+_boosters, BOOSTERS:, OJAČEVALCI:
+_opening_booster_1, 2x DAMAGE ............, DVOJNA MOČ ............
+_opening_booster_2, GET +2 HP ..............., PRIDOBI +2 ŽT ..........
+_opening_booster_3, METEOR BUSTER ..., METEORIT BOOM ....
+_opening_booster_4, SCORE BOOSTER ..., OJAČEVALEC TOČK .
+_opening_booster_5, LEFT TURRET ........., LEVA LADJICA .........
+_opening_booster_6, RIGHT TURRET ......., DESNA LADJICA ......
+
+#SCENE SHOP
+_main_menu, MAIN MENU, GLAVNA STRAN
+_full_recharge, FULL RECHARGE\n FOR , NAPOLNI MAKSIMUM\n ZA 
+_shop_gold, GOLD, ZLATA
+_buy_keys, BUY KEYS, KUPI KLJUČE
+_1_common_key, BUY 1 KEY for\n 450 GOLD, KUPI 1 KLJUČ\n ZA 450 ZLATA
+_3_common_key, BUY 3 KEYS for\n 1250 GOLD, KUPI 3 KLJUČE\n ZA 1250 ZLATA
+_1_rare_key, BUY 1 KEY for\n 950 GOLD, KUPI 1 KLJUČ\n ZA 950 ZLATA
+_3_rare_key, BUY 3 KEYS for\n 2500 GOLD, KUPI 3 KLJUČE\n ZA 2500 ZLATA
+_1_mythical_key, BUY 1 KEY for\n 2000 GOLD, KUPI 1 KLJUČ\n ZA 2000 ZLATA
+_3_mythical_key, BUY 3 KEYS for\n 5250 GOLD, KUPI 3 KLJUČE\n ZA 5250 ZLATA
+_shop_buy_crystals, BUY CRYSTALS, KUPI KRISTALE
+_shop_buy_gold, BUY GOLD, KUPI ZLATO
+_shop_buy_keys, BUY KEYS, KUPI KLJUČE
+_shop_buy_boosters, BUY BOOSTERS, KUPI OJAČEVALCE 
+_premium_shop, PREMIUM SHOP, PREMIUM TRGOVINA
+_recharge_150, RECHARGE 10E\n FOR 150 GOLD, NAPOLNI 10E\n ZA 150 ZLATA
+_starter_pack, -STARTER PACK-, -ZAČETNI PAKET-
+_explorer_pack, -EXPLORER PACK-, -PAKET RAZISKOVALCEV-
+_commnader_pack, -COMMANDER PACK-, -PAKET POVELJNIKA-
+_elite_pack, -ELITE PACK-, -ELITNI PAKET-
+_legendary_pack, -LEGENDARY PACK-, -LEGENDARNI PAKET-
+_starter_pack_price,                  BUY 100x CRYSTALS for 1.99€,                  KUPI 100x KRISTALOV za 1.99€
+_explorer_pack_price,                  BUY 300x CRYSTALS for 4.99€,                  KUPI 300x KRISTALOV za 4.99€
+_c_pack_price, BUY 1000x\n CRYSTALS\n for 12.99€, KUPI 1000x\n KRISTALOV\n za 12.99€
+_elite_pack_price,                  BUY 3000x CRYSTALS for 24.99€,                  KUPI 3000x KRISTALOV za 24.99€
+_legendary_pack_price,                  BUY 9999x CRYSTALS for 74.99€,                  KUPI 9999x KRISTALOV za 74.99€
+_cargo_crate, -CARGO CRATE-, -TOVORNI ZABOJ-
+_supply_pod, -SUPPLY POD-, -OSKRBNI PAKET-
+_orbital_cache, -ORBITAL CACHE-, -ORBITALNI ZABOJ-
+_fleet_reserves, -FLEET RESERVES-, -REZERVE FLOTE-
+_galactic_stockpile, -GALACTIC STOCKPILE-, -GALAKTIČNA ZALOGA-
+_cargo_crate_desc,                        BUY 1000x GOLD for 80 CRYSTALS,                        KUPI 1000x ZLATA za 80 KRISTALOV
+_supply_pod_desc,                        BUY 5000x GOLD for 350 CRYSTALS,                        KUPI 5000x ZLATA za 350 KRISTALOV
+_orbital_cache_desc,                        BUY 12000x GOLD for 750 CRYSTALS,                        KUPI 12000x ZLATA za 750 KRISTALOV
+_f_r_desc, BUY 25000x GOLD \nfor 1400 CRYSTALS, KUPI 25000x ZLATA \nza 1400 KRISTALOV
+_galactic_stockpile_desc,                        BUY 45000x GOLD for 2200 CRYSTALS,                        KUPI 45000x ZLATA za 2200 KRISTALOV
+_open_lootbox, OPEN LOOTBOX, ODPRI SKRINJO
+_overdrive, -OVERDRIVE-, -PREKORAČITEV-
+_armor_plating, -ARMOR PLATING-, -JEKLENI OKLEP-
+_asteroid_breaker, -ASTEROID BREAKER-, -UNIČEVALEC ASTEROIDOV-
+_data_uplink, -DATA UPLINK-, -POSODOBITEV PODATKOV-
+_lef_drone, -LEFT SUPPORT DRONE-, -LEVI PODPORNI DRON-
+_right_drone, -RIGHT SUPPORT DRONE-, -DESNI PODPORNI DRON-
+_overdrive_desc, 300 GOLD - 2x DAMAGE, 300 ZLATA - DVOJNA MOČ
+_armor_plating_desc, 250 GOLD - GET +2 HP, 250 ZLATA - PRIDOBI +2 ŽT
+_asteroid_breaker_desc, 300 GOLD - CAN DESTROY METEORS, 300 ZLATA - LAHKO UNIČI METEORE
+_data_uplink_desc, 350 GOLD - SCORE BOOSTER, 350 ZLATA - OJAČEVALEC TOČK
+_lef_drone_desc, 500 GOLD - GET LEFT TURRET, 500 ZLATA - LEVA BOJNA LADJICA
+_right_drone_desc, 500 GOLD - GET RIGHT TURRET, 500 ZLATA - DESNA BOJNA LADJICA
+_captain_ps, -CAPTAIN AUTHORIZATION-, -KAPITANSKA AVTORIZACIJA-
+_admiral_ps, -ADMIRAL CLEARANCE-, -ADMIRALSKO DOVOLJENJE-
+_combat_training, -COMBAT TRAINING-, -BOJNO USPOSABLJANJE-
+_mission_override_1, -MISSION OVERRIDE I-, -PRESKOK MISIJE I-
+_mission_override_2, -MISSION OVERRIDE II-, -PRESKOK MISIJE II-
+_mission_override_3, -MISSION OVERRIDE III-, -PRESKOK MISIJE III-
+_captain_ps_desc, \nBUY CAPTAIN PASS\n for 999 CRYSTALS, \nKUPI KAPITANSKI PREHOD\n za 999 KRISTALOV
+_admiral_ps_desc, \nBUY ADMIRAL PASS\n for 2450 CRYSTALS, \nKUPI ADMIRALSKI PREHOD\n za 2450 KRISTALOV
+_combat_training_desc, \nGET EXP BOOST for 350 CRYSTALS\n(+900 EXP), \nPRIDOBI IZKUŠNJE za 350 KRISTALOV\n(+900 EXP)
+_mission_override_1_desc, SKIP MISSION #1 for 100 CRYSTALS, PRESKOČI MISIJO #1 za 100 KRISTALOV
+_mission_override_2_desc, SKIP MISSION #2 for 100 CRYSTALS, PRESKOČI MISIJO #2 za 100 KRISTALOV
+_mission_override_3_desc, SKIP MISSION #3 for 100 CRYSTALS, PRESKOČI MISIJO #3 za 100 KRISTALOV
+
+
+#SCENE LEVEL SELECT
+_cost, COST: , CENA: 
+_not_enought_energy, ! NOT ENOUGH ENERGY ! , ! NI DOVOLJ ENERGIJE ! 
+_select_level, SELECT DIFFICULTY:, IZBERI TEŽAVNOST:
+
+#SCENE LEVEL 
+_score, SCORE: , TOČKE: 
+_level_booster_1, 2x DAMAGE, 2x NAPADALNA \nMOČ
+_level_booster_2, METEOR\nBUSTER, UNIČEVALEC\nMETEOROV
+_level_booster_3, +2 HEALTH\nPOINTS, +2 ŽIVLJENJSKI\nTOČKI
+_level_booster_4,  SCORE\nBOOSTER,OJAČEVALCEV\nTOČK
+_level_booster_5, LEFT\nTURRRET, LEVA\nLADJICA
+_level_booster_6, RIGHT\nTURRET, DESNA\nLADJICA
+_difficulty_easy, DIFFICULTY:\nEASY, TEŽAVNOST:\nLAHKO
+_difficulty_normal, DIFFICULTY:\nNORMAL, TEŽAVNOST:\nSREDNJE
+_difficulty_hard, DIFFICULTY:HARD\n, TEŽAVNOST:\nTEŽKO
+_tutorial_01, MOVE:, PREMIKANJE:
+_tutorial_02, CLICK LEFT\nMOUSE\n TO SHOOT, KLIKNI LEVI\n GUMB MIŠKE\n ZA STRELJANJE
+_tutorial_03, HOLD RIGHT\nMOUSE\n TO MOVE\nSLOWLY, DRŽI DESNI\n GUMB MIŠKE\n ZA POČASNO\n PREMIKANJE
+_continiue, CONTINUE GAME, NADALJUJ IGRO
+_destruct, SELF DESTRUCT, UNIČI LADJO
+
+# SCENE GAME OVER
+_game_over, GAME OVER, KONEC IGRE
+_highscore, HIGH SCORE: , TOČKE-REKORD: 
+_to_title, TO TITLE SITE, NA ZAČETNO STRAN
+_new,  (NEW),  (NOVO)
+_game_over_mission_progress, MISSION PROGRESS, NAPREDEK MISIJ
+#SCENE OPTION
+_mute_volume,     MUTE VOLUME,    IZKLOPI ZVOK
+_unmute_volume,     UNMUTE VOLUME,    VKLOPI ZVOK
+_music, MUSIC, GLASBA
+_effects, EFFECTS, EFEKTI
+_test_effects, TEST EFFECT \nVOLUME, PREIZKUSI \n GLASNOST 
+_language, LANGUAGE: , JEZIK: 
+
+
+# INTRO
+_naslov, PROTOSTAR, PROTOZVEZDA
+_click, CLICK TO CONTINUE, KLIKNI ZA NADALJEVANJE
+_intro_1, IT IS HAPPENING AGAIN..., PONOVNO SE DOGAJA...
+_intro_2, DUE TO STELLAR EVOLUTION, ZARADI ZVEZDNE EVOLUCIJE
+_intro_3, FROM THE MASS OF ITS PARENT\n MOLECULAR CLOUD..., IZ MASE SVOJEGA MATIČNEGA\n MOLEKULARNEGA OBLAKA...
+_intro_4, A PROTOSTAR IS BORN, NASTANE PROTOZVEZDA
+_intro_5, EVEN YOUR ENEMYS NOTICE\n ITS BEAUTY, TO LEPOTO OPAZIJO TUDI\n TVOJI SOVRAŽNIKI
+_intro_6, AND THEY WANT TO DESTROY IT!, IN JO ŽELIJO UNIČITI!
+_intro_7, YOU CANNOT ALLOW THAT!, TEGA NE SMEŠ DOVOLITI!
+_intro_8, THE ENEMY HAS ALREADY\n BEGUN THE ATTACK..., SOVRAŽNIK JE ŽE\n ZAČEL NAPAD...
+_intro_9, BEFORE IT IS TOO LATE..., PREDEN BO PREPOZNO...
+_intro_10, YOU HAVE TO SAVE THE..., MORAŠ REŠITI...
+_intro_11, PROTOSTAR, PROTOZVEZDO
+
+# START
+_how_to_play, HOW TO PLAY?, KAKO IGRATI?
+
+# CREDISTS
+_made_by, A GAME MADE BY:, IGRO IZDELAL:
+_special_thanks, SPECIAL THANKS!, POSEBNA ZAHVALA!
+_music_from, MUSIC FROM PIXABAY:, GLASBA (PIXABAY):
+_sounds_from, SOUNDS FROM PIXABAY:, ZVOKI (PIXABAY)
+_sounds_from_2, SOUND EFFECTST MADE WITH:, ZVOČNI EFEKTI IZDELANI Z:
+_sprites_from, SPRITES MADE BY:, IZGLED IZDELAL:
+_mentor, MENTOR:, MENTOR:
+
+#
+_made_with, MADE WITH:, NAREJENO Z:
+
+# TUTORIAL
+_tutorial, TUTORIAL ?, KAKO SE IGRA ?
+_show_how_to_play, DO YOU WANT TO LEARN HOW TO PLAY?, SE HOČEŠ NAUČITI KAKO IGRATI?
+_tutorial_no, NO - I ALREADY KNOW!, NE - ŽE VEM!,
+_tutorial_yes, YES - SHOW ME HOW TO PLAY, JA - POKAŽI MI KAKO SE IGRA
+
+_step_0_text, HELLO YOUNG PILOT!\n\nIT'S TIME FOR YOU TO\nLEARN THE BASICS.\n\nARE YOU READY?, POZDRAVLJEN PILOT!\n\nČAS JE: NAUČITI\nSE MORAŠ OSNOV.\n\nSI PRIRPAVLJEN?
+_step_0_button, YES SIR!, DA - SEM!
+
+_step_1_text, FIRSTLY\nCHOOSE YOUR SHIP!\n\nCLICK ON THE SPACESHIP\nBUTTON OR ON THE \nSPACESHIP ICON, NAJPREJ\nIZBERI SI LADJO!\n\nKLIKNI NA GUMB\nVESOLJSKA LADJA\nALI PA NA IKONO \nVESOLJSKE LADJE!
+
+_step_2_text_part1, SUPER, SUPER
+_step_2_text_part2, SUPER\nCLICK THE COLOR TO \nSELECT THE SHIPS\nCOLOR , SUPER\nKLIKNI NA BARVO\nDA IZBEREŠ BARVO\nSVOJE LADJE
+_step_2_text_part3, SUPER\nCLICK THE COLOR TO \nSELECT THE SHIPS\nCOLOR\n\n IF YOU ARE HAPPY\nWITH THE CHOICE\nCLICK SELECT , SUPER\nKLIKNI NA BARVO\nDA IZBEREŠ BARVO\nSVOJE LADJE\n\nČE SI ZADOVOLJEN Z IZBIRO\nKLIKNI IZBERI
+_step_2_text_part4, NICE!\nNOW WE CAN GO BACK\nTO MAIN MENU., LEPO!\nZDAJ PA NAZAJ NA\nGLAVNO STRAN.
+_step_2_info, YOU WILL HAVE LATER\nMORE SHIPS TO\nSELECT FROM, POZNEJE BOŠ LAHKO\nIZBIRAL MED VEČ\nLADJAMI 
+
+_step_3, AND NOW THE SHOP!\n\nTO ENTER THE SHOP CLICK\nTHE SHOP BUTTON, ZDAJ PA TRGOVINA!\n\nZA TRGOVINO KLIKNI\nNA GUMB TRGOVINA
+_step_3_p2, FOR POWERFUL BOOSTS\nYOU NEED GOLD\n\nAND FOR GOLD YOU\n NEED CRYSTALS!\n\nCLICK THE BUTTON\n BUY CRYSTALS, ZA NAKUP MOČNIH\nOJAČEVALCEV\nPOTREBUJEŠ ZLATO\nIN ZA NAKUP ZLATA\nPOTREBUJEŠ KRISTALE\n\nKLIKNI GUMB\nKUPI KRISTALE
+_step_3_p3, CLICK TO BUY 500\nCRYSTALS FOR FREE!, KLIKNI DA KUPIŠ 500\nKRISTALOV ZASTONJ!
+
+_tutorial_pack, TUTORIAL PACK, PAKET NAUKA
+_tutorial_pack_price,                  BUY 500x CRYSTALS\n                  for FREE,                  KUPI 500x KRISTALOV\n                  za ZASTONJ
+_tutorial_gold_price,                        BUY 3000x GOLD for 80 CRYSTALS,                        KUPI 3000x ZLATA za 80 KRISTALOV
+_step_4, NICE!, LEPO!
+
+_step_4_p2, \nAND NOW TO BUY GOLD\nCLIK THE BUY GOLD\nBUTTON, \nZDAJ PA ZA NAKUP\nZLATA - KLIKNI GUMB\nKUPI ZLATO
+_step_4_p3, LATER THERE WILL BE \nMORE OPTIONS!\n\nNOW BUY GOLD!, POZNEJE BO VEČ OPCIJ!\n\nZDAJ PA KUPI ZLATO!
+_step_4_p4, NICE!, LEPO!
+
+_step_5,WITH GOLD YOU\nCAN LATER BUY\nBOOSTERS AND KEYS!\n\n AND NOW\nTHE FUN PART!, Z ZLATOM BOŠ LAHKO\nPOZNEJE KUPIL KLJUČE\nIN OJAČEVALCE!\n\nZDAJ PA\nNAJBOLJŠI DEL!
+_step_5_button, LETS GO!\nCLICK HERE!, PA DAJMO!\nKLIKNI SEM!
+
+_step_6, WITH KEYS YOU CAN OPEN\nLOOTBOXES FOR MEGA\nREWARDS!\n\nAND NOW\nCLICK START, Z KLJUČI BOŠ LAHKO\nODPRL SKRINJE NAGRAD\nIN DOBIL SUPER NAGRADE!\n\nZDAJ PA KLIKNI\nNA ZAČNI
+
+_step_7, HERE YOU CAN SELECT\nTHE LEVEL AND\nADD BOOSTERS!\n\nSELECT THE TWO AVAILABLE\n BOOSTERS WITH CLICKING\n ON THEM!, TUKAJ LAHKO IZBEREŠ\nTEŽAVNOST TER DODAŠ\nOJAČEVALCE!\n\nIZBERI OBA RAZPOLOŽLJIVA\nOJAČEVALCA TAKO DA\nKLIKNEŠ NA NJU.
+_step_7_p2, AWESOME!\nYOU ARE NOW\n READY TO PLAY!\n\n CLICK ON THE LEVEL TO\nSTART PLAYING\n\nGOOD LUCK!, ODLIČNO!\nZDAJ SI PRIPRAVLJEN\nZA IGRO!\n\nKLIKNI NA TEŽAVNOST IN\nZAČNI IGRO!\n\nVELIKO SREČE!
+
+_skip_button, SKIP, PRESKOČI
