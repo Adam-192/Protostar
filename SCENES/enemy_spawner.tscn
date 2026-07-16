@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://cju1rlbax7k0i"]
+
+[ext_resource type="Script" uid="uid://ds5x5rwcfjt6l" path="res://SCRIPTS/enemy_spawner.gd" id="1_jxamn"]
+
+[node name="EnemySpawner" type="Node" unique_id=776990461]
+script = ExtResource("1_jxamn")
+
+[node name="Timer" type="Timer" parent="." unique_id=1568291326]
+wait_time = 2.0
+one_shot = true
+
+[node name="MeteorTimer" type="Timer" parent="." unique_id=180841506]
+wait_time = 5.0
+autostart = true
+
+[node name="TimerRandomEvents" type="Timer" parent="." unique_id=980978494]
+wait_time = 10.0
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="MeteorTimer" to="." method="_on_meteor_timer_timeout"]
+[connection signal="timeout" from="TimerRandomEvents" to="." method="_on_timer_random_events_timeout"]

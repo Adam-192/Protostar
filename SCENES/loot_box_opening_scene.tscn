@@ -1,0 +1,572 @@
+[gd_scene format=3 uid="uid://coyfdr0j5sgw8"]
+
+[ext_resource type="Script" uid="uid://b6cng0rlad30a" path="res://SCRIPTS/loot_box_opening_scene.gd" id="1_8shjp"]
+[ext_resource type="Shader" uid="uid://dlqn7laqkb3q7" path="res://THEMES_SHADERS/background_slow.gdshader" id="2_73hmu"]
+[ext_resource type="Texture2D" uid="uid://cufljtwnasawi" path="res://SPRITES/Background/Purple Nebula/Purple_Nebula_08-512x512.png" id="3_8028s"]
+[ext_resource type="Texture2D" uid="uid://cyi2rmbs83e0n" path="res://SPRITES/RESOURCES/common_chest.png" id="4_q0prv"]
+[ext_resource type="Texture2D" uid="uid://l1471awmrlcr" path="res://SPRITES/RESOURCES/common_empty_no_glow.png" id="5_bf1kg"]
+[ext_resource type="Texture2D" uid="uid://qfm714m3jjfd" path="res://SPRITES/RESOURCES/big_shine.png" id="6_bf1kg"]
+[ext_resource type="Theme" uid="uid://p0n4tv8rgdp6" path="res://THEMES_SHADERS/button.tres" id="7_8pftm"]
+[ext_resource type="Texture2D" uid="uid://bg1cwsshebokp" path="res://SPRITES/Player/Ship7/skin1.png" id="7_aspoc"]
+[ext_resource type="Texture2D" uid="uid://bg2ohqx0lwfi" path="res://SPRITES/RESOURCES/gold.png" id="7_v4dfo"]
+[ext_resource type="Texture2D" uid="uid://dftdu7ilske4v" path="res://SPRITES/UI/Icons/07.png" id="8_ar2qy"]
+[ext_resource type="Texture2D" uid="uid://ck5diniua6f52" path="res://SPRITES/UI/Card X1/Card X1.png" id="11_qp7mb"]
+[ext_resource type="Texture2D" uid="uid://m4mi1hhd1xpv" path="res://SPRITES/RESOURCES/gem.png" id="12_f8vnv"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_q0prv"]
+shader = ExtResource("2_73hmu")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8pftm"]
+atlas = ExtResource("6_bf1kg")
+region = Rect2(0, 0, 18, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ar2qy"]
+atlas = ExtResource("6_bf1kg")
+region = Rect2(18, 0, 18, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v4dfo"]
+atlas = ExtResource("6_bf1kg")
+region = Rect2(36, 0, 18, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aspoc"]
+atlas = ExtResource("6_bf1kg")
+region = Rect2(54, 0, 18, 38)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7b46m"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8pftm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ar2qy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v4dfo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aspoc")
+}],
+"loop": true,
+"name": &"default",
+"speed": 12.0
+}]
+
+[sub_resource type="Gradient" id="Gradient_ifjte"]
+interpolation_mode = 1
+offsets = PackedFloat32Array(0.37820512, 0.4679487, 0.5833333, 0.6602564)
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 0.78431374, 1, 1, 1, 0.58431375, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_bf1kg"]
+gradient = SubResource("Gradient_ifjte")
+width = 128
+height = 128
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+
+[node name="LootBoxOpeningScene" type="Control" unique_id=464803595]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_8shjp")
+
+[node name="Background" type="Sprite2D" parent="." unique_id=576564245]
+texture_repeat = 3
+material = SubResource("ShaderMaterial_q0prv")
+position = Vector2(628.9998, 95.99999)
+scale = Vector2(2.5449219, 2.5449219)
+texture = ExtResource("3_8028s")
+
+[node name="ChestClosed" type="Sprite2D" parent="." unique_id=1080180812]
+position = Vector2(753.354, 576)
+texture = ExtResource("4_q0prv")
+
+[node name="ChestOpened" type="Sprite2D" parent="." unique_id=1057553558]
+position = Vector2(754.354, 577)
+texture = ExtResource("5_bf1kg")
+
+[node name="TimerWaitAtStart" type="Timer" parent="." unique_id=357196823]
+one_shot = true
+autostart = true
+
+[node name="TimerShaking" type="Timer" parent="." unique_id=739701732]
+wait_time = 2.39
+one_shot = true
+
+[node name="TimerOpeningShine" type="Timer" parent="." unique_id=629366088]
+wait_time = 3.0
+one_shot = true
+
+[node name="ShineRight" type="AnimatedSprite2D" parent="." unique_id=1843546771]
+modulate = Color(1, 1, 1, 0.5882353)
+position = Vector2(751.354, 586)
+rotation = -2.6179938
+scale = Vector2(8, 20)
+sprite_frames = SubResource("SpriteFrames_7b46m")
+autoplay = "default"
+frame_progress = 0.6939639
+centered = false
+offset = Vector2(-9, 0)
+
+[node name="ShineLeft" type="AnimatedSprite2D" parent="." unique_id=1879877108]
+modulate = Color(1, 1, 1, 0.5882353)
+position = Vector2(751.354, 588.99994)
+rotation = -3.6651917
+scale = Vector2(8, 20)
+sprite_frames = SubResource("SpriteFrames_7b46m")
+autoplay = "default"
+frame_progress = 0.14268142
+centered = false
+offset = Vector2(-9, 0)
+
+[node name="ShineMid" type="AnimatedSprite2D" parent="." unique_id=1305322907]
+modulate = Color(1, 1, 1, 0.5882353)
+position = Vector2(752.354, 596)
+rotation = -3.1415927
+scale = Vector2(8, 20)
+sprite_frames = SubResource("SpriteFrames_7b46m")
+autoplay = "default"
+frame_progress = 0.18535918
+centered = false
+offset = Vector2(-9, 0)
+
+[node name="ShineGift1" type="Sprite2D" parent="." unique_id=633214536]
+position = Vector2(749.354, 105)
+texture = SubResource("GradientTexture2D_bf1kg")
+
+[node name="ShipSkin" type="Sprite2D" parent="ShineGift1" unique_id=901646410]
+position = Vector2(0, -8)
+texture = ExtResource("7_aspoc")
+
+[node name="Gold" type="Sprite2D" parent="ShineGift1" unique_id=2075230548]
+position = Vector2(-1, 15)
+texture = ExtResource("7_v4dfo")
+
+[node name="Label" type="Label" parent="ShineGift1" unique_id=283976617]
+offset_left = -98.354004
+offset_top = -49.0
+offset_right = 101.645996
+offset_bottom = 26.0
+theme_override_colors/font_color = Color(0.87600714, 0.8760071, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.36841473, 0.37044218, 0, 0.57254905)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 6
+theme_override_font_sizes/font_size = 32
+text = "+XXXXX
+COINS"
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="ShineGift1" unique_id=1565856389]
+offset_left = -66.0
+offset_top = 46.0
+offset_right = 63.0
+offset_bottom = 103.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 6
+theme_override_font_sizes/font_size = 24
+text = "! NEW SKIN !
+DUPLICATE "
+horizontal_alignment = 1
+
+[node name="ShineGift2" type="Sprite2D" parent="." unique_id=88991947]
+position = Vector2(515.354, 169)
+texture = SubResource("GradientTexture2D_bf1kg")
+
+[node name="Gold" type="Sprite2D" parent="ShineGift2" unique_id=1279313398]
+position = Vector2(-1, 15)
+texture = ExtResource("7_v4dfo")
+
+[node name="Label" type="Label" parent="ShineGift2" unique_id=1997734497]
+offset_left = -110.354004
+offset_top = -49.0
+offset_right = 115.645996
+offset_bottom = 26.0
+theme_override_colors/font_color = Color(0.87600714, 0.8760071, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.36841473, 0.37044218, 0, 0.57254905)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 6
+theme_override_font_sizes/font_size = 32
+text = "+XXXXX
+COINS"
+horizontal_alignment = 1
+
+[node name="ShineGift3" type="Sprite2D" parent="." unique_id=1214778676]
+position = Vector2(973.354, 169)
+texture = SubResource("GradientTexture2D_bf1kg")
+
+[node name="BoosterGift" type="Control" parent="ShineGift3" unique_id=1151537956]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -62.0
+offset_top = -64.0
+offset_right = -22.0
+offset_bottom = -24.0
+
+[node name="BoosterGift" type="Sprite2D" parent="ShineGift3/BoosterGift" unique_id=146115038]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(66.125, 64.12499)
+scale = Vector2(4.1854835, 4.1854835)
+texture = ExtResource("8_ar2qy")
+
+[node name="BoosterGift2" type="Sprite2D" parent="ShineGift3/BoosterGift" unique_id=1330771653]
+position = Vector2(66, 64)
+scale = Vector2(3.3387096, 3.3387096)
+texture = ExtResource("8_ar2qy")
+
+[node name="BoosterGiftName" type="Label" parent="ShineGift3/BoosterGift" unique_id=1761411646]
+layout_mode = 0
+offset_left = -45.354004
+offset_top = 27.0
+offset_right = 171.646
+offset_bottom = 114.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.28235295, 0.28235295, 0.28235295, 0.7607843)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 5
+theme_override_constants/shadow_outline_size = 3
+theme_override_font_sizes/font_size = 24
+text = "BOOSTER
+BOOSTER
+5x"
+horizontal_alignment = 1
+
+[node name="ShineGift4" type="Sprite2D" parent="." unique_id=627750919]
+position = Vector2(748.354, 294)
+texture = SubResource("GradientTexture2D_bf1kg")
+
+[node name="BoosterGift" type="Control" parent="ShineGift4" unique_id=1495049696]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -62.0
+offset_top = -64.0
+offset_right = -22.0
+offset_bottom = -24.0
+
+[node name="BoosterGift" type="Sprite2D" parent="ShineGift4/BoosterGift" unique_id=392823539]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(66.125, 64.12499)
+scale = Vector2(4.1854835, 4.1854835)
+texture = ExtResource("8_ar2qy")
+
+[node name="BoosterGift2" type="Sprite2D" parent="ShineGift4/BoosterGift" unique_id=1894441988]
+position = Vector2(66, 64)
+scale = Vector2(3.3387096, 3.3387096)
+texture = ExtResource("8_ar2qy")
+
+[node name="BoosterGiftName" type="Label" parent="ShineGift4/BoosterGift" unique_id=1945006833]
+layout_mode = 0
+offset_left = -43.354004
+offset_top = 27.0
+offset_right = 170.646
+offset_bottom = 114.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.28235295, 0.28235295, 0.28235295, 0.7607843)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 5
+theme_override_constants/shadow_outline_size = 3
+theme_override_font_sizes/font_size = 24
+text = "BOOSTER
+BOOSTER
+5x"
+horizontal_alignment = 1
+
+[node name="ButtonBack" type="Button" parent="." unique_id=1202950425]
+layout_mode = 0
+offset_left = 972.0842
+offset_top = 502.0
+offset_right = 1182.0
+offset_bottom = 620.0
+theme = ExtResource("7_8pftm")
+theme_override_font_sizes/font_size = 32
+text = "_nice"
+
+[node name="ButtonBack3" type="Button" parent="." unique_id=2102950129]
+layout_mode = 0
+offset_left = 956.8421
+offset_top = 382.0
+offset_right = 1212.0
+offset_bottom = 483.0
+theme = ExtResource("7_8pftm")
+theme_override_font_sizes/font_size = 32
+text = "_open_again"
+
+[node name="ButtonBack2" type="Button" parent="." unique_id=678719534]
+layout_mode = 0
+offset_left = 965.21313
+offset_top = 400.0
+offset_right = 1200.0
+offset_bottom = 466.0
+theme = ExtResource("7_8pftm")
+theme_override_font_sizes/font_size = 24
+text = "_buy_more_keys"
+
+[node name="CardX1" type="Sprite2D" parent="." unique_id=1289128859]
+modulate = Color(1, 1, 1, 0.78431374)
+position = Vector2(173.00002, 358)
+scale = Vector2(0.70987654, 0.7098765)
+texture = ExtResource("11_qp7mb")
+
+[node name="Gem" type="Sprite2D" parent="." unique_id=1427676052]
+position = Vector2(121.5, 185.5)
+scale = Vector2(0.6015625, 0.6015625)
+texture = ExtResource("12_f8vnv")
+
+[node name="LabelGem" type="Label" parent="." unique_id=603732614]
+layout_mode = 0
+offset_left = 154.5
+offset_top = 169.5
+offset_right = 256.5
+offset_bottom = 196.5
+theme_override_colors/font_color = Color(1, 0.5924633, 0.997963, 1)
+theme_override_font_sizes/font_size = 24
+text = "GEM GEM"
+
+[node name="LabelKeys" type="Label" parent="." unique_id=64975321]
+layout_mode = 0
+offset_left = 52.0
+offset_top = 212.0
+offset_right = 154.0
+offset_bottom = 239.0
+theme_override_colors/font_color = Color(0.96779567, 0.917802, 0.9053126, 1)
+theme_override_font_sizes/font_size = 24
+text = "_keys"
+
+[node name="labelBoosts" type="Label" parent="." unique_id=1844784305]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 320.0
+offset_right = 171.0
+offset_bottom = 347.0
+theme_override_colors/font_color = Color(0.96779567, 0.917802, 0.9053126, 1)
+theme_override_font_sizes/font_size = 24
+text = "_boosters"
+
+[node name="Gold" type="Sprite2D" parent="." unique_id=1259747139]
+position = Vector2(118.5, 120.5)
+scale = Vector2(0.7109375, 0.7109375)
+texture = ExtResource("7_v4dfo")
+
+[node name="LabelGold" type="Label" parent="." unique_id=1216562517]
+layout_mode = 0
+offset_left = 148.5
+offset_top = 107.5
+offset_right = 268.5
+offset_bottom = 134.5
+theme_override_colors/font_color = Color(0.7934343, 0.76077646, 3.85046e-07, 1)
+theme_override_font_sizes/font_size = 24
+text = "GOLD GOLD"
+
+[node name="LabelKeys1" type="Label" parent="." unique_id=486295361]
+layout_mode = 0
+offset_left = 83.0
+offset_top = 239.0
+offset_right = 281.0
+offset_bottom = 266.0
+theme_override_colors/font_color = Color(0.9607843, 0.827451, 0.7254902, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.5254902)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 16
+text = "Common KEYS - 5x"
+
+[node name="LabelKeys2" type="Label" parent="." unique_id=717407162]
+layout_mode = 0
+offset_left = 83.0
+offset_top = 266.0
+offset_right = 281.0
+offset_bottom = 293.0
+theme_override_colors/font_color = Color(0.63529414, 0.78039217, 0.9607843, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.5254902)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 16
+text = "Rare KEYS - 5x"
+
+[node name="LabelKeys3" type="Label" parent="." unique_id=143828646]
+layout_mode = 0
+offset_left = 83.0
+offset_top = 292.0
+offset_right = 215.0
+offset_bottom = 319.0
+theme_override_colors/font_color = Color(0.8509804, 0.827451, 0.07058824, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.5254902)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 16
+text = "Mythical KEYS - 5x"
+
+[node name="LabelBooster1" type="Label" parent="." unique_id=2054953466]
+layout_mode = 0
+offset_left = 83.0
+offset_top = 349.0
+offset_right = 230.0
+offset_bottom = 376.0
+theme_override_colors/font_color = Color(0.972549, 0.34509805, 0.36862746, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.5254902)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 16
+text = "_opening_booster_1"
+
+[node name="LabelBooster1Num" type="Label" parent="." unique_id=670615859]
+layout_mode = 0
+offset_left = 223.0
+offset_top = 348.0
+offset_right = 265.0
+offset_bottom = 375.0
+theme_override_colors/font_color = Color(0.972549, 0.34509805, 0.36862746, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.5254902)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 16
+text = "5x"
+
+[node name="LabelBooster2Num" type="Label" parent="." unique_id=1625258940]
+layout_mode = 0
+offset_left = 223.0
+offset_top = 378.0
+offset_right = 265.0
+offset_bottom = 405.0
+theme_override_colors/font_color = Color(0.22352941, 0.61960787, 0.89411765, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.5254902)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 16
+text = "5x"
+
+[node name="LabelBooster8" type="Label" parent="." unique_id=1207485762]
+layout_mode = 0
+offset_left = 83.0
+offset_top = 376.0
+offset_right = 219.0
+offset_bottom = 403.0
+theme_override_colors/font_color = Color(0.22352941, 0.61960787, 0.89411765, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.5254902)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 16
+text = "_opening_booster_2"
+
+[node name="LabelBooster3Num" type="Label" parent="." unique_id=535464928]
+layout_mode = 0
+offset_left = 224.0
+offset_top = 403.0
+offset_right = 266.0
+offset_bottom = 430.0
+theme_override_colors/font_color = Color(0.8784314, 0.60784316, 0.39607844, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.5254902)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 16
+text = "5x"
+
+[node name="LabelBooster9" type="Label" parent="." unique_id=1406595275]
+layout_mode = 0
+offset_left = 83.0
+offset_top = 402.0
+offset_right = 221.0
+offset_bottom = 429.0
+theme_override_colors/font_color = Color(0.8784314, 0.60784316, 0.39607844, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.5254902)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 16
+text = "_opening_booster_3"
+horizontal_alignment = 1
+
+[node name="LabelBooster4Num" type="Label" parent="." unique_id=1131182339]
+layout_mode = 0
+offset_left = 223.0
+offset_top = 427.0
+offset_right = 265.0
+offset_bottom = 454.0
+theme_override_colors/font_color = Color(0.20784314, 0.7921569, 0.49803922, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.5254902)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 16
+text = "5x"
+
+[node name="LabelBooster10" type="Label" parent="." unique_id=607529746]
+layout_mode = 0
+offset_left = 83.0
+offset_top = 426.0
+offset_right = 221.0
+offset_bottom = 453.0
+theme_override_colors/font_color = Color(0.20784314, 0.7921569, 0.49803922, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.5254902)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 16
+text = "_opening_booster_4"
+
+[node name="LabelBooster5" type="Label" parent="." unique_id=1021578349]
+layout_mode = 0
+offset_left = 83.0
+offset_top = 455.0
+offset_right = 233.0
+offset_bottom = 482.0
+theme_override_colors/font_color = Color(0.88235295, 0.29803923, 0.40392157, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.5254902)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 16
+text = "_opening_booster_5"
+
+[node name="LabelBooster5Num" type="Label" parent="." unique_id=1946511196]
+layout_mode = 0
+offset_left = 223.0
+offset_top = 454.0
+offset_right = 265.0
+offset_bottom = 481.0
+theme_override_colors/font_color = Color(0.88235295, 0.29803923, 0.40392157, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.5254902)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 16
+text = "5x"
+
+[node name="LabelBooster6" type="Label" parent="." unique_id=1176986515]
+layout_mode = 0
+offset_left = 83.0
+offset_top = 472.0
+offset_right = 236.0
+offset_bottom = 499.0
+theme_override_colors/font_color = Color(0.49803922, 0.95686275, 0.34509805, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.5254902)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 16
+text = "_opening_booster_6"
+
+[node name="LabelBooster6Num" type="Label" parent="." unique_id=71627986]
+layout_mode = 0
+offset_left = 223.0
+offset_top = 476.0
+offset_right = 265.0
+offset_bottom = 503.0
+theme_override_colors/font_color = Color(0.49803922, 0.95686275, 0.34509805, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.5254902)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 16
+text = "5x"
+
+[connection signal="timeout" from="TimerWaitAtStart" to="." method="_on_timer_wait_at_start_timeout"]
+[connection signal="timeout" from="TimerShaking" to="." method="_on_timer_shaking_timeout"]
+[connection signal="timeout" from="TimerOpeningShine" to="." method="_on_timer_opening_shine_timeout"]
+[connection signal="pressed" from="ButtonBack" to="." method="_on_button_back_pressed"]
+[connection signal="pressed" from="ButtonBack3" to="." method="_on_button_back_3_pressed"]
+[connection signal="pressed" from="ButtonBack2" to="." method="_on_button_back_2_pressed"]

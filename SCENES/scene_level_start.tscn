@@ -1,0 +1,98 @@
+[gd_scene format=3 uid="uid://76u7wjf1s8h1"]
+
+[ext_resource type="Script" uid="uid://c5l3u1my1m1w6" path="res://SCRIPTS/scene_level_start.gd" id="1_4f2wi"]
+[ext_resource type="Shader" uid="uid://dlqn7laqkb3q7" path="res://THEMES_SHADERS/background_slow.gdshader" id="1_1267f"]
+[ext_resource type="Texture2D" uid="uid://bcrvgskei7v0o" path="res://SPRITES/Background/Stars/Space Background_1.png" id="2_o75bh"]
+[ext_resource type="Texture2D" uid="uid://jx17fd4k5gsn" path="res://SPRITES/UI/Card X3/Card X6.png" id="4_a5cq2"]
+[ext_resource type="Texture2D" uid="uid://cdhkgdvgk6n2r" path="res://SPRITES/UI/mouse_left.png" id="5_xuaie"]
+[ext_resource type="Texture2D" uid="uid://1bgp5w2yy6u3" path="res://SPRITES/UI/mouse_right.png" id="6_sxji2"]
+[ext_resource type="Texture2D" uid="uid://dc1tulxffkg3l" path="res://SPRITES/UI/WASD.png" id="7_w4j46"]
+[ext_resource type="Theme" uid="uid://p0n4tv8rgdp6" path="res://THEMES_SHADERS/button.tres" id="8_bjy57"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_31kr6"]
+shader = ExtResource("1_1267f")
+
+[node name="SceneLevelStart" type="Control" unique_id=743649606]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_4f2wi")
+
+[node name="SpaceBackground1" type="Sprite2D" parent="." unique_id=524241663]
+texture_repeat = 3
+material = SubResource("ShaderMaterial_31kr6")
+position = Vector2(644, -643.42847)
+scale = Vector2(3.1142857, 3.1142855)
+texture = ExtResource("2_o75bh")
+
+[node name="CardX6" type="Sprite2D" parent="." unique_id=1043320529]
+position = Vector2(637, 368.87503)
+scale = Vector2(1.2694235, 1.5645363)
+texture = ExtResource("4_a5cq2")
+
+[node name="Label3" type="Label" parent="." unique_id=1945171643]
+layout_mode = 0
+offset_left = 509.0
+offset_top = 147.0
+offset_right = 793.0
+offset_bottom = 222.0
+theme_override_colors/font_color = Color(0.97802943, 0.6667676, 0, 1)
+theme_override_font_sizes/font_size = 32
+text = "_how_to_play"
+horizontal_alignment = 1
+
+[node name="Label4" type="Label" parent="." unique_id=139075317]
+layout_mode = 0
+offset_left = 568.0
+offset_top = 252.0
+offset_right = 650.0
+offset_bottom = 270.0
+theme_override_font_sizes/font_size = 16
+text = "_tutorial_01"
+horizontal_alignment = 2
+
+[node name="Label5" type="Label" parent="." unique_id=1658727021]
+layout_mode = 0
+offset_left = 580.0
+offset_top = 326.0
+offset_right = 662.0
+offset_bottom = 386.0
+theme_override_font_sizes/font_size = 16
+text = "_tutorial_02"
+
+[node name="Label6" type="Label" parent="." unique_id=1826710511]
+visible = false
+layout_mode = 0
+offset_left = 582.0
+offset_top = 412.0
+offset_right = 670.0
+offset_bottom = 493.0
+theme_override_font_sizes/font_size = 16
+text = "_tutorial_03"
+
+[node name="MouseLeft" type="Sprite2D" parent="." unique_id=2039370266]
+position = Vector2(724, 353)
+texture = ExtResource("5_xuaie")
+
+[node name="MouseRight" type="Sprite2D" parent="." unique_id=1404043549]
+visible = false
+position = Vector2(721, 454)
+texture = ExtResource("6_sxji2")
+
+[node name="Wasd" type="Sprite2D" parent="." unique_id=884546151]
+position = Vector2(702, 275)
+texture = ExtResource("7_w4j46")
+
+[node name="Button" type="Button" parent="." unique_id=1399481571]
+layout_mode = 0
+offset_left = 511.0
+offset_top = 512.0
+offset_right = 818.0
+offset_bottom = 615.0
+theme = ExtResource("8_bjy57")
+text = "_start"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

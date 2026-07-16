@@ -1,0 +1,973 @@
+[gd_scene format=3 uid="uid://y5hfm6oii7wv"]
+
+[ext_resource type="Script" uid="uid://cvs8eu3f3akk" path="res://SCRIPTS/scene_missions_battlepass.gd" id="1_7558o"]
+[ext_resource type="Texture2D" uid="uid://jx17fd4k5gsn" path="res://SPRITES/UI/Card X3/Card X6.png" id="2_x0lae"]
+[ext_resource type="Shader" uid="uid://dlqn7laqkb3q7" path="res://THEMES_SHADERS/background_slow.gdshader" id="2_xbgu0"]
+[ext_resource type="Texture2D" uid="uid://cmgnj66j6uuh0" path="res://SPRITES/Background/Starfields/Starfield_05-512x512.png" id="3_8pjfu"]
+[ext_resource type="Texture2D" uid="uid://bov7s5g66ibjw" path="res://SPRITES/UI/Card X3/Card X5.png" id="3_so5hj"]
+[ext_resource type="Theme" uid="uid://p0n4tv8rgdp6" path="res://THEMES_SHADERS/button.tres" id="4_xbgu0"]
+[ext_resource type="Texture2D" uid="uid://cv1gv3xx1pgv5" path="res://SPRITES/UI/Card X2/Card X3.png" id="7_8pjfu"]
+[ext_resource type="Texture2D" uid="uid://bg2ohqx0lwfi" path="res://SPRITES/RESOURCES/gold.png" id="8_kes83"]
+[ext_resource type="Texture2D" uid="uid://b6aggqhtam46i" path="res://SPRITES/UI/Icons/08.png" id="9_vcfiv"]
+[ext_resource type="Texture2D" uid="uid://4u8v7kbtjmib" path="res://SPRITES/RESOURCES/key_common.png" id="10_nc8i8"]
+[ext_resource type="Texture2D" uid="uid://gspthe40f44a" path="res://SPRITES/RESOURCES/gem_shine.png" id="11_ly50i"]
+[ext_resource type="Texture2D" uid="uid://bcn18wqn8cp26" path="res://SPRITES/RESOURCES/rare_gold_glow.png" id="13_3iufg"]
+[ext_resource type="Texture2D" uid="uid://cuh6ujk8t1jw" path="res://SPRITES/UI/Icons/04.png" id="14_3iufg"]
+[ext_resource type="Texture2D" uid="uid://dftdu7ilske4v" path="res://SPRITES/UI/Icons/07.png" id="15_6ixvb"]
+[ext_resource type="Texture2D" uid="uid://dcikmvc40hwll" path="res://SPRITES/RESOURCES/mythical_key_purple_glow.png" id="16_cxbe5"]
+[ext_resource type="Texture2D" uid="uid://cubf4526xkrju" path="res://SPRITES/RESOURCES/myzhical_with_gem_purple_glow.png" id="17_b1ioc"]
+[ext_resource type="Texture2D" uid="uid://dvsjlal3dlfh" path="res://SPRITES/RESOURCES/rare_chest_with_gold_purple_glow.png" id="18_6ixvb"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_b081m"]
+shader = ExtResource("2_xbgu0")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_b081m"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8pjfu"]
+bg_color = Color(0.08315379, 0.26449874, 0.30672663, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8pjfu"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_b081m"]
+bg_color = Color(0.3399911, 0.16912538, 0.11043123, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4ti7l"]
+bg_color = Color(0.73404175, 0.56556237, 0.35588714, 1)
+
+[node name="SceneMissionsBattlepass" type="Control" unique_id=1895478539]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_7558o")
+
+[node name="Starfield05512x512" type="Sprite2D" parent="." unique_id=1819613999]
+texture_repeat = 3
+material = SubResource("ShaderMaterial_b081m")
+position = Vector2(646, 638)
+scale = Vector2(2.5703125, 2.5703125)
+texture = ExtResource("3_8pjfu")
+
+[node name="CardX6" type="Sprite2D" parent="." unique_id=1605379750]
+modulate = Color(1, 1, 1, 0.78431374)
+position = Vector2(639.5, 111.99999)
+scale = Vector2(1.7079136, 0.62656635)
+texture = ExtResource("2_x0lae")
+
+[node name="LabelMissions" type="Label" parent="." unique_id=32752544]
+layout_mode = 0
+offset_left = 548.0
+offset_top = 8.0
+offset_right = 723.0
+offset_bottom = 53.0
+theme_override_colors/font_color = Color(0.7572435, 0.8594235, 0.76146615, 1)
+theme_override_colors/font_outline_color = Color(0.41908973, 0.7258271, 0.37469098, 1)
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 40
+text = "_missions_mb"
+
+[node name="CardX5" type="Sprite2D" parent="." unique_id=1339902825]
+modulate = Color(1, 1, 1, 0.78431374)
+position = Vector2(641.49994, 458.375)
+scale = Vector2(1.8776977, 1.1969495)
+texture = ExtResource("3_so5hj")
+
+[node name="LabelBattlePass" type="Label" parent="." unique_id=1313088574]
+layout_mode = 0
+offset_left = 254.0
+offset_top = 263.0
+offset_right = 552.0
+offset_bottom = 308.0
+theme_override_colors/font_color = Color(0.59636176, 0.877074, 0.9561817, 1)
+theme_override_colors/font_outline_color = Color(5.583167e-06, 0.69845814, 0.91055995, 1)
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 40
+text = "_battle_pass"
+horizontal_alignment = 1
+
+[node name="LabelExpProgress" type="Label" parent="." unique_id=2138200926]
+layout_mode = 0
+offset_left = 568.0
+offset_top = 258.0
+offset_right = 1190.0
+offset_bottom = 315.0
+theme_override_colors/font_color = Color(0.59636176, 0.877074, 0.9561817, 1)
+theme_override_colors/font_outline_color = Color(5.583167e-06, 0.69845814, 0.91055995, 1)
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 24
+text = "- GIFTS 0/9 - NEXT LEVEL: x/x EXP -
+TOTAL X  Y XY  XY Y"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ButtonBack" type="Button" parent="." unique_id=205485696]
+layout_mode = 0
+offset_left = 475.0
+offset_top = 644.0
+offset_right = 783.0
+offset_bottom = 702.0
+theme = ExtResource("4_xbgu0")
+theme_override_font_sizes/font_size = 42
+text = "_back"
+
+[node name="Mission1" type="Control" parent="." unique_id=1492031572]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="CardMission" type="Sprite2D" parent="Mission1" unique_id=890089237]
+position = Vector2(266, 128)
+scale = Vector2(0.9235949, 0.48375458)
+texture = ExtResource("7_8pjfu")
+
+[node name="LabelMission" type="Label" parent="Mission1" unique_id=1026141014]
+layout_mode = 0
+offset_left = 105.0
+offset_top = 41.0
+offset_right = 249.0
+offset_bottom = 77.0
+theme_override_colors/font_color = Color(0.8560673, 0.8560673, 0.85606724, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 32
+text = "_mission1"
+
+[node name="LabelDesc" type="Label" parent="Mission1" unique_id=969282357]
+layout_mode = 0
+offset_left = 99.0
+offset_top = 80.0
+offset_right = 434.0
+offset_bottom = 140.0
+theme_override_colors/font_color = Color(0.70796657, 0.7079665, 0.7079665, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 24
+text = "DESC DESC DESC DESC"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LabelProgress" type="Label" parent="Mission1" unique_id=1694327327]
+layout_mode = 0
+offset_left = 102.0
+offset_top = 183.0
+offset_right = 426.0
+offset_bottom = 210.0
+theme_override_colors/font_color = Color(0.5370113, 0.5370113, 0.5370113, 1)
+theme_override_font_sizes/font_size = 24
+text = "PROGRESS / PROGRESS"
+horizontal_alignment = 1
+
+[node name="ButtonClaim" type="Button" parent="Mission1" unique_id=346615474]
+layout_mode = 0
+offset_left = 189.0
+offset_top = 144.0
+offset_right = 339.0
+offset_bottom = 180.0
+theme = ExtResource("4_xbgu0")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_b081m")
+disabled = true
+text = "_claim"
+
+[node name="Mission2" type="Control" parent="." unique_id=820153917]
+anchors_preset = 0
+offset_left = 362.0
+offset_top = 8.0
+offset_right = 402.0
+offset_bottom = 48.0
+
+[node name="CardMission" type="Sprite2D" parent="Mission2" unique_id=368857659]
+position = Vector2(266, 128)
+scale = Vector2(0.9235949, 0.48375458)
+texture = ExtResource("7_8pjfu")
+
+[node name="LabelMission" type="Label" parent="Mission2" unique_id=124320775]
+layout_mode = 0
+offset_left = 105.0
+offset_top = 41.0
+offset_right = 249.0
+offset_bottom = 77.0
+theme_override_colors/font_color = Color(0.8560673, 0.8560673, 0.85606724, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 32
+text = "_mission2"
+
+[node name="LabelDesc" type="Label" parent="Mission2" unique_id=454782496]
+layout_mode = 0
+offset_left = 97.0
+offset_top = 80.0
+offset_right = 433.0
+offset_bottom = 137.0
+theme_override_colors/font_color = Color(0.70796657, 0.7079665, 0.7079665, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 24
+text = "DESC DESC DESC DESC
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LabelProgress" type="Label" parent="Mission2" unique_id=1345872754]
+layout_mode = 0
+offset_left = 102.0
+offset_top = 178.0
+offset_right = 431.0
+offset_bottom = 205.0
+theme_override_colors/font_color = Color(0.5370113, 0.5370113, 0.5370113, 1)
+theme_override_font_sizes/font_size = 24
+text = "PROGRESS / PROGRESS"
+horizontal_alignment = 1
+
+[node name="ButtonClaim" type="Button" parent="Mission2" unique_id=1632239369]
+layout_mode = 0
+offset_left = 189.0
+offset_top = 137.0
+offset_right = 339.0
+offset_bottom = 173.0
+theme = ExtResource("4_xbgu0")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_b081m")
+disabled = true
+text = "_claim"
+
+[node name="Mission3" type="Control" parent="." unique_id=285570360]
+anchors_preset = 0
+offset_left = 724.0
+offset_right = 764.0
+offset_bottom = 40.0
+
+[node name="CardMission" type="Sprite2D" parent="Mission3" unique_id=1498534288]
+position = Vector2(266, 128)
+scale = Vector2(0.9235949, 0.48375458)
+texture = ExtResource("7_8pjfu")
+
+[node name="LabelMission" type="Label" parent="Mission3" unique_id=1582680101]
+layout_mode = 0
+offset_left = 105.0
+offset_top = 41.0
+offset_right = 249.0
+offset_bottom = 77.0
+theme_override_colors/font_color = Color(0.8560673, 0.8560673, 0.85606724, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 32
+text = "_mission2"
+
+[node name="LabelDesc" type="Label" parent="Mission3" unique_id=276002643]
+layout_mode = 0
+offset_left = 103.0
+offset_top = 80.0
+offset_right = 432.0
+offset_bottom = 148.0
+theme_override_colors/font_color = Color(0.70796657, 0.7079665, 0.7079665, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 24
+text = "DESC DESC DESC DESC
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LabelProgress" type="Label" parent="Mission3" unique_id=797757789]
+layout_mode = 0
+offset_left = 104.0
+offset_top = 185.0
+offset_right = 431.0
+offset_bottom = 212.0
+theme_override_colors/font_color = Color(0.5370113, 0.5370113, 0.5370113, 1)
+theme_override_font_sizes/font_size = 24
+text = "PROGRESS / PROGRESS"
+horizontal_alignment = 1
+
+[node name="ButtonClaim" type="Button" parent="Mission3" unique_id=71122218]
+layout_mode = 0
+offset_left = 189.0
+offset_top = 147.0
+offset_right = 339.0
+offset_bottom = 183.0
+theme = ExtResource("4_xbgu0")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_b081m")
+disabled = true
+text = "_claim"
+
+[node name="CadetPass" type="Control" parent="." unique_id=1889827402]
+anchors_preset = 0
+offset_top = 248.0
+offset_right = 40.0
+offset_bottom = 288.0
+
+[node name="LabelPassName" type="Label" parent="CadetPass" unique_id=1329283080]
+layout_mode = 0
+offset_left = 52.0
+offset_top = 39.0
+offset_right = 196.0
+offset_bottom = 66.0
+theme_override_colors/font_color = Color(0.73393273, 0.90246123, 0.9563655, 1)
+theme_override_colors/font_outline_color = Color(3.3691526e-07, 0.38806224, 0.5073344, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 24
+text = "_cadet_pass"
+
+[node name="Gift1" type="Button" parent="CadetPass" unique_id=582169873]
+layout_mode = 0
+offset_left = 25.0
+offset_top = 74.0
+offset_right = 155.0
+offset_bottom = 144.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 6
+theme_override_styles/normal = SubResource("StyleBoxFlat_8pjfu")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_8pjfu")
+text = "_cadet_reward_1"
+
+[node name="Gift2" type="Button" parent="CadetPass" unique_id=1465532892]
+layout_mode = 0
+offset_left = 159.0
+offset_top = 74.0
+offset_right = 289.0
+offset_bottom = 144.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 6
+theme_override_styles/normal = SubResource("StyleBoxFlat_8pjfu")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_8pjfu")
+text = "_cadet_reward_2"
+
+[node name="08" type="Sprite2D" parent="CadetPass/Gift2" unique_id=2111691932]
+position = Vector2(110, 68)
+texture = ExtResource("9_vcfiv")
+
+[node name="Gift3" type="Button" parent="CadetPass" unique_id=677464778]
+layout_mode = 0
+offset_left = 293.0
+offset_top = 74.0
+offset_right = 423.0
+offset_bottom = 144.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 6
+theme_override_styles/normal = SubResource("StyleBoxFlat_8pjfu")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_8pjfu")
+text = "_cadet_reward_3"
+
+[node name="GoldShine" type="Sprite2D" parent="CadetPass/Gift3" unique_id=77582196]
+position = Vector2(79.25001, 7.749999)
+scale = Vector2(0.3554688, 0.3554688)
+texture = ExtResource("8_kes83")
+
+[node name="GoldShine2" type="Sprite2D" parent="CadetPass/Gift3" unique_id=1241075968]
+position = Vector2(63, 4.2915344e-06)
+scale = Vector2(0.4296875, 0.4296875)
+texture = ExtResource("8_kes83")
+
+[node name="Gift4" type="Button" parent="CadetPass" unique_id=411617288]
+layout_mode = 0
+offset_left = 427.0
+offset_top = 74.0
+offset_right = 557.0
+offset_bottom = 144.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 6
+theme_override_styles/normal = SubResource("StyleBoxFlat_8pjfu")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_8pjfu")
+text = "_cadet_reward_4"
+
+[node name="KeyCommon" type="Sprite2D" parent="CadetPass/Gift4" unique_id=2027602133]
+position = Vector2(72, 69)
+scale = Vector2(0.6015625, 0.6015625)
+texture = ExtResource("10_nc8i8")
+
+[node name="Gift5" type="Button" parent="CadetPass" unique_id=1773772906]
+layout_mode = 0
+offset_left = 561.0
+offset_top = 74.0
+offset_right = 691.0
+offset_bottom = 144.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 6
+theme_override_styles/normal = SubResource("StyleBoxFlat_8pjfu")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_8pjfu")
+text = "_cadet_reward_5"
+
+[node name="Gift6" type="Button" parent="CadetPass" unique_id=2013976597]
+layout_mode = 0
+offset_left = 695.0
+offset_top = 74.0
+offset_right = 825.0
+offset_bottom = 144.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 6
+theme_override_styles/normal = SubResource("StyleBoxFlat_8pjfu")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_8pjfu")
+text = "_cadet_reward_6"
+
+[node name="RareGoldGlow" type="Sprite2D" parent="CadetPass/Gift6" unique_id=1818211505]
+position = Vector2(17.000008, 70.00001)
+scale = Vector2(0.45312512, 0.45312512)
+texture = ExtResource("13_3iufg")
+
+[node name="RareGoldGlow2" type="Sprite2D" parent="CadetPass/Gift6" unique_id=989236324]
+position = Vector2(16.000015, 2.0000134)
+rotation = 2.0943952
+scale = Vector2(0.45312512, 0.45312512)
+texture = ExtResource("13_3iufg")
+
+[node name="Gift7" type="Button" parent="CadetPass" unique_id=197044825]
+layout_mode = 0
+offset_left = 829.0
+offset_top = 74.0
+offset_right = 959.0
+offset_bottom = 144.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 6
+theme_override_styles/normal = SubResource("StyleBoxFlat_8pjfu")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_8pjfu")
+text = "_cadet_reward_7"
+
+[node name="04" type="Sprite2D" parent="CadetPass/Gift7" unique_id=556788623]
+position = Vector2(6, 4)
+texture = ExtResource("14_3iufg")
+
+[node name="05" type="Sprite2D" parent="CadetPass/Gift7" unique_id=364604460]
+position = Vector2(91, 4)
+texture = ExtResource("15_6ixvb")
+
+[node name="06" type="Sprite2D" parent="CadetPass/Gift7" unique_id=746717117]
+position = Vector2(17, 75)
+texture = ExtResource("9_vcfiv")
+
+[node name="Gift8" type="Button" parent="CadetPass" unique_id=1297914111]
+layout_mode = 0
+offset_left = 963.0
+offset_top = 74.0
+offset_right = 1093.0
+offset_bottom = 144.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 6
+theme_override_styles/normal = SubResource("StyleBoxFlat_8pjfu")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_8pjfu")
+text = "_cadet_reward_8"
+
+[node name="MythicalKeyPurpleGlow" type="Sprite2D" parent="CadetPass/Gift8" unique_id=865568642]
+position = Vector2(83, 74)
+scale = Vector2(0.6484375, 0.6484375)
+texture = ExtResource("16_cxbe5")
+
+[node name="Gift9" type="Button" parent="CadetPass" unique_id=1312034189]
+layout_mode = 0
+offset_left = 1097.0
+offset_top = 74.0
+offset_right = 1227.0
+offset_bottom = 144.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 6
+theme_override_styles/normal = SubResource("StyleBoxFlat_8pjfu")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_8pjfu")
+text = "_cadet_reward_9"
+
+[node name="MyzhicalWithGemPurpleGlow" type="Sprite2D" parent="CadetPass/Gift9" unique_id=1013296889]
+position = Vector2(143, 35)
+scale = Vector2(0.3714844, 0.3714844)
+texture = ExtResource("17_b1ioc")
+
+[node name="CaptainPass" type="Control" parent="." unique_id=1213462359]
+anchors_preset = 0
+offset_top = 366.0
+offset_right = 40.0
+offset_bottom = 406.0
+
+[node name="LabelPassName" type="Label" parent="CaptainPass" unique_id=1131838170]
+layout_mode = 0
+offset_left = 52.0
+offset_top = 39.0
+offset_right = 196.0
+offset_bottom = 66.0
+theme_override_colors/font_color = Color(0.9207514, 0.83494675, 0.94500035, 1)
+theme_override_colors/font_outline_color = Color(0.5671407, 0.19745895, 0.35430872, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 24
+text = "_captain_pass"
+
+[node name="Gift1" type="Button" parent="CaptainPass" unique_id=979733178]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 77.0
+offset_right = 154.0
+offset_bottom = 147.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 6
+theme_override_styles/normal = SubResource("StyleBoxFlat_b081m")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_8pjfu")
+text = "_captain_reward_1"
+
+[node name="GoldShine" type="Sprite2D" parent="CaptainPass/Gift1" unique_id=1337143207]
+position = Vector2(93.75001, 10.249999)
+scale = Vector2(0.3554688, 0.3554688)
+texture = ExtResource("8_kes83")
+
+[node name="GoldShine2" type="Sprite2D" parent="CaptainPass/Gift1" unique_id=589930487]
+position = Vector2(77.5, 2.500004)
+scale = Vector2(0.4296875, 0.4296875)
+texture = ExtResource("8_kes83")
+
+[node name="GoldShine3" type="Sprite2D" parent="CaptainPass/Gift1" unique_id=1701028870]
+position = Vector2(93.5, 0.5000042)
+scale = Vector2(0.4296875, 0.4296875)
+texture = ExtResource("8_kes83")
+
+[node name="Gift2" type="Button" parent="CaptainPass" unique_id=1121410777]
+layout_mode = 0
+offset_left = 158.0
+offset_top = 77.0
+offset_right = 288.0
+offset_bottom = 147.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 6
+theme_override_styles/normal = SubResource("StyleBoxFlat_b081m")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_8pjfu")
+text = "_captain_reward_2"
+
+[node name="Gift3" type="Button" parent="CaptainPass" unique_id=1857752019]
+layout_mode = 0
+offset_left = 293.0
+offset_top = 77.0
+offset_right = 423.0
+offset_bottom = 147.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 6
+theme_override_styles/normal = SubResource("StyleBoxFlat_b081m")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_8pjfu")
+text = "_captain_reward_3"
+
+[node name="GemShine" type="Sprite2D" parent="CaptainPass/Gift3" unique_id=180499950]
+position = Vector2(33, 77)
+scale = Vector2(0.453125, 0.453125)
+texture = ExtResource("11_ly50i")
+
+[node name="GemShine2" type="Sprite2D" parent="CaptainPass/Gift3" unique_id=118485024]
+position = Vector2(78.00001, -1.0000076)
+rotation = 1.3089969
+scale = Vector2(0.453125, 0.453125)
+texture = ExtResource("11_ly50i")
+
+[node name="Gift4" type="Button" parent="CaptainPass" unique_id=955680436]
+layout_mode = 0
+offset_left = 427.0
+offset_top = 77.0
+offset_right = 557.0
+offset_bottom = 147.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 6
+theme_override_styles/normal = SubResource("StyleBoxFlat_b081m")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_8pjfu")
+text = "_captain_reward_4"
+
+[node name="Gift5" type="Button" parent="CaptainPass" unique_id=1240775307]
+layout_mode = 0
+offset_left = 561.0
+offset_top = 77.0
+offset_right = 691.0
+offset_bottom = 147.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 6
+theme_override_styles/normal = SubResource("StyleBoxFlat_b081m")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_8pjfu")
+text = "_captain_reward_5"
+
+[node name="Gift6" type="Button" parent="CaptainPass" unique_id=1927247998]
+layout_mode = 0
+offset_left = 695.0
+offset_top = 77.0
+offset_right = 825.0
+offset_bottom = 147.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 6
+theme_override_styles/normal = SubResource("StyleBoxFlat_b081m")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_8pjfu")
+text = "_captain_reward_6"
+
+[node name="RareChestWithGoldPurpleGlow" type="Sprite2D" parent="CaptainPass/Gift6" unique_id=956970579]
+position = Vector2(50.999992, 77.00001)
+scale = Vector2(0.25976557, 0.25976557)
+texture = ExtResource("18_6ixvb")
+
+[node name="Gift7" type="Button" parent="CaptainPass" unique_id=2054464949]
+layout_mode = 0
+offset_left = 829.0
+offset_top = 77.0
+offset_right = 959.0
+offset_bottom = 147.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 6
+theme_override_styles/normal = SubResource("StyleBoxFlat_b081m")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_8pjfu")
+text = "_captain_reward_7"
+
+[node name="RareGoldGlow" type="Sprite2D" parent="CaptainPass/Gift7" unique_id=1734978849]
+position = Vector2(16.000008, 61.000008)
+rotation = 1.0580215
+scale = Vector2(0.45312512, 0.45312512)
+texture = ExtResource("13_3iufg")
+
+[node name="RareGoldGlow3" type="Sprite2D" parent="CaptainPass/Gift7" unique_id=1485589405]
+position = Vector2(100.00001, 62.000008)
+scale = Vector2(0.45312512, 0.45312512)
+texture = ExtResource("13_3iufg")
+
+[node name="RareGoldGlow2" type="Sprite2D" parent="CaptainPass/Gift7" unique_id=1728472870]
+position = Vector2(74.000015, -1.9999886)
+rotation = 4.712389
+scale = Vector2(0.45312512, 0.45312512)
+texture = ExtResource("13_3iufg")
+
+[node name="Gift8" type="Button" parent="CaptainPass" unique_id=176952042]
+layout_mode = 0
+offset_left = 963.0
+offset_top = 77.0
+offset_right = 1093.0
+offset_bottom = 147.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 6
+theme_override_styles/normal = SubResource("StyleBoxFlat_b081m")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_8pjfu")
+text = "_captain_reward_8"
+
+[node name="Gift9" type="Button" parent="CaptainPass" unique_id=2003084525]
+layout_mode = 0
+offset_left = 1097.0
+offset_top = 77.0
+offset_right = 1227.0
+offset_bottom = 147.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 6
+theme_override_styles/normal = SubResource("StyleBoxFlat_b081m")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_8pjfu")
+text = "_captain_reward_9"
+
+[node name="MythicalKeyPurpleGlow" type="Sprite2D" parent="CaptainPass/Gift9" unique_id=1250017252]
+position = Vector2(126.99998, 69.00002)
+scale = Vector2(0.5273434, 0.5273434)
+texture = ExtResource("16_cxbe5")
+
+[node name="MythicalKeyPurpleGlow2" type="Sprite2D" parent="CaptainPass/Gift9" unique_id=1326347564]
+position = Vector2(70.000015, -9.000015)
+scale = Vector2(0.5117189, 0.5117189)
+texture = ExtResource("16_cxbe5")
+
+[node name="MythicalKeyPurpleGlow3" type="Sprite2D" parent="CaptainPass/Gift9" unique_id=786098147]
+position = Vector2(16.999996, 77.00001)
+scale = Vector2(0.5742186, 0.5742186)
+texture = ExtResource("16_cxbe5")
+
+[node name="AdmiralPass" type="Control" parent="." unique_id=1364762008]
+anchors_preset = 0
+offset_top = 485.0
+offset_right = 40.0
+offset_bottom = 525.0
+
+[node name="LabelPassName" type="Label" parent="AdmiralPass" unique_id=617728040]
+layout_mode = 0
+offset_left = 52.0
+offset_top = 39.0
+offset_right = 196.0
+offset_bottom = 66.0
+theme_override_colors/font_color = Color(0.8492703, 0.89604366, 0.7046074, 1)
+theme_override_colors/font_outline_color = Color(0.52560556, 0.27915785, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 24
+text = "_admiral_pass"
+
+[node name="Gift1" type="Button" parent="AdmiralPass" unique_id=696652284]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 76.0
+offset_right = 154.0
+offset_bottom = 146.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 6
+theme_override_styles/normal = SubResource("StyleBoxFlat_4ti7l")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_8pjfu")
+text = "_admiral_reward_1"
+
+[node name="KeyCommon2" type="Sprite2D" parent="AdmiralPass/Gift1" unique_id=156276860]
+position = Vector2(103.00001, 82)
+scale = Vector2(0.640625, 0.640625)
+texture = ExtResource("10_nc8i8")
+
+[node name="RareGoldGlow" type="Sprite2D" parent="AdmiralPass/Gift1" unique_id=690161827]
+position = Vector2(12, 71.00001)
+scale = Vector2(0.45312512, 0.45312512)
+texture = ExtResource("13_3iufg")
+
+[node name="MythicalKeyPurpleGlow2" type="Sprite2D" parent="AdmiralPass/Gift1" unique_id=1732690884]
+position = Vector2(53, 81)
+scale = Vector2(0.6484375, 0.6484375)
+texture = ExtResource("16_cxbe5")
+
+[node name="Gift2" type="Button" parent="AdmiralPass" unique_id=1146326409]
+layout_mode = 0
+offset_left = 158.0
+offset_top = 76.0
+offset_right = 288.0
+offset_bottom = 146.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 6
+theme_override_styles/normal = SubResource("StyleBoxFlat_4ti7l")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_8pjfu")
+text = "_admiral_reward_2"
+
+[node name="Gift3" type="Button" parent="AdmiralPass" unique_id=100894575]
+layout_mode = 0
+offset_left = 293.0
+offset_top = 76.0
+offset_right = 423.0
+offset_bottom = 146.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 6
+theme_override_styles/normal = SubResource("StyleBoxFlat_4ti7l")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_8pjfu")
+text = "_admiral_reward_3"
+
+[node name="KeyCommon2" type="Sprite2D" parent="AdmiralPass/Gift3" unique_id=821894503]
+position = Vector2(10.999988, 79.999985)
+scale = Vector2(0.45312518, 0.45312518)
+texture = ExtResource("10_nc8i8")
+
+[node name="KeyCommon3" type="Sprite2D" parent="AdmiralPass/Gift3" unique_id=200363404]
+position = Vector2(25.999966, 78.00001)
+scale = Vector2(0.46874985, 0.46874985)
+texture = ExtResource("10_nc8i8")
+
+[node name="KeyCommon4" type="Sprite2D" parent="AdmiralPass/Gift3" unique_id=1844567708]
+position = Vector2(30.999954, 78.999985)
+scale = Vector2(0.45312518, 0.45312518)
+texture = ExtResource("10_nc8i8")
+
+[node name="KeyCommon5" type="Sprite2D" parent="AdmiralPass/Gift3" unique_id=840628721]
+position = Vector2(45.99994, 77.00001)
+scale = Vector2(0.46874985, 0.46874985)
+texture = ExtResource("10_nc8i8")
+
+[node name="KeyCommon6" type="Sprite2D" parent="AdmiralPass/Gift3" unique_id=1228951289]
+position = Vector2(51.999954, 85.999985)
+scale = Vector2(0.45312518, 0.45312518)
+texture = ExtResource("10_nc8i8")
+
+[node name="KeyCommon7" type="Sprite2D" parent="AdmiralPass/Gift3" unique_id=1793264419]
+position = Vector2(66.99994, 84.00001)
+scale = Vector2(0.46874985, 0.46874985)
+texture = ExtResource("10_nc8i8")
+
+[node name="KeyCommon8" type="Sprite2D" parent="AdmiralPass/Gift3" unique_id=820131225]
+position = Vector2(82.999954, 78.999985)
+scale = Vector2(0.45312518, 0.45312518)
+texture = ExtResource("10_nc8i8")
+
+[node name="KeyCommon9" type="Sprite2D" parent="AdmiralPass/Gift3" unique_id=435669042]
+position = Vector2(97.99994, 77.00001)
+scale = Vector2(0.46874985, 0.46874985)
+texture = ExtResource("10_nc8i8")
+
+[node name="Gift4" type="Button" parent="AdmiralPass" unique_id=1665744322]
+layout_mode = 0
+offset_left = 427.0
+offset_top = 76.0
+offset_right = 557.0
+offset_bottom = 146.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 6
+theme_override_styles/normal = SubResource("StyleBoxFlat_4ti7l")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_8pjfu")
+text = "_admiral_reward_4"
+
+[node name="Gift5" type="Button" parent="AdmiralPass" unique_id=2074486199]
+layout_mode = 0
+offset_left = 561.0
+offset_top = 76.0
+offset_right = 691.0
+offset_bottom = 146.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 6
+theme_override_styles/normal = SubResource("StyleBoxFlat_4ti7l")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_8pjfu")
+text = "_admiral_reward_5"
+
+[node name="04" type="Sprite2D" parent="AdmiralPass/Gift5" unique_id=995101015]
+position = Vector2(10, 3)
+texture = ExtResource("14_3iufg")
+
+[node name="05" type="Sprite2D" parent="AdmiralPass/Gift5" unique_id=19609484]
+position = Vector2(106, 0)
+texture = ExtResource("15_6ixvb")
+
+[node name="06" type="Sprite2D" parent="AdmiralPass/Gift5" unique_id=94262752]
+position = Vector2(54, 68)
+texture = ExtResource("9_vcfiv")
+
+[node name="07" type="Sprite2D" parent="AdmiralPass/Gift5" unique_id=1780685743]
+position = Vector2(35, -5)
+scale = Vector2(0.61538464, 0.61538464)
+texture = ExtResource("14_3iufg")
+
+[node name="08" type="Sprite2D" parent="AdmiralPass/Gift5" unique_id=877039320]
+position = Vector2(14, -17)
+scale = Vector2(0.61538464, 0.61538464)
+texture = ExtResource("14_3iufg")
+
+[node name="09" type="Sprite2D" parent="AdmiralPass/Gift5" unique_id=678460148]
+position = Vector2(123, 67)
+scale = Vector2(0.5967742, 0.5967742)
+texture = ExtResource("15_6ixvb")
+
+[node name="10" type="Sprite2D" parent="AdmiralPass/Gift5" unique_id=398473150]
+position = Vector2(83, -8)
+scale = Vector2(0.5967742, 0.5967742)
+texture = ExtResource("15_6ixvb")
+
+[node name="11" type="Sprite2D" parent="AdmiralPass/Gift5" unique_id=512929431]
+position = Vector2(77, 71)
+scale = Vector2(0.5952381, 0.5952381)
+texture = ExtResource("9_vcfiv")
+
+[node name="12" type="Sprite2D" parent="AdmiralPass/Gift5" unique_id=341696559]
+position = Vector2(6, 70)
+scale = Vector2(0.5952381, 0.5952381)
+texture = ExtResource("9_vcfiv")
+
+[node name="Gift6" type="Button" parent="AdmiralPass" unique_id=1965948937]
+layout_mode = 0
+offset_left = 695.0
+offset_top = 76.0
+offset_right = 825.0
+offset_bottom = 146.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 6
+theme_override_styles/normal = SubResource("StyleBoxFlat_4ti7l")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_8pjfu")
+text = "_admiral_reward_6"
+
+[node name="Gift7" type="Button" parent="AdmiralPass" unique_id=1002044372]
+layout_mode = 0
+offset_left = 829.0
+offset_top = 76.0
+offset_right = 959.0
+offset_bottom = 146.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 6
+theme_override_styles/normal = SubResource("StyleBoxFlat_4ti7l")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_8pjfu")
+text = "_admiral_reward_7"
+
+[node name="RareChestWithGoldPurpleGlow" type="Sprite2D" parent="AdmiralPass/Gift7" unique_id=1343612162]
+position = Vector2(58.999992, 76.00001)
+scale = Vector2(0.25976557, 0.25976557)
+texture = ExtResource("18_6ixvb")
+
+[node name="Gift8" type="Button" parent="AdmiralPass" unique_id=2145839427]
+layout_mode = 0
+offset_left = 963.0
+offset_top = 76.0
+offset_right = 1093.0
+offset_bottom = 146.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 6
+theme_override_styles/normal = SubResource("StyleBoxFlat_4ti7l")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_8pjfu")
+text = "_admiral_reward_8"
+
+[node name="Gift9" type="Button" parent="AdmiralPass" unique_id=1247623646]
+layout_mode = 0
+offset_left = 1097.0
+offset_top = 76.0
+offset_right = 1227.0
+offset_bottom = 146.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 6
+theme_override_styles/normal = SubResource("StyleBoxFlat_4ti7l")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_8pjfu")
+text = "_admiral_reward_9"
+
+[node name="KeyCommon2" type="Sprite2D" parent="AdmiralPass/Gift9" unique_id=1515116197]
+position = Vector2(126, 73)
+scale = Vector2(0.640625, 0.640625)
+texture = ExtResource("10_nc8i8")
+
+[node name="RareGoldGlow" type="Sprite2D" parent="AdmiralPass/Gift9" unique_id=1973256959]
+position = Vector2(12.000008, 67.00001)
+scale = Vector2(0.45312512, 0.45312512)
+texture = ExtResource("13_3iufg")
+
+[node name="MythicalKeyPurpleGlow2" type="Sprite2D" parent="AdmiralPass/Gift9" unique_id=1601946517]
+position = Vector2(70.5, 77.5)
+scale = Vector2(0.6484375, 0.6484375)
+texture = ExtResource("16_cxbe5")
+
+[node name="KeyCommon3" type="Sprite2D" parent="AdmiralPass/Gift9" unique_id=13289813]
+position = Vector2(129, 88)
+scale = Vector2(0.640625, 0.640625)
+texture = ExtResource("10_nc8i8")
+
+[node name="RareGoldGlow2" type="Sprite2D" parent="AdmiralPass/Gift9" unique_id=597181223]
+position = Vector2(15.000008, 82.00001)
+scale = Vector2(0.45312512, 0.45312512)
+texture = ExtResource("13_3iufg")
+
+[node name="MythicalKeyPurpleGlow3" type="Sprite2D" parent="AdmiralPass/Gift9" unique_id=396770211]
+position = Vector2(73.5, 92.5)
+scale = Vector2(0.6484375, 0.6484375)
+texture = ExtResource("16_cxbe5")
+
+[node name="LabelCP_info" type="Label" parent="." unique_id=1227788487]
+layout_mode = 0
+offset_left = 57.0
+offset_top = 410.0
+offset_right = 336.0
+offset_bottom = 467.0
+theme_override_colors/font_color = Color(0.9207514, 0.83494675, 0.94500035, 1)
+theme_override_colors/font_outline_color = Color(0.5671407, 0.19745895, 0.35430872, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 24
+text = "_captain_pass_buy"
+
+[node name="LabelAP_info" type="Label" parent="." unique_id=970837729]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 527.0
+offset_right = 339.0
+offset_bottom = 584.0
+theme_override_colors/font_color = Color(0.8492703, 0.89604366, 0.7046074, 1)
+theme_override_colors/font_outline_color = Color(0.52560556, 0.27915785, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 24
+text = "_admiral_pass_buy"
+
+[connection signal="pressed" from="ButtonBack" to="." method="_on_button_back_pressed"]
+[connection signal="pressed" from="Mission1/ButtonClaim" to="." method="_on_button_m_1_pressed"]
+[connection signal="pressed" from="Mission2/ButtonClaim" to="." method="_on_button_m_2_pressed"]
+[connection signal="pressed" from="Mission3/ButtonClaim" to="." method="_on_button_m_3_pressed"]
+[connection signal="pressed" from="CadetPass/Gift1" to="." method="_on_gift_1_pressed_Cadet"]
+[connection signal="pressed" from="CadetPass/Gift2" to="." method="_on_gift_2_pressed_Cadet"]
+[connection signal="pressed" from="CadetPass/Gift3" to="." method="_on_gift_3_pressed_Cadet"]
+[connection signal="pressed" from="CadetPass/Gift4" to="." method="_on_gift_4_pressed_Cadet"]
+[connection signal="pressed" from="CadetPass/Gift5" to="." method="_on_gift_5_pressed_Cadet"]
+[connection signal="pressed" from="CadetPass/Gift6" to="." method="_on_gift_6_pressed_Cadet"]
+[connection signal="pressed" from="CadetPass/Gift7" to="." method="_on_gift_7_pressed_Cadet"]
+[connection signal="pressed" from="CadetPass/Gift8" to="." method="_on_gift_8_pressed_Cadet"]
+[connection signal="pressed" from="CadetPass/Gift9" to="." method="_on_gift_9_pressed_Cadet"]
+[connection signal="pressed" from="CaptainPass/Gift1" to="." method="_on_gift_1_pressed_Captain"]
+[connection signal="pressed" from="CaptainPass/Gift2" to="." method="_on_gift_2_pressed_Captain"]
+[connection signal="pressed" from="CaptainPass/Gift3" to="." method="_on_gift_3_pressed_Captain"]
+[connection signal="pressed" from="CaptainPass/Gift4" to="." method="_on_gift_4_pressed_Captain"]
+[connection signal="pressed" from="CaptainPass/Gift5" to="." method="_on_gift_5_pressed_Captain"]
+[connection signal="pressed" from="CaptainPass/Gift6" to="." method="_on_gift_6_pressed_Captain"]
+[connection signal="pressed" from="CaptainPass/Gift7" to="." method="_on_gift_7_pressed_Captain"]
+[connection signal="pressed" from="CaptainPass/Gift8" to="." method="_on_gift_8_pressed_Captain"]
+[connection signal="pressed" from="CaptainPass/Gift9" to="." method="_on_gift_9_pressed_Captain"]
+[connection signal="pressed" from="AdmiralPass/Gift1" to="." method="_on_gift_1_pressed_Admiral"]
+[connection signal="pressed" from="AdmiralPass/Gift2" to="." method="_on_gift_2_pressed_Admiral"]
+[connection signal="pressed" from="AdmiralPass/Gift3" to="." method="_on_gift_3_pressed_Admiral"]
+[connection signal="pressed" from="AdmiralPass/Gift4" to="." method="_on_gift_4_pressed_Admiral"]
+[connection signal="pressed" from="AdmiralPass/Gift5" to="." method="_on_gift_5_pressed_Admiral"]
+[connection signal="pressed" from="AdmiralPass/Gift6" to="." method="_on_gift_6_pressed_Admiral"]
+[connection signal="pressed" from="AdmiralPass/Gift7" to="." method="_on_gift_7_pressed_Admiral"]
+[connection signal="pressed" from="AdmiralPass/Gift8" to="." method="_on_gift_8_pressed_Admiral"]
+[connection signal="pressed" from="AdmiralPass/Gift9" to="." method="_on_gift_9_pressed_Admiral"]

@@ -1,0 +1,143 @@
+[gd_scene format=3 uid="uid://31s58far21gp"]
+
+[ext_resource type="AudioStream" uid="uid://4ar0lbe8lti7" path="res://SOUNDS/click.wav" id="1_cf11g"]
+[ext_resource type="Script" uid="uid://df0gr6vd7rnoi" path="res://SCRIPTS/sound.gd" id="1_shxld"]
+[ext_resource type="AudioStream" uid="uid://c5sbc1f5vkchr" path="res://SOUNDS/select.wav" id="2_ng6dx"]
+[ext_resource type="AudioStream" uid="uid://dipx3psdtxt3c" path="res://SOUNDS/select2.wav" id="3_ej81o"]
+[ext_resource type="AudioStream" uid="uid://c306ptt3dulnr" path="res://SOUNDS/select3.wav" id="4_jjdi6"]
+[ext_resource type="AudioStream" uid="uid://curbvskd80w20" path="res://SOUNDS/noEnergy.wav" id="5_8uhdk"]
+[ext_resource type="AudioStream" uid="uid://bdh2a7d0bxyx2" path="res://SOUNDS/Buy.wav" id="6_jjdi6"]
+[ext_resource type="AudioStream" uid="uid://c55c8pu251p7d" path="res://SOUNDS/playerShooting.wav" id="7_8uhdk"]
+[ext_resource type="AudioStream" uid="uid://dbpb7lkjr7ago" path="res://SOUNDS/hit1.wav" id="8_xcwen"]
+[ext_resource type="AudioStream" uid="uid://cnbms8l7mxy12" path="res://SOUNDS/hit2.wav" id="9_shxld"]
+[ext_resource type="AudioStream" uid="uid://ch2s115kpa843" path="res://SOUNDS/hit3.wav" id="10_3hmnr"]
+[ext_resource type="AudioStream" uid="uid://s8s0plp2vwmy" path="res://SOUNDS/HitPortal.wav" id="12_88jaf"]
+[ext_resource type="AudioStream" uid="uid://dkwtnv1iw21wa" path="res://SOUNDS/ExplosionPortal2.wav" id="13_6xxjk"]
+[ext_resource type="AudioStream" uid="uid://c6drdkwmi7io8" path="res://SOUNDS/ShootSmall.wav" id="14_2xtwt"]
+[ext_resource type="AudioStream" uid="uid://dfhpoet7k1xtv" path="res://SOUNDS/ShootBig.wav" id="15_uo4vt"]
+[ext_resource type="AudioStream" uid="uid://b3g31gj46tbq" path="res://SOUNDS/ShootWave.wav" id="16_0aqne"]
+[ext_resource type="AudioStream" uid="uid://6671p6u4nv0t" path="res://SOUNDS/Shield.wav" id="17_uo4vt"]
+[ext_resource type="AudioStream" uid="uid://dwba60y37073u" path="res://SOUNDS/LaserCharging.mp3" id="18_0aqne"]
+[ext_resource type="AudioStream" uid="uid://dcfetokdo8rbr" path="res://SOUNDS/LaserShooting.mp3" id="19_icip1"]
+
+[node name="Sound" type="Node" unique_id=1253557928]
+script = ExtResource("1_shxld")
+
+[node name="Click" type="AudioStreamPlayer2D" parent="." unique_id=1294209091]
+process_mode = 3
+stream = ExtResource("1_cf11g")
+bus = &"Effects"
+
+[node name="Select" type="AudioStreamPlayer2D" parent="." unique_id=911907250]
+process_mode = 3
+stream = ExtResource("3_ej81o")
+bus = &"Effects"
+
+[node name="Select2" type="AudioStreamPlayer2D" parent="." unique_id=973418254]
+process_mode = 3
+stream = ExtResource("4_jjdi6")
+bus = &"Effects"
+
+[node name="NoEnergy" type="AudioStreamPlayer2D" parent="." unique_id=238111692]
+process_mode = 3
+stream = ExtResource("5_8uhdk")
+bus = &"Effects"
+
+[node name="Claim" type="AudioStreamPlayer2D" parent="." unique_id=640597008]
+process_mode = 3
+stream = ExtResource("2_ng6dx")
+bus = &"Effects"
+
+[node name="Buy" type="AudioStreamPlayer2D" parent="." unique_id=799615512]
+process_mode = 3
+stream = ExtResource("6_jjdi6")
+bus = &"Effects"
+
+[node name="PlayerShooting" type="AudioStreamPlayer2D" parent="." unique_id=1661005149]
+process_mode = 3
+stream = ExtResource("7_8uhdk")
+bus = &"Effects"
+
+[node name="Hit" type="AudioStreamPlayer2D" parent="." unique_id=234544744]
+process_mode = 3
+stream = ExtResource("8_xcwen")
+volume_db = -10.0
+bus = &"Effects"
+
+[node name="Hit2" type="AudioStreamPlayer2D" parent="." unique_id=1035899497]
+process_mode = 3
+stream = ExtResource("9_shxld")
+volume_db = -10.0
+bus = &"Effects"
+
+[node name="Hit3" type="AudioStreamPlayer2D" parent="." unique_id=2082309850]
+process_mode = 3
+stream = ExtResource("10_3hmnr")
+volume_db = -10.0
+bus = &"Effects"
+
+[node name="Explosion" type="AudioStreamPlayer2D" parent="." unique_id=478563935]
+process_mode = 3
+stream = ExtResource("9_shxld")
+volume_db = -5.0
+bus = &"Effects"
+
+[node name="Explosion2" type="AudioStreamPlayer2D" parent="." unique_id=1277737245]
+process_mode = 3
+stream = ExtResource("10_3hmnr")
+volume_db = -5.0
+bus = &"Effects"
+
+[node name="ExplosionPortal" type="AudioStreamPlayer2D" parent="." unique_id=943852553]
+process_mode = 3
+stream = ExtResource("12_88jaf")
+volume_db = -5.0
+bus = &"Effects"
+
+[node name="ExplosionPortal2" type="AudioStreamPlayer2D" parent="." unique_id=1977188330]
+process_mode = 3
+stream = ExtResource("13_6xxjk")
+volume_db = -5.0
+bus = &"Effects"
+
+[node name="ShootingSmall" type="AudioStreamPlayer2D" parent="." unique_id=1036248142]
+process_mode = 3
+stream = ExtResource("14_2xtwt")
+volume_db = -5.0
+pitch_scale = 0.9
+bus = &"Effects"
+
+[node name="ShootingBig" type="AudioStreamPlayer2D" parent="." unique_id=1276422012]
+process_mode = 3
+stream = ExtResource("15_uo4vt")
+volume_db = -5.0
+pitch_scale = 0.9
+bus = &"Effects"
+
+[node name="ShootingWave" type="AudioStreamPlayer2D" parent="." unique_id=1189306390]
+process_mode = 3
+stream = ExtResource("16_0aqne")
+volume_db = -5.0
+pitch_scale = 0.9
+bus = &"Effects"
+
+[node name="Shield" type="AudioStreamPlayer2D" parent="." unique_id=1401586566]
+process_mode = 3
+stream = ExtResource("17_uo4vt")
+volume_db = -5.0
+pitch_scale = 0.9
+bus = &"Effects"
+
+[node name="LaserCharging" type="AudioStreamPlayer2D" parent="." unique_id=2068526262]
+process_mode = 3
+stream = ExtResource("18_0aqne")
+volume_db = -5.0
+pitch_scale = 0.9
+bus = &"Effects"
+
+[node name="LaserShooting" type="AudioStreamPlayer2D" parent="." unique_id=812773868]
+process_mode = 3
+stream = ExtResource("19_icip1")
+volume_db = -5.0
+pitch_scale = 0.9
+bus = &"Effects"

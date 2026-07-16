@@ -1,0 +1,106 @@
+[gd_scene format=3 uid="uid://bt8ooaabysbmf"]
+
+[ext_resource type="Script" uid="uid://bof3nhf5hqear" path="res://SCRIPTS/turret.gd" id="1_66575"]
+[ext_resource type="Texture2D" uid="uid://c1k3rqtml1ifj" path="res://SPRITES/Player/Turret/Turret-Engine.png" id="2_52fse"]
+[ext_resource type="Texture2D" uid="uid://c32yde48ycdib" path="res://SPRITES/Player/Turret/Turret.png" id="3_blyhr"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_3eevp"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dlw0r"]
+atlas = ExtResource("2_52fse")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_anxr6"]
+atlas = ExtResource("2_52fse")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q0hvb"]
+atlas = ExtResource("2_52fse")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_js4q5"]
+atlas = ExtResource("2_52fse")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s7ddd"]
+atlas = ExtResource("2_52fse")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4bjj7"]
+atlas = ExtResource("2_52fse")
+region = Rect2(320, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8advs"]
+atlas = ExtResource("2_52fse")
+region = Rect2(384, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0aldu"]
+atlas = ExtResource("2_52fse")
+region = Rect2(448, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wi4jj"]
+atlas = ExtResource("2_52fse")
+region = Rect2(512, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2ijmq"]
+atlas = ExtResource("2_52fse")
+region = Rect2(576, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_k4e41"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dlw0r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_anxr6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q0hvb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_js4q5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s7ddd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4bjj7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8advs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0aldu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wi4jj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2ijmq")
+}],
+"loop": true,
+"name": &"default",
+"speed": 8.0
+}]
+
+[node name="Turret" type="CharacterBody2D" unique_id=1202021773]
+scale = Vector2(1.5, 1.5)
+script = ExtResource("1_66575")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1552443693]
+shape = SubResource("CapsuleShape2D_3eevp")
+
+[node name="Engine" type="AnimatedSprite2D" parent="." unique_id=445304924]
+sprite_frames = SubResource("SpriteFrames_k4e41")
+autoplay = "default"
+frame_progress = 0.87715966
+
+[node name="Body" type="Sprite2D" parent="." unique_id=304248205]
+texture = ExtResource("3_blyhr")
+
+[node name="Timer" type="Timer" parent="." unique_id=43580352]
+wait_time = 2.0
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

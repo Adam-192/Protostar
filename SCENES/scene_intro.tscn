@@ -1,0 +1,347 @@
+[gd_scene format=3 uid="uid://2yimyubldfim"]
+
+[ext_resource type="Script" uid="uid://dmv7h0ogynjqw" path="res://SCRIPTS/scene_intro.gd" id="1_bs1o4"]
+[ext_resource type="Texture2D" uid="uid://bcpqf2qr0s43a" path="res://SPRITES/Intro/intro.png" id="1_v75y0"]
+[ext_resource type="Shader" uid="uid://dk5uasku54amq" path="res://THEMES_SHADERS/background_stars_big.gdshader" id="2_s65q0"]
+[ext_resource type="Texture2D" uid="uid://cw7j32pka1o7c" path="res://SPRITES/Background/Stars/stars_big.png" id="3_7h0o1"]
+[ext_resource type="Shader" uid="uid://kcrls5kum5nn" path="res://THEMES_SHADERS/background_stars_small.gdshader" id="4_voe5k"]
+[ext_resource type="Texture2D" uid="uid://chawuxhwxaldt" path="res://SPRITES/Background/Stars/stars_small.png" id="5_5orxi"]
+
+[sub_resource type="Gradient" id="Gradient_v75y0"]
+colors = PackedColorArray(0, 0, 0, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_bs1o4"]
+gradient = SubResource("Gradient_v75y0")
+fill_to = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_m1bwg"]
+shader = ExtResource("2_s65q0")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_jca31"]
+shader = ExtResource("4_voe5k")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2rolr"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6t8re"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rvewc"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_s65q0"]
+
+[node name="SceneIntro" type="Control" unique_id=1547586900]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_bs1o4")
+
+[node name="Backgorund" type="Sprite2D" parent="." unique_id=949395679]
+position = Vector2(643, 360)
+scale = Vector2(21.09375, 12.25)
+texture = SubResource("GradientTexture2D_bs1o4")
+
+[node name="Stars" type="Node2D" parent="." unique_id=1723834271]
+position = Vector2(208, 370)
+scale = Vector2(3.6640625, 3.6640625)
+
+[node name="StarsBig1" type="Sprite2D" parent="Stars" unique_id=244547382]
+texture_repeat = 3
+material = SubResource("ShaderMaterial_m1bwg")
+position = Vector2(-3.0469086, 19.196163)
+texture = ExtResource("3_7h0o1")
+region_enabled = true
+region_rect = Rect2(1, 5, 126, 250)
+
+[node name="StarsBig2" type="Sprite2D" parent="Stars" unique_id=1609042547]
+texture_repeat = 3
+material = SubResource("ShaderMaterial_m1bwg")
+position = Vector2(122.95094, -26.654583)
+texture = ExtResource("3_7h0o1")
+region_enabled = true
+region_rect = Rect2(1, 0, 126, 254)
+
+[node name="StarsBig3" type="Sprite2D" parent="Stars" unique_id=1090492784]
+texture_repeat = 3
+material = SubResource("ShaderMaterial_m1bwg")
+position = Vector2(251.5885, 9.098079)
+texture = ExtResource("3_7h0o1")
+region_enabled = true
+region_rect = Rect2(1, 0, 126, 254)
+
+[node name="StarsSmall1" type="Sprite2D" parent="Stars" unique_id=1772539470]
+texture_repeat = 3
+material = SubResource("ShaderMaterial_jca31")
+position = Vector2(4.7313776, 26.292114)
+scale = Vector2(1.0277185, 1.0277185)
+texture = ExtResource("5_5orxi")
+region_enabled = true
+region_rect = Rect2(1, 0, 126, 254)
+
+[node name="StarsSmall2" type="Sprite2D" parent="Stars" unique_id=508865662]
+texture_repeat = 3
+material = SubResource("ShaderMaterial_jca31")
+position = Vector2(131.82089, -20.923239)
+scale = Vector2(1.0277185, 1.0277185)
+texture = ExtResource("5_5orxi")
+region_enabled = true
+region_rect = Rect2(1, 0, 125.463, 252.84303)
+
+[node name="StarsSmall3" type="Sprite2D" parent="Stars" unique_id=1541055075]
+texture_repeat = 3
+material = SubResource("ShaderMaterial_jca31")
+position = Vector2(247.90405, 21.652456)
+scale = Vector2(1.0277185, 1.0277185)
+texture = ExtResource("5_5orxi")
+region_enabled = true
+region_rect = Rect2(1, 0, 126, 254)
+
+[node name="Button" type="Button" parent="." unique_id=415661303]
+layout_mode = 0
+offset_left = -12.0
+offset_top = -9.0
+offset_right = 1296.0
+offset_bottom = 736.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_2rolr")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_6t8re")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_rvewc")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_s65q0")
+
+[node name="Page1" type="Control" parent="." unique_id=733167949]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Intro1" type="Sprite2D" parent="Page1" unique_id=1478552734]
+visible = false
+position = Vector2(341, 239)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("1_v75y0")
+region_enabled = true
+region_rect = Rect2(96, 132, 320, 240)
+
+[node name="Label1" type="Label" parent="Page1" unique_id=318056463]
+visible = false
+layout_mode = 0
+offset_left = 101.0
+offset_top = 446.0
+offset_right = 213.0
+offset_bottom = 482.0
+theme_override_font_sizes/font_size = 32
+text = "_intro_1"
+
+[node name="Intro2" type="Sprite2D" parent="Page1" unique_id=798988500]
+visible = false
+position = Vector2(939.5, 301)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("1_v75y0")
+region_enabled = true
+region_rect = Rect2(427, 130, 338, 248)
+
+[node name="Label2" type="Label" parent="Page1" unique_id=2116639927]
+visible = false
+layout_mode = 0
+offset_left = 697.5
+offset_top = 504.0
+offset_right = 809.5
+offset_bottom = 540.0
+theme_override_font_sizes/font_size = 32
+text = "_intro_2"
+
+[node name="Page2" type="Control" parent="." unique_id=927473185]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Intro3" type="Sprite2D" parent="Page2" unique_id=168321475]
+visible = false
+position = Vector2(359.5, 359.25)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("1_v75y0")
+region_enabled = true
+region_rect = Rect2(770.52295, 128.56482, 338.84326, 251.69067)
+
+[node name="Label3" type="Label" parent="Page2" unique_id=1887688958]
+visible = false
+layout_mode = 0
+offset_left = 121.5
+offset_top = 553.25
+offset_right = 233.5
+offset_bottom = 589.25
+theme_override_font_sizes/font_size = 32
+text = "_intro_3"
+
+[node name="Intro4" type="Sprite2D" parent="Page2" unique_id=1539805358]
+visible = false
+position = Vector2(950.25, 263)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("1_v75y0")
+region_enabled = true
+region_rect = Rect2(1117.4282, 126.52924, 323.06567, 252.44202)
+
+[node name="Label4" type="Label" parent="Page2" unique_id=1778489718]
+visible = false
+layout_mode = 0
+offset_left = 721.25
+offset_top = 462.0
+offset_right = 833.25
+offset_bottom = 498.0
+theme_override_font_sizes/font_size = 32
+text = "_intro_4"
+
+[node name="Page3" type="Control" parent="." unique_id=930839421]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Intro5" type="Sprite2D" parent="Page3" unique_id=2020527879]
+visible = false
+position = Vector2(305, 240)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("1_v75y0")
+region_enabled = true
+region_rect = Rect2(92.05871, 384.42145, 331.26184, 245.88507)
+
+[node name="Label5" type="Label" parent="Page3" unique_id=1636793238]
+visible = false
+layout_mode = 0
+offset_left = 78.0
+offset_top = 436.0
+offset_right = 190.0
+offset_bottom = 472.0
+theme_override_font_sizes/font_size = 32
+text = "_intro_5"
+
+[node name="Intro6" type="Sprite2D" parent="Page3" unique_id=1889092249]
+visible = false
+position = Vector2(922, 334.25)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("1_v75y0")
+region_enabled = true
+region_rect = Rect2(422.7275, 385.0001, 340.00046, 243.63669)
+
+[node name="Label6" type="Label" parent="Page3" unique_id=1450502686]
+visible = false
+layout_mode = 0
+offset_left = 680.0
+offset_top = 537.25
+offset_right = 792.0
+offset_bottom = 573.25
+theme_override_font_sizes/font_size = 32
+text = "_intro_6"
+
+[node name="Page4" type="Control" parent="." unique_id=995376531]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Intro7" type="Sprite2D" parent="Page4" unique_id=642182722]
+visible = false
+position = Vector2(356, 390.25)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("1_v75y0")
+region_enabled = true
+region_rect = Rect2(766.5358, 379.49915, 348.45636, 251.82556)
+
+[node name="Label7" type="Label" parent="Page4" unique_id=1618212294]
+visible = false
+layout_mode = 0
+offset_left = 116.0
+offset_top = 597.25
+offset_right = 228.0
+offset_bottom = 633.25
+theme_override_font_sizes/font_size = 32
+text = "_intro_7"
+
+[node name="Intro8" type="Sprite2D" parent="Page4" unique_id=2144372984]
+visible = false
+position = Vector2(920, 308.25)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("1_v75y0")
+region_enabled = true
+region_rect = Rect2(1113.5281, 383.89142, 335.27942, 251.82556)
+
+[node name="Label8" type="Label" parent="Page4" unique_id=1286535235]
+visible = false
+layout_mode = 0
+offset_left = 685.0
+offset_top = 488.24997
+offset_right = 797.0
+offset_bottom = 524.25
+theme_override_font_sizes/font_size = 32
+text = "_intro_8"
+
+[node name="Page5" type="Control" parent="." unique_id=1115007808]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Intro9" type="Sprite2D" parent="Page5" unique_id=1206635825]
+visible = false
+position = Vector2(332, 220)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("1_v75y0")
+region_enabled = true
+region_rect = Rect2(343.69977, 631.5005, 423.50055, 262.90033)
+
+[node name="Label9" type="Label" parent="Page5" unique_id=1585606848]
+visible = false
+layout_mode = 0
+offset_left = 109.0
+offset_top = 419.0
+offset_right = 221.0
+offset_bottom = 455.0
+theme_override_font_sizes/font_size = 32
+text = "_intro_9"
+
+[node name="Intro10" type="Sprite2D" parent="Page5" unique_id=339043346]
+visible = false
+position = Vector2(958, 299)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("1_v75y0")
+region_enabled = true
+region_rect = Rect2(769.00024, 632.00055, 417.0005, 263.0003)
+
+[node name="Label10" type="Label" parent="Page5" unique_id=1006293149]
+visible = false
+layout_mode = 0
+offset_left = 663.0
+offset_top = 499.0
+offset_right = 791.0
+offset_bottom = 535.0
+theme_override_font_sizes/font_size = 32
+text = "_intro_10"
+
+[node name="Page6" type="Control" parent="." unique_id=428765394]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label11" type="Label" parent="Page6" unique_id=1045358383]
+visible = false
+layout_mode = 0
+offset_left = 2.0
+offset_top = 214.0
+offset_right = 1279.0
+offset_bottom = 286.0
+theme_override_colors/font_shadow_color = Color(0.8645519, 0.65627784, 0, 0.5529412)
+theme_override_colors/font_outline_color = Color(0.8439244, 0.6542692, 3.85046e-07, 1)
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 3
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 96
+text = "_intro_11"
+horizontal_alignment = 1
+
+[node name="Label" type="Label" parent="." unique_id=1085929706]
+layout_mode = 0
+offset_left = 750.0
+offset_top = 646.0
+offset_right = 1242.0
+offset_bottom = 682.0
+theme_override_font_sizes/font_size = 32
+text = "_click"
+horizontal_alignment = 2
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

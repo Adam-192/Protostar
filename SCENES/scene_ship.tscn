@@ -1,0 +1,304 @@
+[gd_scene format=3 uid="uid://boiy437o52by5"]
+
+[ext_resource type="Script" uid="uid://b0mxvuj31glgq" path="res://SCRIPTS/scene_ship.gd" id="1_es885"]
+[ext_resource type="Texture2D" uid="uid://cv1gv3xx1pgv5" path="res://SPRITES/UI/Card X2/Card X3.png" id="2_bavjr"]
+[ext_resource type="Shader" uid="uid://dlqn7laqkb3q7" path="res://THEMES_SHADERS/background_slow.gdshader" id="2_shuxd"]
+[ext_resource type="Texture2D" uid="uid://cufljtwnasawi" path="res://SPRITES/Background/Purple Nebula/Purple_Nebula_08-512x512.png" id="3_y8av3"]
+[ext_resource type="Shader" uid="uid://dk5uasku54amq" path="res://THEMES_SHADERS/background_stars_big.gdshader" id="4_ifjte"]
+[ext_resource type="Texture2D" uid="uid://cw7j32pka1o7c" path="res://SPRITES/Background/Stars/stars_big.png" id="5_36cag"]
+[ext_resource type="Shader" uid="uid://kcrls5kum5nn" path="res://THEMES_SHADERS/background_stars_small.gdshader" id="6_kgofd"]
+[ext_resource type="Texture2D" uid="uid://chawuxhwxaldt" path="res://SPRITES/Background/Stars/stars_small.png" id="7_an8hm"]
+[ext_resource type="Texture2D" uid="uid://skkes1r7bmsx" path="res://SPRITES/Player/Ship8/skin1.png" id="9_shuxd"]
+[ext_resource type="Theme" uid="uid://p0n4tv8rgdp6" path="res://THEMES_SHADERS/button.tres" id="10_kv82d"]
+[ext_resource type="Texture2D" uid="uid://b7a36hai2ripm" path="res://SPRITES/UI/Icons/09.png" id="11_36cag"]
+[ext_resource type="Theme" uid="uid://dnslyjo2lxxa0" path="res://THEMES_SHADERS/button_empty.tres" id="11_y8av3"]
+[ext_resource type="Texture2D" uid="uid://rf5yijew1eut" path="res://SPRITES/UI/Icons/10.png" id="12_kgofd"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_jcv3r"]
+shader = ExtResource("2_shuxd")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_dmgnw"]
+shader = ExtResource("4_ifjte")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_g08b5"]
+shader = ExtResource("6_kgofd")
+
+[sub_resource type="Gradient" id="Gradient_36cag"]
+interpolation_mode = 1
+offsets = PackedFloat32Array(0.48, 0.6, 0.64666665)
+colors = PackedColorArray(0, 0, 0, 1, 0, 0, 0, 0.78431374, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_36cag"]
+gradient = SubResource("Gradient_36cag")
+width = 50
+height = 50
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+
+[node name="SceneShip" type="Control" unique_id=1601513769]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_es885")
+
+[node name="Label" type="Label" parent="." unique_id=593667295]
+layout_mode = 0
+offset_left = 429.0
+offset_top = 94.0
+offset_right = 694.0
+offset_bottom = 139.0
+theme_override_colors/font_color = Color(0.20819816, 0.5762888, 0.5458395, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 40
+text = "CURRENT SHIP"
+
+[node name="PurpleNebula08512x512" type="Sprite2D" parent="." unique_id=177468734]
+texture_repeat = 3
+material = SubResource("ShaderMaterial_jcv3r")
+position = Vector2(637, 606)
+scale = Vector2(2.5703125, 2.5703125)
+texture = ExtResource("3_y8av3")
+
+[node name="Stars" type="Node2D" parent="." unique_id=267552712]
+position = Vector2(208, 370)
+scale = Vector2(3.6640625, 3.6640625)
+
+[node name="StarsBig1" type="Sprite2D" parent="Stars" unique_id=1088499111]
+texture_repeat = 3
+material = SubResource("ShaderMaterial_dmgnw")
+position = Vector2(-4.7761197, -4.0938168)
+texture = ExtResource("5_36cag")
+
+[node name="StarsBig2" type="Sprite2D" parent="Stars" unique_id=1718015103]
+texture_repeat = 3
+material = SubResource("ShaderMaterial_dmgnw")
+position = Vector2(122.95094, -9.006394)
+texture = ExtResource("5_36cag")
+
+[node name="StarsBig3" type="Sprite2D" parent="Stars" unique_id=885676605]
+texture_repeat = 3
+material = SubResource("ShaderMaterial_dmgnw")
+position = Vector2(249.85928, -14.191901)
+texture = ExtResource("5_36cag")
+
+[node name="StarsSmall1" type="Sprite2D" parent="Stars" unique_id=545302887]
+texture_repeat = 3
+material = SubResource("ShaderMaterial_g08b5")
+position = Vector2(3.0021667, 3.0021343)
+scale = Vector2(1.0277185, 1.0277185)
+texture = ExtResource("7_an8hm")
+
+[node name="StarsSmall2" type="Sprite2D" parent="Stars" unique_id=1867994562]
+texture_repeat = 3
+material = SubResource("ShaderMaterial_g08b5")
+position = Vector2(131.82089, -3.275051)
+scale = Vector2(1.0277185, 1.0277185)
+texture = ExtResource("7_an8hm")
+
+[node name="StarsSmall3" type="Sprite2D" parent="Stars" unique_id=1337885960]
+texture_repeat = 3
+material = SubResource("ShaderMaterial_g08b5")
+position = Vector2(246.17484, -1.6375244)
+scale = Vector2(1.0277185, 1.0277185)
+texture = ExtResource("7_an8hm")
+
+[node name="CardX3" type="Sprite2D" parent="." unique_id=887817094]
+modulate = Color(1, 1, 1, 0.78431374)
+position = Vector2(622, 361)
+scale = Vector2(1.4497355, 1.931217)
+texture = ExtResource("2_bavjr")
+
+[node name="SpriteSkin" type="Sprite2D" parent="." unique_id=999763047]
+position = Vector2(623, 100)
+scale = Vector2(0.99999994, 1)
+texture = ExtResource("9_shuxd")
+
+[node name="SpriteSkinL" type="Sprite2D" parent="." unique_id=493883256]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(486.00003, 113)
+scale = Vector2(0.99999994, 1)
+texture = ExtResource("9_shuxd")
+
+[node name="SpriteSkinR" type="Sprite2D" parent="." unique_id=1130856524]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(768, 113)
+scale = Vector2(0.99999994, 1)
+texture = ExtResource("9_shuxd")
+
+[node name="CardX2" type="Sprite2D" parent="." unique_id=1626885727]
+position = Vector2(630.2222, 501)
+scale = Vector2(0.44444448, 0.44444445)
+texture = ExtResource("2_bavjr")
+
+[node name="Skin" type="Sprite2D" parent="CardX2" unique_id=1572848594]
+position = Vector2(-0.00012207031, -2.25)
+scale = Vector2(2.2499998, 2.25)
+texture = ExtResource("9_shuxd")
+
+[node name="Label2" type="Label" parent="." unique_id=1231612398]
+layout_mode = 0
+offset_left = 510.0
+offset_top = 370.0
+offset_right = 754.22217
+offset_bottom = 427.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 24
+text = "_selected"
+horizontal_alignment = 1
+
+[node name="ButtonBack" type="Button" parent="." unique_id=1995984598]
+layout_mode = 0
+offset_left = 550.0
+offset_top = 585.0
+offset_right = 719.0
+offset_bottom = 680.0
+theme = ExtResource("10_kv82d")
+theme_override_font_sizes/font_size = 32
+text = "_back"
+
+[node name="ButtonSelect" type="Button" parent="." unique_id=1954906306]
+layout_mode = 0
+offset_left = 542.0
+offset_top = 248.0
+offset_right = 711.0
+offset_bottom = 343.0
+theme = ExtResource("10_kv82d")
+theme_override_font_sizes/font_size = 32
+text = "_select"
+
+[node name="ButtonLeft" type="Button" parent="." unique_id=1250405889]
+layout_mode = 0
+offset_left = 463.0
+offset_top = 261.0
+offset_right = 533.0
+offset_bottom = 331.0
+theme = ExtResource("10_kv82d")
+
+[node name="09" type="Sprite2D" parent="ButtonLeft" unique_id=1332254699]
+position = Vector2(32, 33)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("11_36cag")
+
+[node name="ButtonRight" type="Button" parent="." unique_id=391346343]
+layout_mode = 0
+offset_left = 725.0
+offset_top = 261.0
+offset_right = 795.0
+offset_bottom = 331.0
+theme = ExtResource("10_kv82d")
+
+[node name="10" type="Sprite2D" parent="ButtonRight" unique_id=844752087]
+position = Vector2(36.999977, 32.999985)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("12_kgofd")
+
+[node name="LabelQuestionmark" type="Label" parent="." unique_id=1526810952]
+layout_mode = 0
+offset_left = 589.0
+offset_top = 80.0
+offset_right = 661.0
+offset_bottom = 134.0
+theme_override_font_sizes/font_size = 48
+text = "???"
+
+[node name="Button_skin1" type="Button" parent="." unique_id=35544494]
+layout_mode = 0
+offset_left = 500.0
+offset_top = 177.0
+offset_right = 550.0
+offset_bottom = 227.0
+theme = ExtResource("11_y8av3")
+
+[node name="Sprite2D" type="Sprite2D" parent="Button_skin1" unique_id=1561978648]
+position = Vector2(25, 25)
+texture = SubResource("GradientTexture2D_36cag")
+
+[node name="Button_skin2" type="Button" parent="." unique_id=171766456]
+layout_mode = 0
+offset_left = 550.0
+offset_top = 177.0
+offset_right = 600.0
+offset_bottom = 227.0
+theme = ExtResource("11_y8av3")
+
+[node name="Sprite2D" type="Sprite2D" parent="Button_skin2" unique_id=1285238439]
+position = Vector2(25, 25)
+texture = SubResource("GradientTexture2D_36cag")
+
+[node name="Button_skin3" type="Button" parent="." unique_id=557613065]
+layout_mode = 0
+offset_left = 600.0
+offset_top = 177.0
+offset_right = 650.0
+offset_bottom = 227.0
+theme = ExtResource("11_y8av3")
+
+[node name="Sprite2D" type="Sprite2D" parent="Button_skin3" unique_id=2005136215]
+position = Vector2(25, 25)
+texture = SubResource("GradientTexture2D_36cag")
+
+[node name="Button_skin4" type="Button" parent="." unique_id=435478701]
+layout_mode = 0
+offset_left = 650.0
+offset_top = 177.0
+offset_right = 700.0
+offset_bottom = 227.0
+theme = ExtResource("11_y8av3")
+
+[node name="Sprite2D" type="Sprite2D" parent="Button_skin4" unique_id=1584119986]
+position = Vector2(25, 25)
+texture = SubResource("GradientTexture2D_36cag")
+
+[node name="Button_skin5" type="Button" parent="." unique_id=1975313697]
+layout_mode = 0
+offset_left = 700.0
+offset_top = 177.0
+offset_right = 750.0
+offset_bottom = 227.0
+theme = ExtResource("11_y8av3")
+
+[node name="Sprite2D" type="Sprite2D" parent="Button_skin5" unique_id=195358626]
+position = Vector2(25, 25)
+texture = SubResource("GradientTexture2D_36cag")
+
+[node name="Button_skin6" type="Button" parent="." unique_id=1484842819]
+layout_mode = 0
+offset_left = 450.0
+offset_top = 177.0
+offset_right = 500.0
+offset_bottom = 227.0
+theme = ExtResource("11_y8av3")
+
+[node name="Sprite2D" type="Sprite2D" parent="Button_skin6" unique_id=2078673865]
+position = Vector2(25, 25)
+texture = SubResource("GradientTexture2D_36cag")
+
+[node name="Button_skin7" type="Button" parent="." unique_id=245736053]
+layout_mode = 0
+offset_left = 750.0
+offset_top = 177.0
+offset_right = 800.0
+offset_bottom = 227.0
+theme = ExtResource("11_y8av3")
+
+[node name="Sprite2D" type="Sprite2D" parent="Button_skin7" unique_id=1517132524]
+position = Vector2(25, 25)
+texture = SubResource("GradientTexture2D_36cag")
+
+[connection signal="pressed" from="ButtonBack" to="." method="_on_button_back_pressed"]
+[connection signal="pressed" from="ButtonSelect" to="." method="_on_button_select_pressed"]
+[connection signal="pressed" from="ButtonLeft" to="." method="_on_button_left_pressed"]
+[connection signal="pressed" from="ButtonRight" to="." method="_on_button_right_pressed"]
+[connection signal="pressed" from="Button_skin1" to="." method="_on_button_skin_1_pressed"]
+[connection signal="pressed" from="Button_skin2" to="." method="_on_button_skin_2_pressed"]
+[connection signal="pressed" from="Button_skin3" to="." method="_on_button_skin_3_pressed"]
+[connection signal="pressed" from="Button_skin4" to="." method="_on_button_skin_4_pressed"]
+[connection signal="pressed" from="Button_skin5" to="." method="_on_button_skin_5_pressed"]
+[connection signal="pressed" from="Button_skin6" to="." method="_on_button_skin_6_pressed"]
+[connection signal="pressed" from="Button_skin7" to="." method="_on_button_skin_7_pressed"]

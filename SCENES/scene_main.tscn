@@ -1,0 +1,395 @@
+[gd_scene format=3 uid="uid://bn0g5kmxc0rib"]
+
+[ext_resource type="Script" uid="uid://djjwhmroay6ob" path="res://SCRIPTS/scene_main.gd" id="1_6f324"]
+[ext_resource type="Shader" uid="uid://dlqn7laqkb3q7" path="res://THEMES_SHADERS/background_slow.gdshader" id="1_c15kg"]
+[ext_resource type="Texture2D" uid="uid://dlgl73hho7fbx" path="res://SPRITES/Background/Blue Nebula/Blue_Nebula_03-512x512.png" id="2_pwpau"]
+[ext_resource type="Texture2D" uid="uid://cv1gv3xx1pgv5" path="res://SPRITES/UI/Card X2/Card X3.png" id="3_pwpau"]
+[ext_resource type="Theme" uid="uid://p0n4tv8rgdp6" path="res://THEMES_SHADERS/button.tres" id="4_eci5j"]
+[ext_resource type="Texture2D" uid="uid://bnfjp3qgl2212" path="res://SPRITES/UI/Icons/15.png" id="5_64bm4"]
+[ext_resource type="Shader" uid="uid://kcrls5kum5nn" path="res://THEMES_SHADERS/background_stars_small.gdshader" id="6_up6ot"]
+[ext_resource type="Texture2D" uid="uid://dftdu7ilske4v" path="res://SPRITES/UI/Icons/07.png" id="6_wnthl"]
+[ext_resource type="Texture2D" uid="uid://dx5kvxrw8c3m2" path="res://SPRITES/UI/Icons/01.png" id="8_u247d"]
+[ext_resource type="Texture2D" uid="uid://dl7pxe5olct7x" path="res://SPRITES/UI/Icons/20.png" id="9_ba085"]
+[ext_resource type="Texture2D" uid="uid://ck5diniua6f52" path="res://SPRITES/UI/Card X1/Card X1.png" id="9_eamt3"]
+[ext_resource type="Texture2D" uid="uid://cj0igye7dhnfl" path="res://SPRITES/UI/Icons/05.png" id="10_odelc"]
+[ext_resource type="Texture2D" uid="uid://rf5yijew1eut" path="res://SPRITES/UI/Icons/10.png" id="11_v4u6x"]
+[ext_resource type="Texture2D" uid="uid://b62tnupqbpa2b" path="res://SPRITES/UI/Card X1/Panel Red.png" id="12_u247d"]
+[ext_resource type="Texture2D" uid="uid://b6sj12f5yxkof" path="res://SPRITES/UI/Icons/21.png" id="13_ba085"]
+[ext_resource type="Texture2D" uid="uid://du3y1llpc2op5" path="res://SPRITES/UI/Icons/16.png" id="14_50f4v"]
+[ext_resource type="Texture2D" uid="uid://cmhk4vrfcpkpa" path="res://SPRITES/UI/Card X1/Panel Empty Green.png" id="14_v4u6x"]
+[ext_resource type="Texture2D" uid="uid://ckcyahtxrwmeh" path="res://SPRITES/UI/Icons/24.png" id="15_6f324"]
+[ext_resource type="Shader" uid="uid://dk5uasku54amq" path="res://THEMES_SHADERS/background_stars_big.gdshader" id="19_ar4yr"]
+[ext_resource type="Texture2D" uid="uid://cw7j32pka1o7c" path="res://SPRITES/Background/Stars/stars_big.png" id="20_up6ot"]
+[ext_resource type="Texture2D" uid="uid://chawuxhwxaldt" path="res://SPRITES/Background/Stars/stars_small.png" id="21_eamt3"]
+[ext_resource type="Texture2D" uid="uid://m4mi1hhd1xpv" path="res://SPRITES/RESOURCES/gem.png" id="24_icttq"]
+[ext_resource type="Texture2D" uid="uid://bg2ohqx0lwfi" path="res://SPRITES/RESOURCES/gold.png" id="25_50f4v"]
+[ext_resource type="Texture2D" uid="uid://xyihaoasofeg" path="res://SPRITES/RESOURCES/battery.png" id="26_i4m3d"]
+[ext_resource type="Texture2D" uid="uid://ci00kduwxu0av" path="res://SPRITES/UI/Card X1/Panel Empty.png" id="27_flni8"]
+[ext_resource type="Texture2D" uid="uid://b6aggqhtam46i" path="res://SPRITES/UI/Icons/08.png" id="28_03b1u"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_eci5j"]
+shader = ExtResource("1_c15kg")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_7gxt1"]
+shader = ExtResource("19_ar4yr")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_eamt3"]
+shader = ExtResource("6_up6ot")
+
+[node name="SceneMain" type="Control" unique_id=580389484]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_6f324")
+
+[node name="Background" type="Sprite2D" parent="." unique_id=661711074]
+texture_repeat = 3
+material = SubResource("ShaderMaterial_eci5j")
+position = Vector2(648, 613)
+scale = Vector2(2.640625, 2.640625)
+texture = ExtResource("2_pwpau")
+
+[node name="Stars" type="Node2D" parent="." unique_id=6596903]
+position = Vector2(208, 370)
+scale = Vector2(3.6640625, 3.6640625)
+
+[node name="StarsBig1" type="Sprite2D" parent="Stars" unique_id=938434651]
+texture_repeat = 3
+material = SubResource("ShaderMaterial_7gxt1")
+position = Vector2(-4.7761197, -4.0938168)
+texture = ExtResource("20_up6ot")
+
+[node name="StarsBig2" type="Sprite2D" parent="Stars" unique_id=1891918986]
+texture_repeat = 3
+material = SubResource("ShaderMaterial_7gxt1")
+position = Vector2(122.95094, -9.006394)
+texture = ExtResource("20_up6ot")
+
+[node name="StarsBig3" type="Sprite2D" parent="Stars" unique_id=1172614952]
+texture_repeat = 3
+material = SubResource("ShaderMaterial_7gxt1")
+position = Vector2(249.85928, -14.191901)
+texture = ExtResource("20_up6ot")
+
+[node name="StarsSmall1" type="Sprite2D" parent="Stars" unique_id=1300686655]
+texture_repeat = 3
+material = SubResource("ShaderMaterial_eamt3")
+position = Vector2(3.0021667, 3.0021343)
+scale = Vector2(1.0277185, 1.0277185)
+texture = ExtResource("21_eamt3")
+
+[node name="StarsSmall2" type="Sprite2D" parent="Stars" unique_id=1008477246]
+texture_repeat = 3
+material = SubResource("ShaderMaterial_eamt3")
+position = Vector2(131.82089, -3.275051)
+scale = Vector2(1.0277185, 1.0277185)
+texture = ExtResource("21_eamt3")
+
+[node name="StarsSmall3" type="Sprite2D" parent="Stars" unique_id=1402465749]
+texture_repeat = 3
+material = SubResource("ShaderMaterial_eamt3")
+position = Vector2(246.17484, -1.6375244)
+scale = Vector2(1.0277185, 1.0277185)
+texture = ExtResource("21_eamt3")
+
+[node name="CardX3" type="Sprite2D" parent="." unique_id=1415421755]
+modulate = Color(1, 1, 1, 0.78431374)
+position = Vector2(622, 361.49997)
+scale = Vector2(1.4497355, 1.8174602)
+texture = ExtResource("3_pwpau")
+
+[node name="Title" type="Label" parent="." unique_id=539652220]
+layout_mode = 0
+offset_top = 50.0
+offset_right = 1280.0
+offset_bottom = 92.0
+theme_override_colors/font_color = Color(0.28887627, 0.47339523, 1, 1)
+theme_override_colors/font_outline_color = Color(0.8627451, 0.93333334, 0.98039216, 1)
+theme_override_constants/outline_size = 6
+theme_override_font_sizes/font_size = 48
+text = "_naslov"
+horizontal_alignment = 1
+
+[node name="CardX1" type="Sprite2D" parent="." unique_id=1852479685]
+modulate = Color(1, 1, 1, 0.78431374)
+position = Vector2(173.00002, 358)
+scale = Vector2(0.70987654, 0.7098765)
+texture = ExtResource("9_eamt3")
+
+[node name="ButtonShop" type="Button" parent="." unique_id=1926853653]
+layout_mode = 0
+offset_left = 420.0
+offset_top = 111.0
+offset_right = 820.0
+offset_bottom = 171.0
+theme = ExtResource("4_eci5j")
+theme_override_colors/font_color = Color(0.9999998, 0.86023957, 0.35310903, 1)
+text = "_shop"
+
+[node name="15" type="Sprite2D" parent="ButtonShop" unique_id=331981729]
+modulate = Color(0.9119031, 0.8120354, 0.505629, 1)
+position = Vector2(35.99999, 26.999996)
+scale = Vector2(1.4499989, 1.4499991)
+texture = ExtResource("5_64bm4")
+
+[node name="16" type="Sprite2D" parent="ButtonShop" unique_id=1272344358]
+modulate = Color(0.9119031, 0.8120354, 0.505629, 1)
+position = Vector2(366, 26.999996)
+scale = Vector2(1.4499989, 1.4499991)
+texture = ExtResource("5_64bm4")
+
+[node name="ButtonStart" type="Button" parent="." unique_id=2131077233]
+layout_mode = 0
+offset_left = 420.0
+offset_top = 187.0
+offset_right = 820.0
+offset_bottom = 289.0
+theme = ExtResource("4_eci5j")
+text = "_start"
+icon_alignment = 2
+
+[node name="10" type="Sprite2D" parent="ButtonStart" unique_id=1454953893]
+position = Vector2(267, 49)
+scale = Vector2(1.7, 1.7)
+texture = ExtResource("11_v4u6x")
+
+[node name="ButtonShip" type="Button" parent="." unique_id=204947166]
+layout_mode = 0
+offset_left = 420.0
+offset_top = 304.0
+offset_right = 820.0
+offset_bottom = 364.0
+theme = ExtResource("4_eci5j")
+text = "_ship"
+
+[node name="07" type="Sprite2D" parent="ButtonShip" unique_id=2112237908]
+position = Vector2(35, 29)
+texture = ExtResource("6_wnthl")
+
+[node name="ButtonShip2" type="Button" parent="." unique_id=1755561012]
+layout_mode = 0
+offset_left = 90.0
+offset_top = 257.0
+offset_right = 264.0
+offset_bottom = 419.0
+theme = ExtResource("4_eci5j")
+
+[node name="Skin" type="Sprite2D" parent="ButtonShip2" unique_id=1274700032]
+position = Vector2(87, 76)
+texture = ExtResource("6_wnthl")
+
+[node name="ButtonMissions" type="Button" parent="." unique_id=1338719193]
+layout_mode = 0
+offset_left = 420.0
+offset_top = 375.0
+offset_right = 820.0
+offset_bottom = 460.0
+theme = ExtResource("4_eci5j")
+text = "_missions_battlepass"
+
+[node name="17" type="Sprite2D" parent="ButtonMissions" unique_id=1023273072]
+position = Vector2(35, 40)
+texture = ExtResource("14_50f4v")
+
+[node name="Label" type="Label" parent="ButtonMissions" unique_id=837023033]
+layout_mode = 0
+offset_left = 427.40894
+offset_top = 18.858765
+offset_right = 781.40894
+offset_bottom = 45.858765
+theme_override_font_sizes/font_size = 24
+text = "_season_timer"
+
+[node name="PanelEmpty" type="Sprite2D" parent="ButtonMissions" unique_id=943855506]
+position = Vector2(729, 44)
+rotation = -3.1415927
+scale = Vector2(1.3516732, 1.3516731)
+texture = ExtResource("27_flni8")
+region_enabled = true
+region_rect = Rect2(0, 0, 95.78955, 65)
+
+[node name="PanelEmpty2" type="Sprite2D" parent="ButtonMissions" unique_id=372859887]
+position = Vector2(464.20447, 38.929382)
+rotation = -6.2831855
+scale = Vector2(1.3516732, 1.3516731)
+texture = ExtResource("27_flni8")
+region_enabled = true
+region_rect = Rect2(0, 0, 95.78955, 65)
+
+[node name="ButtonLootbox" type="Button" parent="." unique_id=1809195476]
+layout_mode = 0
+offset_left = 420.0
+offset_top = 473.0
+offset_right = 820.0
+offset_bottom = 533.0
+theme = ExtResource("4_eci5j")
+text = "_lootbox"
+
+[node name="01" type="Sprite2D" parent="ButtonLootbox" unique_id=612821378]
+position = Vector2(36, 28)
+texture = ExtResource("8_u247d")
+
+[node name="ButtonEnemyList" type="Button" parent="." unique_id=1879610541]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -220.0
+offset_top = 185.0
+offset_right = 180.0
+offset_bottom = 245.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("4_eci5j")
+text = "_enemy_list"
+
+[node name="20" type="Sprite2D" parent="ButtonEnemyList" unique_id=1713665942]
+position = Vector2(29.999979, 28)
+scale = Vector2(1.3666667, 1.3666667)
+texture = ExtResource("9_ba085")
+
+[node name="ButtonCredits" type="Button" parent="." unique_id=393971694]
+layout_mode = 0
+offset_left = 696.0
+offset_top = 611.0
+offset_right = 870.0
+offset_bottom = 671.0
+theme = ExtResource("4_eci5j")
+text = "_credits"
+
+[node name="05" type="Sprite2D" parent="ButtonCredits" unique_id=849317474]
+position = Vector2(17, 27)
+texture = ExtResource("10_odelc")
+
+[node name="PanelRed" type="Sprite2D" parent="." unique_id=1857211949]
+visible = false
+position = Vector2(1210, 660)
+scale = Vector2(2.5923076, 2.5923078)
+texture = ExtResource("12_u247d")
+
+[node name="ButtonExit" type="Button" parent="." unique_id=1769171484]
+visible = false
+layout_mode = 0
+offset_left = 1112.0
+offset_top = 630.0
+offset_right = 1271.0
+offset_bottom = 690.0
+theme = ExtResource("4_eci5j")
+text = "_exit"
+
+[node name="05" type="Sprite2D" parent="ButtonExit" unique_id=1542802469]
+position = Vector2(138.00003, 29)
+scale = Vector2(1.3095239, 1.3095238)
+texture = ExtResource("13_ba085")
+
+[node name="PanelEmptyGreen" type="Sprite2D" parent="." unique_id=464062292]
+position = Vector2(1147, 132)
+scale = Vector2(3.4961538, 3.4961538)
+texture = ExtResource("14_v4u6x")
+
+[node name="ButtonOptions" type="Button" parent="." unique_id=1912281366]
+layout_mode = 0
+offset_left = 1007.0
+offset_top = 90.0
+offset_right = 1229.0
+offset_bottom = 173.0
+theme = ExtResource("4_eci5j")
+text = "_options"
+
+[node name="Gem" type="Sprite2D" parent="." unique_id=1858982662]
+position = Vector2(121.5, 185.5)
+scale = Vector2(0.6015625, 0.6015625)
+texture = ExtResource("24_icttq")
+
+[node name="LabelGem" type="Label" parent="." unique_id=905235364]
+layout_mode = 0
+offset_left = 154.5
+offset_top = 169.5
+offset_right = 256.5
+offset_bottom = 196.5
+theme_override_colors/font_color = Color(1, 0.5924633, 0.997963, 1)
+theme_override_font_sizes/font_size = 24
+text = "GEM GEM"
+
+[node name="Gold" type="Sprite2D" parent="." unique_id=877651141]
+position = Vector2(118.5, 120.5)
+scale = Vector2(0.7109375, 0.7109375)
+texture = ExtResource("25_50f4v")
+
+[node name="LabelGold" type="Label" parent="." unique_id=2005353995]
+layout_mode = 0
+offset_left = 148.5
+offset_top = 107.5
+offset_right = 268.5
+offset_bottom = 134.5
+theme_override_colors/font_color = Color(0.7934343, 0.76077646, 3.85046e-07, 1)
+theme_override_font_sizes/font_size = 24
+text = "GOLD GOLD"
+
+[node name="Battery" type="Sprite2D" parent="." unique_id=1092803566]
+position = Vector2(80, 548)
+texture = ExtResource("26_i4m3d")
+
+[node name="LabelEnergy" type="Label" parent="Battery" unique_id=1653728483]
+anchors_preset = -1
+anchor_top = -0.46875
+anchor_bottom = -0.46875
+offset_left = 25.0
+offset_top = 19.0
+offset_right = 134.0
+offset_bottom = 76.0
+theme_override_colors/font_color = Color(0.6056103, 0.9039774, 0.62918955, 1)
+theme_override_colors/font_outline_color = Color(0.2225534, 0.27592722, 0.17825285, 1)
+theme_override_constants/outline_size = 2
+theme_override_font_sizes/font_size = 24
+text = "."
+horizontal_alignment = 1
+
+[node name="LabelEnergy2" type="Label" parent="Battery" unique_id=1779286739]
+anchors_preset = -1
+anchor_top = -0.46875
+anchor_bottom = -0.46875
+offset_left = 25.0
+offset_top = -5.0
+offset_right = 134.0
+offset_bottom = 22.0
+theme_override_colors/font_color = Color(0.42023718, 0.7257671, 0.44975936, 1)
+theme_override_colors/font_outline_color = Color(0.2225534, 0.27592722, 0.17825285, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 24
+text = "_energy"
+horizontal_alignment = 1
+
+[node name="PanelEmpty" type="Sprite2D" parent="." unique_id=597475925]
+modulate = Color(1, 1, 1, 0.78431374)
+position = Vector2(160.00002, 550)
+rotation = 3.1415927
+scale = Vector2(2.3923078, 2.3923078)
+texture = ExtResource("27_flni8")
+region_enabled = true
+region_rect = Rect2(0, 0, 97.65147, 65)
+
+[node name="08" type="Sprite2D" parent="." unique_id=297737819]
+position = Vector2(80, 545)
+scale = Vector2(1.1190476, 1.1190476)
+texture = ExtResource("28_03b1u")
+
+[node name="GearIcon" type="Sprite2D" parent="." unique_id=381192352]
+position = Vector2(1035, 128)
+texture = ExtResource("15_6f324")
+
+[connection signal="pressed" from="ButtonShop" to="." method="_on_button_shop_pressed"]
+[connection signal="pressed" from="ButtonStart" to="." method="_on_button_start_pressed"]
+[connection signal="pressed" from="ButtonShip" to="." method="_on_button_ship_pressed"]
+[connection signal="pressed" from="ButtonShip2" to="." method="_on_button_ship_pressed"]
+[connection signal="pressed" from="ButtonMissions" to="." method="_on_button_missions_pressed"]
+[connection signal="pressed" from="ButtonLootbox" to="." method="_on_button_lootbox_pressed"]
+[connection signal="pressed" from="ButtonEnemyList" to="." method="_on_button_enemy_list_pressed"]
+[connection signal="pressed" from="ButtonCredits" to="." method="_on_button_credits_pressed"]
+[connection signal="pressed" from="ButtonExit" to="." method="_on_button_exit_pressed"]
+[connection signal="pressed" from="ButtonOptions" to="." method="_on_button_options_pressed"]

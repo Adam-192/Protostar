@@ -1,0 +1,1802 @@
+[gd_scene format=3 uid="uid://mylkvgcxs50x"]
+
+[ext_resource type="Script" uid="uid://yq1iiboe6p7b" path="res://SCRIPTS/scene_shop.gd" id="1_cedtk"]
+[ext_resource type="Theme" uid="uid://p0n4tv8rgdp6" path="res://THEMES_SHADERS/button.tres" id="2_4sumh"]
+[ext_resource type="Shader" uid="uid://dlqn7laqkb3q7" path="res://THEMES_SHADERS/background_slow.gdshader" id="2_50uhm"]
+[ext_resource type="Texture2D" uid="uid://cj4pfrnr5t4ll" path="res://SPRITES/Background/Stars/Space Background_3.png" id="3_0l4rj"]
+[ext_resource type="Shader" uid="uid://dk5uasku54amq" path="res://THEMES_SHADERS/background_stars_big.gdshader" id="4_lfcrp"]
+[ext_resource type="Texture2D" uid="uid://cw7j32pka1o7c" path="res://SPRITES/Background/Stars/stars_big.png" id="5_ejxt4"]
+[ext_resource type="Shader" uid="uid://kcrls5kum5nn" path="res://THEMES_SHADERS/background_stars_small.gdshader" id="6_wj2du"]
+[ext_resource type="Texture2D" uid="uid://chawuxhwxaldt" path="res://SPRITES/Background/Stars/stars_small.png" id="7_xnrsq"]
+[ext_resource type="Texture2D" uid="uid://ck5diniua6f52" path="res://SPRITES/UI/Card X1/Card X1.png" id="9_boovo"]
+[ext_resource type="Texture2D" uid="uid://m4mi1hhd1xpv" path="res://SPRITES/RESOURCES/gem.png" id="10_pmcih"]
+[ext_resource type="Texture2D" uid="uid://bg2ohqx0lwfi" path="res://SPRITES/RESOURCES/gold.png" id="11_c3had"]
+[ext_resource type="Texture2D" uid="uid://xyihaoasofeg" path="res://SPRITES/RESOURCES/battery.png" id="12_jgmff"]
+[ext_resource type="Texture2D" uid="uid://ci00kduwxu0av" path="res://SPRITES/UI/Card X1/Panel Empty.png" id="13_85ho0"]
+[ext_resource type="Texture2D" uid="uid://b6aggqhtam46i" path="res://SPRITES/UI/Icons/08.png" id="14_la2in"]
+[ext_resource type="Texture2D" uid="uid://bov7s5g66ibjw" path="res://SPRITES/UI/Card X3/Card X5.png" id="15_jgmff"]
+[ext_resource type="Texture2D" uid="uid://gspthe40f44a" path="res://SPRITES/RESOURCES/gem_shine.png" id="16_85ho0"]
+[ext_resource type="Texture2D" uid="uid://dftdu7ilske4v" path="res://SPRITES/UI/Icons/07.png" id="17_jir7v"]
+[ext_resource type="Texture2D" uid="uid://dh8l2pf2fgjae" path="res://SPRITES/RESOURCES/gold_shine.png" id="17_la2in"]
+[ext_resource type="Texture2D" uid="uid://521cp34a0ygx" path="res://SPRITES/RESOURCES/key_common_shine.png" id="18_85ho0"]
+[ext_resource type="Texture2D" uid="uid://c0py7hvlxe2k3" path="res://SPRITES/UI/Icons/13.png" id="19_61sy3"]
+[ext_resource type="Texture2D" uid="uid://dx5kvxrw8c3m2" path="res://SPRITES/UI/Icons/01.png" id="19_la2in"]
+[ext_resource type="Texture2D" uid="uid://c1seyejwwyw6h" path="res://SPRITES/UI/Icons/33.png" id="20_ywer7"]
+[ext_resource type="Texture2D" uid="uid://c5te4rhxfkbvo" path="res://SPRITES/UI/Icons/32.png" id="21_olvpc"]
+[ext_resource type="Texture2D" uid="uid://bnfjp3qgl2212" path="res://SPRITES/UI/Icons/15.png" id="24_olvpc"]
+[ext_resource type="Texture2D" uid="uid://cmhk4vrfcpkpa" path="res://SPRITES/UI/Card X1/Panel Empty Green.png" id="25_banrc"]
+[ext_resource type="Texture2D" uid="uid://cubf4526xkrju" path="res://SPRITES/RESOURCES/myzhical_with_gem_purple_glow.png" id="26_banrc"]
+[ext_resource type="Texture2D" uid="uid://dvsjlal3dlfh" path="res://SPRITES/RESOURCES/rare_chest_with_gold_purple_glow.png" id="27_in0up"]
+[ext_resource type="Texture2D" uid="uid://dp2nfec4o6bou" path="res://SPRITES/UI/Card X1/Card X2.png" id="28_7fveu"]
+[ext_resource type="Texture2D" uid="uid://cyi2rmbs83e0n" path="res://SPRITES/RESOURCES/common_chest.png" id="29_lsiv4"]
+[ext_resource type="Texture2D" uid="uid://ccxsskm07xncp" path="res://SPRITES/RESOURCES/chest_rare_closed.png" id="30_2s6km"]
+[ext_resource type="Texture2D" uid="uid://bcn18wqn8cp26" path="res://SPRITES/RESOURCES/rare_gold_glow.png" id="32_2s6km"]
+[ext_resource type="Texture2D" uid="uid://4u8v7kbtjmib" path="res://SPRITES/RESOURCES/key_common.png" id="32_dfogi"]
+[ext_resource type="Texture2D" uid="uid://dthq02jydcb1" path="res://SPRITES/RESOURCES/mythical_no_glow.png" id="33_8y2qa"]
+[ext_resource type="Texture2D" uid="uid://n7f8pg4g5n5l" path="res://SPRITES/RESOURCES/mythical_purple_glow.png" id="34_tmc34"]
+[ext_resource type="Texture2D" uid="uid://cuh6ujk8t1jw" path="res://SPRITES/UI/Icons/04.png" id="35_8y2qa"]
+[ext_resource type="Texture2D" uid="uid://c0ko6cy5mw7md" path="res://SPRITES/UI/Icons/18.png" id="36_pb3fe"]
+[ext_resource type="Texture2D" uid="uid://bsrw0xncp5onn" path="res://SPRITES/UI/Icons/17.png" id="37_8tx0s"]
+[ext_resource type="Texture2D" uid="uid://cj0igye7dhnfl" path="res://SPRITES/UI/Icons/05.png" id="38_q7j3k"]
+[ext_resource type="Texture2D" uid="uid://ce7ytau06fqxs" path="res://SPRITES/UI/Icons/03.png" id="39_sb4vg"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_boovo"]
+shader = ExtResource("2_50uhm")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_pmcih"]
+shader = ExtResource("4_lfcrp")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_c3had"]
+shader = ExtResource("6_wj2du")
+
+[node name="SceneShop" type="Control" unique_id=594908366]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_cedtk")
+
+[node name="SpaceBackground3" type="Sprite2D" parent="." unique_id=1261633936]
+texture_repeat = 3
+material = SubResource("ShaderMaterial_boovo")
+position = Vector2(638, -605.85706)
+scale = Vector2(3.1619048, 3.1619046)
+texture = ExtResource("3_0l4rj")
+
+[node name="StarsBig" type="Sprite2D" parent="." unique_id=1634510216]
+texture_repeat = 3
+material = SubResource("ShaderMaterial_pmcih")
+position = Vector2(308, 337)
+scale = Vector2(5.234375, 5.234375)
+texture = ExtResource("5_ejxt4")
+
+[node name="StarsBig2" type="Sprite2D" parent="." unique_id=1271700450]
+texture_repeat = 3
+material = SubResource("ShaderMaterial_pmcih")
+position = Vector2(968, 337)
+scale = Vector2(5.234375, 5.234375)
+texture = ExtResource("5_ejxt4")
+
+[node name="StarsSmall" type="Sprite2D" parent="." unique_id=417376921]
+texture_repeat = 3
+material = SubResource("ShaderMaterial_c3had")
+position = Vector2(300, 558)
+scale = Vector2(5.21875, 5.21875)
+texture = ExtResource("7_xnrsq")
+
+[node name="StarsSmall2" type="Sprite2D" parent="." unique_id=1522298624]
+texture_repeat = 3
+material = SubResource("ShaderMaterial_c3had")
+position = Vector2(960, 558)
+scale = Vector2(5.21875, 5.21875)
+texture = ExtResource("7_xnrsq")
+
+[node name="ButtonBack" type="Button" parent="." unique_id=1399823467]
+layout_mode = 0
+offset_left = 475.0
+offset_top = 644.0
+offset_right = 783.0
+offset_bottom = 702.0
+theme = ExtResource("2_4sumh")
+theme_override_font_sizes/font_size = 42
+text = "_main_menu"
+
+[node name="ButtonBack2" type="Button" parent="." unique_id=181824215]
+layout_mode = 0
+offset_left = 476.0
+offset_top = 644.0
+offset_right = 784.0
+offset_bottom = 702.0
+theme = ExtResource("2_4sumh")
+theme_override_font_sizes/font_size = 42
+text = "_back"
+
+[node name="CardX1" type="Sprite2D" parent="." unique_id=948316053]
+modulate = Color(1, 1, 1, 0.78431374)
+position = Vector2(173.00002, 358)
+scale = Vector2(0.70987654, 0.7098765)
+texture = ExtResource("9_boovo")
+
+[node name="Gem" type="Sprite2D" parent="." unique_id=225761600]
+position = Vector2(121.5, 185.5)
+scale = Vector2(0.6015625, 0.6015625)
+texture = ExtResource("10_pmcih")
+
+[node name="LabelGem" type="Label" parent="." unique_id=1856234417]
+layout_mode = 0
+offset_left = 154.5
+offset_top = 169.5
+offset_right = 256.5
+offset_bottom = 196.5
+theme_override_colors/font_color = Color(1, 0.5924633, 0.997963, 1)
+theme_override_font_sizes/font_size = 24
+text = "GEM GEM"
+
+[node name="LabelKeys" type="Label" parent="." unique_id=1720585929]
+layout_mode = 0
+offset_left = 52.0
+offset_top = 212.0
+offset_right = 154.0
+offset_bottom = 239.0
+theme_override_colors/font_color = Color(0.96779567, 0.917802, 0.9053126, 1)
+theme_override_font_sizes/font_size = 24
+text = "_keys"
+
+[node name="labelBoosts" type="Label" parent="." unique_id=1416636103]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 320.0
+offset_right = 171.0
+offset_bottom = 347.0
+theme_override_colors/font_color = Color(0.96779567, 0.917802, 0.9053126, 1)
+theme_override_font_sizes/font_size = 24
+text = "_boosters"
+
+[node name="Gold" type="Sprite2D" parent="." unique_id=940851924]
+position = Vector2(118.5, 120.5)
+scale = Vector2(0.7109375, 0.7109375)
+texture = ExtResource("11_c3had")
+
+[node name="LabelGold" type="Label" parent="." unique_id=779232177]
+layout_mode = 0
+offset_left = 148.5
+offset_top = 107.5
+offset_right = 268.5
+offset_bottom = 134.5
+theme_override_colors/font_color = Color(0.7934343, 0.76077646, 3.85046e-07, 1)
+theme_override_font_sizes/font_size = 24
+text = "GOLD GOLD"
+
+[node name="Battery" type="Sprite2D" parent="." unique_id=655105350]
+position = Vector2(80, 548)
+texture = ExtResource("12_jgmff")
+
+[node name="LabelEnergy" type="Label" parent="Battery" unique_id=2083313641]
+anchors_preset = -1
+anchor_top = -0.46875
+anchor_bottom = -0.46875
+offset_left = 25.0
+offset_top = 19.0
+offset_right = 134.0
+offset_bottom = 76.0
+theme_override_colors/font_color = Color(0.6056103, 0.9039774, 0.62918955, 1)
+theme_override_colors/font_outline_color = Color(0.2225534, 0.27592722, 0.17825285, 1)
+theme_override_constants/outline_size = 2
+theme_override_font_sizes/font_size = 24
+text = "."
+horizontal_alignment = 1
+
+[node name="LabelEnergy2" type="Label" parent="Battery" unique_id=1500476211]
+anchors_preset = -1
+anchor_top = -0.46875
+anchor_bottom = -0.46875
+offset_left = 25.0
+offset_top = -5.0
+offset_right = 134.0
+offset_bottom = 22.0
+theme_override_colors/font_color = Color(0.42023718, 0.7257671, 0.44975936, 1)
+theme_override_colors/font_outline_color = Color(0.2225534, 0.27592722, 0.17825285, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 24
+text = "_energy"
+horizontal_alignment = 1
+
+[node name="PanelEmpty" type="Sprite2D" parent="." unique_id=39074483]
+modulate = Color(1, 1, 1, 0.78431374)
+position = Vector2(160.00002, 550)
+rotation = 3.1415927
+scale = Vector2(2.3923078, 2.3923078)
+texture = ExtResource("13_85ho0")
+region_enabled = true
+region_rect = Rect2(0, 0, 97.65147, 65)
+
+[node name="08" type="Sprite2D" parent="." unique_id=1346817701]
+position = Vector2(80, 545)
+scale = Vector2(1.1190476, 1.1190476)
+texture = ExtResource("14_la2in")
+
+[node name="LabelKeys1" type="Label" parent="." unique_id=848206624]
+layout_mode = 0
+offset_left = 83.0
+offset_top = 239.0
+offset_right = 281.0
+offset_bottom = 266.0
+theme_override_colors/font_color = Color(0.9607843, 0.827451, 0.7254902, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.5254902)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 16
+text = "Common KEYS - 5x"
+
+[node name="LabelKeys2" type="Label" parent="." unique_id=1685635572]
+layout_mode = 0
+offset_left = 83.0
+offset_top = 256.0
+offset_right = 281.0
+offset_bottom = 283.0
+theme_override_colors/font_color = Color(0.63529414, 0.78039217, 0.9607843, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.5254902)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 16
+text = "Rare KEYS - 5x"
+
+[node name="LabelKeys3" type="Label" parent="." unique_id=1401568021]
+layout_mode = 0
+offset_left = 83.0
+offset_top = 272.0
+offset_right = 215.0
+offset_bottom = 299.0
+theme_override_colors/font_color = Color(0.8509804, 0.827451, 0.07058824, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.5254902)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 16
+text = "Mythical KEYS - 5x"
+
+[node name="LabelBooster1" type="Label" parent="." unique_id=823862244]
+layout_mode = 0
+offset_left = 72.0
+offset_top = 349.0
+offset_right = 219.0
+offset_bottom = 376.0
+theme_override_colors/font_color = Color(0.972549, 0.34509805, 0.36862746, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.5254902)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 16
+text = "_opening_booster_1"
+
+[node name="LabelBooster1Num" type="Label" parent="." unique_id=586145111]
+layout_mode = 0
+offset_left = 223.0
+offset_top = 348.0
+offset_right = 265.0
+offset_bottom = 375.0
+theme_override_colors/font_color = Color(0.972549, 0.34509805, 0.36862746, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.5254902)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 16
+text = "5x"
+
+[node name="LabelBooster2Num" type="Label" parent="." unique_id=967886278]
+layout_mode = 0
+offset_left = 223.0
+offset_top = 378.0
+offset_right = 265.0
+offset_bottom = 405.0
+theme_override_colors/font_color = Color(0.22352941, 0.61960787, 0.89411765, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.5254902)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 16
+text = "5x"
+
+[node name="LabelBooster8" type="Label" parent="." unique_id=1256991956]
+layout_mode = 0
+offset_left = 72.0
+offset_top = 376.0
+offset_right = 208.0
+offset_bottom = 403.0
+theme_override_colors/font_color = Color(0.22352941, 0.61960787, 0.89411765, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.5254902)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 16
+text = "_opening_booster_2"
+
+[node name="LabelBooster3Num" type="Label" parent="." unique_id=1651895696]
+layout_mode = 0
+offset_left = 224.0
+offset_top = 403.0
+offset_right = 266.0
+offset_bottom = 430.0
+theme_override_colors/font_color = Color(0.8784314, 0.60784316, 0.39607844, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.5254902)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 16
+text = "5x"
+
+[node name="LabelBooster9" type="Label" parent="." unique_id=667324590]
+layout_mode = 0
+offset_left = 72.0
+offset_top = 402.0
+offset_right = 210.0
+offset_bottom = 429.0
+theme_override_colors/font_color = Color(0.8784314, 0.60784316, 0.39607844, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.5254902)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 16
+text = "_opening_booster_3"
+horizontal_alignment = 1
+
+[node name="LabelBooster4Num" type="Label" parent="." unique_id=517433061]
+layout_mode = 0
+offset_left = 223.0
+offset_top = 427.0
+offset_right = 265.0
+offset_bottom = 454.0
+theme_override_colors/font_color = Color(0.20784314, 0.7921569, 0.49803922, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.5254902)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 16
+text = "5x"
+
+[node name="LabelBooster10" type="Label" parent="." unique_id=1326867687]
+layout_mode = 0
+offset_left = 72.0
+offset_top = 426.0
+offset_right = 210.0
+offset_bottom = 453.0
+theme_override_colors/font_color = Color(0.20784314, 0.7921569, 0.49803922, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.5254902)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 16
+text = "_opening_booster_4"
+
+[node name="LabelBooster5" type="Label" parent="." unique_id=1706320917]
+layout_mode = 0
+offset_left = 72.0
+offset_top = 455.0
+offset_right = 222.0
+offset_bottom = 482.0
+theme_override_colors/font_color = Color(0.88235295, 0.29803923, 0.40392157, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.5254902)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 16
+text = "_opening_booster_5"
+
+[node name="LabelBooster5Num" type="Label" parent="." unique_id=1728414948]
+layout_mode = 0
+offset_left = 223.0
+offset_top = 454.0
+offset_right = 265.0
+offset_bottom = 481.0
+theme_override_colors/font_color = Color(0.88235295, 0.29803923, 0.40392157, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.5254902)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 16
+text = "5x"
+
+[node name="LabelBooster6" type="Label" parent="." unique_id=1541005207]
+layout_mode = 0
+offset_left = 72.0
+offset_top = 472.0
+offset_right = 225.0
+offset_bottom = 499.0
+theme_override_colors/font_color = Color(0.49803922, 0.95686275, 0.34509805, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.5254902)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 16
+text = "_opening_booster_6"
+
+[node name="LabelBooster6Num" type="Label" parent="." unique_id=2085683594]
+layout_mode = 0
+offset_left = 223.0
+offset_top = 476.0
+offset_right = 265.0
+offset_bottom = 503.0
+theme_override_colors/font_color = Color(0.49803922, 0.95686275, 0.34509805, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.5254902)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 16
+text = "5x"
+
+[node name="Default" type="Control" parent="." unique_id=221429436]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="CardX5" type="Sprite2D" parent="Default" unique_id=696805560]
+modulate = Color(1, 1, 1, 0.78431374)
+position = Vector2(783, 333)
+scale = Vector2(1.4071618, 1.4071618)
+texture = ExtResource("15_jgmff")
+
+[node name="ButtonBuyGems" type="Button" parent="Default" unique_id=1250273373]
+layout_mode = 0
+offset_left = 323.0
+offset_top = 233.0
+offset_right = 741.0
+offset_bottom = 387.0
+theme = ExtResource("2_4sumh")
+theme_override_colors/font_color = Color(0.88678586, 0.061450712, 0.9722752, 1)
+theme_override_font_sizes/font_size = 40
+text = "_shop_buy_crystals"
+
+[node name="Icon" type="Sprite2D" parent="Default/ButtonBuyGems" unique_id=436104170]
+position = Vector2(376, 47)
+rotation = 1.5707964
+scale = Vector2(0.9459694, 0.9459694)
+texture = ExtResource("16_85ho0")
+
+[node name="ButtonBuyBoosters" type="Button" parent="Default" unique_id=782616846]
+layout_mode = 0
+offset_left = 785.0
+offset_top = 135.0
+offset_right = 1215.0
+offset_bottom = 217.0
+theme = ExtResource("2_4sumh")
+theme_override_colors/font_color = Color(0.413106, 0.79983205, 0.70645505, 1)
+theme_override_font_sizes/font_size = 40
+text = "_shop_buy_boosters"
+
+[node name="Icon" type="Sprite2D" parent="Default/ButtonBuyBoosters" unique_id=1243171040]
+position = Vector2(6.1035156e-05, 16)
+rotation = 1.5707964
+scale = Vector2(2.2749534, 2.2749534)
+texture = ExtResource("17_jir7v")
+
+[node name="Icon2" type="Sprite2D" parent="Default/ButtonBuyBoosters" unique_id=940715511]
+position = Vector2(415, 64)
+scale = Vector2(2.2749534, 2.2749534)
+texture = ExtResource("17_jir7v")
+
+[node name="ButtonBuyCoins" type="Button" parent="Default" unique_id=691633342]
+layout_mode = 0
+offset_left = 368.0
+offset_top = 117.0
+offset_right = 668.0
+offset_bottom = 217.0
+theme = ExtResource("2_4sumh")
+theme_override_colors/font_color = Color(0.93378454, 0.67783004, 0.31556708, 1)
+theme_override_font_sizes/font_size = 40
+text = "_shop_buy_gold"
+
+[node name="Icon" type="Sprite2D" parent="Default/ButtonBuyCoins" unique_id=1887748936]
+position = Vector2(28, 6)
+scale = Vector2(0.79656005, 0.79656005)
+texture = ExtResource("17_la2in")
+
+[node name="ButtonPremiumShop" type="Button" parent="Default" unique_id=1939409054]
+layout_mode = 0
+offset_left = 767.0
+offset_top = 255.0
+offset_right = 1242.0
+offset_bottom = 364.0
+theme = ExtResource("2_4sumh")
+theme_override_colors/font_color = Color(0.95314234, 0.66945344, 0.26518184, 1)
+theme_override_colors/font_outline_color = Color(0.023150822, 0.13289976, 0.14393964, 1)
+theme_override_font_sizes/font_size = 48
+text = "_premium_shop"
+
+[node name="13" type="Sprite2D" parent="Default/ButtonPremiumShop" unique_id=1116080538]
+position = Vector2(409.00003, 96)
+scale = Vector2(2.4545455, 2.4545455)
+texture = ExtResource("19_61sy3")
+
+[node name="33" type="Sprite2D" parent="Default/ButtonPremiumShop" unique_id=1666418543]
+position = Vector2(49.999973, -4)
+scale = Vector2(2.6, 2.6)
+texture = ExtResource("20_ywer7")
+
+[node name="32" type="Sprite2D" parent="Default/ButtonPremiumShop" unique_id=1380691997]
+position = Vector2(419, 13.000004)
+scale = Vector2(1.4285715, 1.4285713)
+texture = ExtResource("21_olvpc")
+
+[node name="ButtonBuyKeys" type="Button" parent="Default" unique_id=1891344380]
+layout_mode = 0
+offset_left = 367.0
+offset_top = 422.0
+offset_right = 667.0
+offset_bottom = 522.0
+theme = ExtResource("2_4sumh")
+theme_override_colors/font_color = Color(0.69719213, 0.41175842, 0.31406567, 1)
+theme_override_font_sizes/font_size = 40
+text = "_shop_buy_keys"
+
+[node name="Icon" type="Sprite2D" parent="Default/ButtonBuyKeys" unique_id=50315589]
+position = Vector2(257, 84)
+scale = Vector2(1.0389049, 1.0389049)
+texture = ExtResource("18_85ho0")
+
+[node name="ButtonRecharegeEnergy" type="Button" parent="Default" unique_id=1615532810]
+layout_mode = 0
+offset_left = 686.0
+offset_top = 422.0
+offset_right = 947.0
+offset_bottom = 511.0
+theme = ExtResource("2_4sumh")
+theme_override_colors/font_color = Color(0.3252092, 0.5662638, 0.30864707, 1)
+theme_override_font_sizes/font_size = 24
+text = "_recharge_150"
+
+[node name="Icon" type="Sprite2D" parent="Default/ButtonRecharegeEnergy" unique_id=1278312181]
+position = Vector2(247, 76)
+scale = Vector2(1.0389049, 1.0389049)
+texture = ExtResource("12_jgmff")
+
+[node name="01" type="Sprite2D" parent="Default/ButtonRecharegeEnergy" unique_id=1769675234]
+position = Vector2(231, 60)
+texture = ExtResource("19_la2in")
+
+[node name="08" type="Sprite2D" parent="Default/ButtonRecharegeEnergy" unique_id=256482953]
+position = Vector2(246, 80)
+texture = ExtResource("14_la2in")
+
+[node name="ButtonRecharegeFullEnergy2" type="Button" parent="Default" unique_id=344460727]
+layout_mode = 0
+offset_left = 962.0
+offset_top = 422.0
+offset_right = 1223.0
+offset_bottom = 511.0
+theme = ExtResource("2_4sumh")
+theme_override_colors/font_color = Color(0.3252092, 0.5662638, 0.30864707, 1)
+theme_override_font_sizes/font_size = 24
+text = "FULL RECHARGE
+FOR XXX"
+
+[node name="Icon" type="Sprite2D" parent="Default/ButtonRecharegeFullEnergy2" unique_id=1642974208]
+position = Vector2(251.245, 84.5)
+scale = Vector2(1.0389049, 1.0389049)
+texture = ExtResource("12_jgmff")
+
+[node name="08" type="Sprite2D" parent="Default/ButtonRecharegeFullEnergy2" unique_id=1280046717]
+position = Vector2(257.24512, 91.50003)
+scale = Vector2(1.8809524, 1.8809524)
+texture = ExtResource("14_la2in")
+
+[node name="01" type="Sprite2D" parent="Default/ButtonRecharegeFullEnergy2" unique_id=900407069]
+position = Vector2(236.245, 56.5)
+texture = ExtResource("19_la2in")
+
+[node name="02" type="Sprite2D" parent="Default/ButtonRecharegeFullEnergy2" unique_id=1402306465]
+position = Vector2(253.245, 47.5)
+scale = Vector2(0.625, 0.625)
+texture = ExtResource("19_la2in")
+
+[node name="03" type="Sprite2D" parent="Default/ButtonRecharegeFullEnergy2" unique_id=546974751]
+position = Vector2(227.245, 72.5)
+scale = Vector2(0.625, 0.625)
+texture = ExtResource("19_la2in")
+
+[node name="BuyGems" type="Control" parent="." unique_id=250200211]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="CardX5" type="Sprite2D" parent="BuyGems" unique_id=44840833]
+modulate = Color(1, 1, 1, 0.78431374)
+position = Vector2(783, 333)
+scale = Vector2(1.4071618, 1.4071618)
+texture = ExtResource("15_jgmff")
+
+[node name="Label" type="Label" parent="BuyGems" unique_id=663682288]
+layout_mode = 0
+offset_left = 317.0
+offset_top = 117.0
+offset_right = 1245.0
+offset_bottom = 171.0
+theme_override_colors/font_color = Color(1, 0.40019485, 0.98532945, 1)
+theme_override_colors/font_shadow_color = Color(0.7004928, 0.37852946, 0.5869988, 0.9882353)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 4
+theme_override_constants/shadow_outline_size = 4
+theme_override_font_sizes/font_size = 48
+text = "_shop_buy_crystals"
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="BuyGems" unique_id=1863771276]
+layout_mode = 0
+offset_left = 319.0
+offset_top = 179.0
+offset_right = 969.0
+offset_bottom = 257.0
+theme = ExtResource("2_4sumh")
+theme_override_colors/font_color = Color(0.4481448, 0.71283835, 0.6418357, 1)
+text = "_starter_pack_price"
+
+[node name="PanelEmptyGreen" type="Sprite2D" parent="BuyGems/Button" unique_id=1817467504]
+position = Vector2(100, 39)
+texture = ExtResource("25_banrc")
+
+[node name="Label" type="Label" parent="BuyGems/Button/PanelEmptyGreen" unique_id=621614941]
+offset_left = -32.0
+offset_top = -15.0
+offset_right = 16.0
+offset_bottom = 12.0
+theme_override_colors/font_color = Color(0.8535574, 0.5198395, 0.95155543, 1)
+theme_override_font_sizes/font_size = 24
+text = "100x"
+
+[node name="Gem" type="Sprite2D" parent="BuyGems/Button/PanelEmptyGreen" unique_id=1382742950]
+position = Vector2(40, -1)
+scale = Vector2(0.5976564, 0.5976564)
+texture = ExtResource("10_pmcih")
+
+[node name="15" type="Sprite2D" parent="BuyGems/Button/PanelEmptyGreen" unique_id=1494665158]
+position = Vector2(-64.49997, -2.2500153)
+scale = Vector2(1.3000003, 1.3000004)
+texture = ExtResource("24_olvpc")
+
+[node name="Label" type="Label" parent="BuyGems/Button" unique_id=1204255454]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 5.0
+offset_right = 569.0
+offset_bottom = 23.0
+theme_override_font_sizes/font_size = 16
+text = "_starter_pack"
+horizontal_alignment = 1
+
+[node name="Button2" type="Button" parent="BuyGems" unique_id=703783205]
+layout_mode = 0
+offset_left = 319.0
+offset_top = 269.0
+offset_right = 969.0
+offset_bottom = 347.0
+theme = ExtResource("2_4sumh")
+theme_override_colors/font_color = Color(0.4481448, 0.71283835, 0.6418357, 1)
+text = "_explorer_pack_price"
+
+[node name="PanelEmptyGreen" type="Sprite2D" parent="BuyGems/Button2" unique_id=1733132242]
+position = Vector2(94.5, 38.5)
+texture = ExtResource("25_banrc")
+
+[node name="Label" type="Label" parent="BuyGems/Button2/PanelEmptyGreen" unique_id=1974105887]
+offset_left = -32.0
+offset_top = -15.0
+offset_right = 16.0
+offset_bottom = 12.0
+theme_override_colors/font_color = Color(0.8535574, 0.5198395, 0.95155543, 1)
+theme_override_font_sizes/font_size = 24
+text = "300x"
+
+[node name="Gem" type="Sprite2D" parent="BuyGems/Button2/PanelEmptyGreen" unique_id=1207406804]
+position = Vector2(40, -1)
+scale = Vector2(0.5976564, 0.5976564)
+texture = ExtResource("10_pmcih")
+
+[node name="15" type="Sprite2D" parent="BuyGems/Button2/PanelEmptyGreen" unique_id=487683118]
+position = Vector2(-64.49997, -2.2500153)
+scale = Vector2(1.3000003, 1.3000004)
+texture = ExtResource("24_olvpc")
+
+[node name="Label" type="Label" parent="BuyGems/Button2" unique_id=747219812]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 5.0
+offset_right = 569.0
+offset_bottom = 23.0
+theme_override_font_sizes/font_size = 16
+text = "_explorer_pack"
+horizontal_alignment = 1
+
+[node name="Button3" type="Button" parent="BuyGems" unique_id=1081783603]
+layout_mode = 0
+offset_left = 319.0
+offset_top = 366.0
+offset_right = 969.0
+offset_bottom = 444.0
+theme = ExtResource("2_4sumh")
+theme_override_colors/font_color = Color(0.4481448, 0.71283835, 0.6418357, 1)
+text = "_elite_pack_price"
+
+[node name="PanelEmptyGreen" type="Sprite2D" parent="BuyGems/Button3" unique_id=1871499030]
+position = Vector2(99.5, 34.5)
+texture = ExtResource("25_banrc")
+
+[node name="Label" type="Label" parent="BuyGems/Button3/PanelEmptyGreen" unique_id=565492581]
+offset_left = -32.0
+offset_top = -15.0
+offset_right = 16.0
+offset_bottom = 12.0
+theme_override_colors/font_color = Color(0.8535574, 0.5198395, 0.95155543, 1)
+theme_override_font_sizes/font_size = 24
+text = "3000"
+
+[node name="Gem" type="Sprite2D" parent="BuyGems/Button3/PanelEmptyGreen" unique_id=980963998]
+position = Vector2(35.499992, -0.49999332)
+scale = Vector2(0.5410157, 0.5410157)
+texture = ExtResource("10_pmcih")
+
+[node name="15" type="Sprite2D" parent="BuyGems/Button3/PanelEmptyGreen" unique_id=1108323675]
+position = Vector2(-64.49997, -2.2500153)
+scale = Vector2(1.3000003, 1.3000004)
+texture = ExtResource("24_olvpc")
+
+[node name="Label" type="Label" parent="BuyGems/Button3" unique_id=989110110]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 5.0
+offset_right = 569.0
+offset_bottom = 23.0
+theme_override_font_sizes/font_size = 16
+text = "_elite_pack"
+horizontal_alignment = 1
+
+[node name="Button4" type="Button" parent="BuyGems" unique_id=207173533]
+layout_mode = 0
+offset_left = 320.0
+offset_top = 454.0
+offset_right = 970.0
+offset_bottom = 532.0
+theme = ExtResource("2_4sumh")
+theme_override_colors/font_color = Color(0.4481448, 0.71283835, 0.6418357, 1)
+text = "_legendary_pack_price"
+
+[node name="PanelEmptyGreen" type="Sprite2D" parent="BuyGems/Button4" unique_id=1841724907]
+position = Vector2(95.5, 35.5)
+texture = ExtResource("25_banrc")
+
+[node name="Label" type="Label" parent="BuyGems/Button4/PanelEmptyGreen" unique_id=890544981]
+offset_left = -32.0
+offset_top = -15.0
+offset_right = 16.0
+offset_bottom = 12.0
+theme_override_colors/font_color = Color(0.8535574, 0.5198395, 0.95155543, 1)
+theme_override_font_sizes/font_size = 24
+text = "9999x"
+
+[node name="Gem" type="Sprite2D" parent="BuyGems/Button4/PanelEmptyGreen" unique_id=786311952]
+position = Vector2(44.499992, -8.499993)
+scale = Vector2(0.5410157, 0.5410157)
+texture = ExtResource("10_pmcih")
+
+[node name="15" type="Sprite2D" parent="BuyGems/Button4/PanelEmptyGreen" unique_id=581767851]
+position = Vector2(-64.49997, -2.2500153)
+scale = Vector2(1.3000003, 1.3000004)
+texture = ExtResource("24_olvpc")
+
+[node name="Label" type="Label" parent="BuyGems/Button4" unique_id=1693623132]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 5.0
+offset_right = 569.0
+offset_bottom = 23.0
+theme_override_font_sizes/font_size = 16
+text = "_legendary_pack"
+horizontal_alignment = 1
+
+[node name="Button5" type="Button" parent="BuyGems" unique_id=223087927]
+layout_mode = 0
+offset_left = 977.0
+offset_top = 165.0
+offset_right = 1243.0
+offset_bottom = 536.0
+theme = ExtResource("2_4sumh")
+theme_override_colors/font_color = Color(0.4481448, 0.71283835, 0.6418357, 1)
+text = "_c_pack_price"
+
+[node name="PanelEmptyGreen" type="Sprite2D" parent="BuyGems/Button5" unique_id=383843086]
+position = Vector2(137, 103)
+texture = ExtResource("25_banrc")
+
+[node name="Label" type="Label" parent="BuyGems/Button5/PanelEmptyGreen" unique_id=1563667768]
+offset_left = -32.0
+offset_top = -15.0
+offset_right = 16.0
+offset_bottom = 12.0
+theme_override_colors/font_color = Color(0.8535574, 0.5198395, 0.95155543, 1)
+theme_override_font_sizes/font_size = 24
+text = "1000x"
+
+[node name="Gem" type="Sprite2D" parent="BuyGems/Button5/PanelEmptyGreen" unique_id=2009207453]
+position = Vector2(44.499992, -2.9999933)
+scale = Vector2(0.5410157, 0.5410157)
+texture = ExtResource("10_pmcih")
+
+[node name="15" type="Sprite2D" parent="BuyGems/Button5/PanelEmptyGreen" unique_id=1749284896]
+position = Vector2(-64.49997, -2.2500153)
+scale = Vector2(1.3000003, 1.3000004)
+texture = ExtResource("24_olvpc")
+
+[node name="Label" type="Label" parent="BuyGems/Button5" unique_id=875516180]
+layout_mode = 0
+offset_top = 45.0
+offset_right = 277.0
+offset_bottom = 63.0
+theme_override_font_sizes/font_size = 16
+text = "_commnader_pack"
+horizontal_alignment = 1
+
+[node name="MyzhicalWithGemPurpleGlow" type="Sprite2D" parent="BuyGems" unique_id=1303856486]
+position = Vector2(1117.0001, 477)
+scale = Vector2(0.74218774, 0.70312506)
+texture = ExtResource("26_banrc")
+
+[node name="BuyCoins" type="Control" parent="." unique_id=20670039]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="CardX5" type="Sprite2D" parent="BuyCoins" unique_id=287127374]
+modulate = Color(1, 1, 1, 0.78431374)
+position = Vector2(783, 333)
+scale = Vector2(1.4071618, 1.4071618)
+texture = ExtResource("15_jgmff")
+
+[node name="Label" type="Label" parent="BuyCoins" unique_id=1307577613]
+layout_mode = 0
+offset_left = 321.0
+offset_top = 117.0
+offset_right = 1242.0
+offset_bottom = 171.0
+theme_override_colors/font_color = Color(0.93419164, 0.810642, 0.19833556, 1)
+theme_override_colors/font_shadow_color = Color(0.7380234, 0.41459912, 7.70092e-07, 0.9882353)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 4
+theme_override_constants/shadow_outline_size = 4
+theme_override_font_sizes/font_size = 48
+text = "_shop_buy_gold"
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="BuyCoins" unique_id=1903717526]
+layout_mode = 0
+offset_left = 322.0
+offset_top = 179.0
+offset_right = 947.0
+offset_bottom = 257.0
+theme = ExtResource("2_4sumh")
+theme_override_colors/font_color = Color(0.4481448, 0.71283835, 0.6418357, 1)
+theme_override_font_sizes/font_size = 24
+text = "_cargo_crate_desc"
+
+[node name="PanelEmptyGreen" type="Sprite2D" parent="BuyCoins/Button" unique_id=1270845514]
+position = Vector2(100, 39)
+texture = ExtResource("25_banrc")
+
+[node name="Label" type="Label" parent="BuyCoins/Button/PanelEmptyGreen" unique_id=2141770223]
+offset_left = -32.0
+offset_top = -15.0
+offset_right = 16.0
+offset_bottom = 12.0
+theme_override_colors/font_color = Color(0.897506, 0.6028388, 0.30586773, 1)
+theme_override_font_sizes/font_size = 24
+text = "1000x"
+
+[node name="Gem" type="Sprite2D" parent="BuyCoins/Button/PanelEmptyGreen" unique_id=210066466]
+position = Vector2(44.000008, -1.0000067)
+scale = Vector2(0.5019534, 0.5019534)
+texture = ExtResource("11_c3had")
+
+[node name="15" type="Sprite2D" parent="BuyCoins/Button/PanelEmptyGreen" unique_id=882791670]
+position = Vector2(-64.49997, -2.2500153)
+scale = Vector2(1.3000003, 1.3000004)
+texture = ExtResource("24_olvpc")
+
+[node name="Label" type="Label" parent="BuyCoins/Button" unique_id=973930153]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 5.0
+offset_right = 569.0
+offset_bottom = 23.0
+theme_override_font_sizes/font_size = 16
+text = "_cargo_crate"
+horizontal_alignment = 1
+
+[node name="Button2" type="Button" parent="BuyCoins" unique_id=1273732772]
+layout_mode = 0
+offset_left = 322.0
+offset_top = 269.0
+offset_right = 947.0
+offset_bottom = 347.0
+theme = ExtResource("2_4sumh")
+theme_override_colors/font_color = Color(0.4481448, 0.71283835, 0.6418357, 1)
+theme_override_font_sizes/font_size = 24
+text = "_supply_pod_desc"
+
+[node name="PanelEmptyGreen" type="Sprite2D" parent="BuyCoins/Button2" unique_id=2069232337]
+position = Vector2(94.5, 38.5)
+texture = ExtResource("25_banrc")
+
+[node name="Label" type="Label" parent="BuyCoins/Button2/PanelEmptyGreen" unique_id=329117390]
+offset_left = -32.0
+offset_top = -15.0
+offset_right = 16.0
+offset_bottom = 12.0
+theme_override_colors/font_color = Color(0.897506, 0.6028388, 0.30586773, 1)
+theme_override_font_sizes/font_size = 24
+text = "5000x"
+
+[node name="15" type="Sprite2D" parent="BuyCoins/Button2/PanelEmptyGreen" unique_id=1312723157]
+position = Vector2(-64.49997, -2.2500153)
+scale = Vector2(1.3000003, 1.3000004)
+texture = ExtResource("24_olvpc")
+
+[node name="Gem" type="Sprite2D" parent="BuyCoins/Button2/PanelEmptyGreen" unique_id=1165536017]
+position = Vector2(44.000008, -1.0000067)
+scale = Vector2(0.5019534, 0.5019534)
+texture = ExtResource("11_c3had")
+
+[node name="Label" type="Label" parent="BuyCoins/Button2" unique_id=282908846]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 5.0
+offset_right = 569.0
+offset_bottom = 23.0
+theme_override_font_sizes/font_size = 16
+text = "_supply_pod"
+horizontal_alignment = 1
+
+[node name="Button3" type="Button" parent="BuyCoins" unique_id=1781819174]
+layout_mode = 0
+offset_left = 322.0
+offset_top = 366.0
+offset_right = 947.0
+offset_bottom = 444.0
+theme = ExtResource("2_4sumh")
+theme_override_colors/font_color = Color(0.4481448, 0.71283835, 0.6418357, 1)
+theme_override_font_sizes/font_size = 24
+text = "_orbital_cache_desc"
+
+[node name="PanelEmptyGreen" type="Sprite2D" parent="BuyCoins/Button3" unique_id=2141579363]
+position = Vector2(99.5, 34.5)
+texture = ExtResource("25_banrc")
+
+[node name="Label" type="Label" parent="BuyCoins/Button3/PanelEmptyGreen" unique_id=1615203459]
+offset_left = -32.0
+offset_top = -15.0
+offset_right = 16.0
+offset_bottom = 12.0
+theme_override_colors/font_color = Color(0.897506, 0.6028388, 0.30586773, 1)
+theme_override_font_sizes/font_size = 24
+text = "12000x"
+
+[node name="15" type="Sprite2D" parent="BuyCoins/Button3/PanelEmptyGreen" unique_id=763135946]
+position = Vector2(-64.49997, -2.2500153)
+scale = Vector2(1.3000003, 1.3000004)
+texture = ExtResource("24_olvpc")
+
+[node name="Gem" type="Sprite2D" parent="BuyCoins/Button3/PanelEmptyGreen" unique_id=304548887]
+position = Vector2(51.62504, -2.3749762)
+scale = Vector2(0.5019534, 0.5019534)
+texture = ExtResource("11_c3had")
+
+[node name="Label" type="Label" parent="BuyCoins/Button3" unique_id=226499650]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 5.0
+offset_right = 569.0
+offset_bottom = 23.0
+theme_override_font_sizes/font_size = 16
+text = "_orbital_cache"
+horizontal_alignment = 1
+
+[node name="Button4" type="Button" parent="BuyCoins" unique_id=366568806]
+layout_mode = 0
+offset_left = 323.0
+offset_top = 454.0
+offset_right = 948.0
+offset_bottom = 532.0
+theme = ExtResource("2_4sumh")
+theme_override_colors/font_color = Color(0.4481448, 0.71283835, 0.6418357, 1)
+theme_override_font_sizes/font_size = 24
+text = "_galactic_stockpile_desc"
+
+[node name="PanelEmptyGreen" type="Sprite2D" parent="BuyCoins/Button4" unique_id=1341833595]
+position = Vector2(95.5, 35.5)
+texture = ExtResource("25_banrc")
+
+[node name="Label" type="Label" parent="BuyCoins/Button4/PanelEmptyGreen" unique_id=1701666508]
+offset_left = -32.0
+offset_top = -15.0
+offset_right = 16.0
+offset_bottom = 12.0
+theme_override_colors/font_color = Color(0.897506, 0.6028388, 0.30586773, 1)
+theme_override_font_sizes/font_size = 24
+text = "45000x"
+
+[node name="15" type="Sprite2D" parent="BuyCoins/Button4/PanelEmptyGreen" unique_id=54175776]
+position = Vector2(-64.49997, -2.2500153)
+scale = Vector2(1.3000003, 1.3000004)
+texture = ExtResource("24_olvpc")
+
+[node name="Gem" type="Sprite2D" parent="BuyCoins/Button4/PanelEmptyGreen" unique_id=2848782]
+position = Vector2(51.62504, -2.3749762)
+scale = Vector2(0.5019534, 0.5019534)
+texture = ExtResource("11_c3had")
+
+[node name="Label" type="Label" parent="BuyCoins/Button4" unique_id=1569902022]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 5.0
+offset_right = 569.0
+offset_bottom = 23.0
+theme_override_font_sizes/font_size = 16
+text = "_galactic_stockpile"
+horizontal_alignment = 1
+
+[node name="Button5" type="Button" parent="BuyCoins" unique_id=842231715]
+layout_mode = 0
+offset_left = 954.0
+offset_top = 168.0
+offset_right = 1244.0
+offset_bottom = 539.0
+theme = ExtResource("2_4sumh")
+theme_override_colors/font_color = Color(0.4481448, 0.71283835, 0.6418357, 1)
+text = "_f_r_desc"
+
+[node name="PanelEmptyGreen" type="Sprite2D" parent="BuyCoins/Button5" unique_id=1130816063]
+position = Vector2(137, 103)
+texture = ExtResource("25_banrc")
+
+[node name="Label" type="Label" parent="BuyCoins/Button5/PanelEmptyGreen" unique_id=730045941]
+offset_left = -32.0
+offset_top = -15.0
+offset_right = 16.0
+offset_bottom = 12.0
+theme_override_colors/font_color = Color(0.9064827, 0.5991566, 0.26907757, 1)
+theme_override_font_sizes/font_size = 24
+text = "25000x"
+
+[node name="Gem" type="Sprite2D" parent="BuyCoins/Button5/PanelEmptyGreen" unique_id=91274341]
+position = Vector2(54.999992, -1.0000086)
+scale = Vector2(0.5410157, 0.5410157)
+texture = ExtResource("11_c3had")
+
+[node name="15" type="Sprite2D" parent="BuyCoins/Button5/PanelEmptyGreen" unique_id=1067470329]
+position = Vector2(-64.49997, -2.2500153)
+scale = Vector2(1.3000003, 1.3000004)
+texture = ExtResource("24_olvpc")
+
+[node name="Label" type="Label" parent="BuyCoins/Button5" unique_id=1693352391]
+layout_mode = 0
+offset_top = 45.0
+offset_right = 277.0
+offset_bottom = 63.0
+theme_override_font_sizes/font_size = 16
+text = "_fleet_reserves"
+horizontal_alignment = 1
+
+[node name="MyzhicalWithGemPurpleGlow" type="Sprite2D" parent="BuyCoins" unique_id=1890883458]
+position = Vector2(1089.0001, 461)
+scale = Vector2(0.74218774, 0.70312506)
+texture = ExtResource("27_in0up")
+
+[node name="BuyKeys" type="Control" parent="." unique_id=1633108154]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="CardX5" type="Sprite2D" parent="BuyKeys" unique_id=721953381]
+modulate = Color(1, 1, 1, 0.78431374)
+position = Vector2(783, 333)
+scale = Vector2(1.4071618, 1.4071618)
+texture = ExtResource("15_jgmff")
+
+[node name="Common" type="Control" parent="BuyKeys" unique_id=535453896]
+anchors_preset = 0
+offset_left = -25.0
+offset_top = 14.0
+offset_right = 15.0
+offset_bottom = 54.0
+
+[node name="CardX2" type="Sprite2D" parent="BuyKeys/Common" unique_id=645241258]
+modulate = Color(1, 1, 1, 0.5882353)
+position = Vector2(506.00003, 321.5625)
+scale = Vector2(0.8169192, 0.38828218)
+texture = ExtResource("28_7fveu")
+
+[node name="ButtonBack" type="Button" parent="BuyKeys/Common" unique_id=528174348]
+layout_mode = 0
+offset_left = 362.0
+offset_top = 333.0
+offset_right = 647.0
+offset_bottom = 391.0
+theme = ExtResource("2_4sumh")
+theme_override_colors/font_color = Color(0.6611064, 0.45112038, 0.31044254, 1)
+theme_override_colors/font_outline_color = Color(0.91764706, 0.8980392, 0.79607844, 1)
+theme_override_font_sizes/font_size = 24
+text = "_1_common_key"
+
+[node name="ButtonBack2" type="Button" parent="BuyKeys/Common" unique_id=302192111]
+layout_mode = 0
+offset_left = 362.0
+offset_top = 405.0
+offset_right = 647.0
+offset_bottom = 463.0
+theme = ExtResource("2_4sumh")
+theme_override_colors/font_color = Color(0.6627451, 0.4509804, 0.30980393, 1)
+theme_override_colors/font_outline_color = Color(0.91764706, 0.8980392, 0.79607844, 1)
+theme_override_font_sizes/font_size = 24
+text = "_3_common_key"
+
+[node name="Chest" type="Sprite2D" parent="BuyKeys/Common" unique_id=322758173]
+position = Vector2(429.80002, 247.8)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("29_lsiv4")
+
+[node name="Label2" type="Label" parent="BuyKeys/Common" unique_id=945655766]
+layout_mode = 0
+offset_left = 358.0
+offset_top = 163.0
+offset_right = 655.0
+offset_bottom = 220.0
+theme_override_colors/font_color = Color(0.9595688, 0.828719, 0.72710913, 1)
+theme_override_font_sizes/font_size = 24
+text = "_common_loot_box"
+horizontal_alignment = 1
+
+[node name="Label3" type="Label" parent="BuyKeys/Common" unique_id=1582129642]
+layout_mode = 0
+offset_left = 489.0
+offset_top = 223.0
+offset_right = 629.0
+offset_bottom = 283.0
+text = "_common_loot_desc"
+
+[node name="LabelNum" type="Label" parent="BuyKeys/Common" unique_id=832455170]
+layout_mode = 0
+offset_left = 362.0
+offset_top = 289.0
+offset_right = 422.0
+offset_bottom = 307.0
+theme_override_font_sizes/font_size = 24
+text = "(X)"
+horizontal_alignment = 1
+
+[node name="Key4" type="Sprite2D" parent="BuyKeys/Common" unique_id=288724498]
+position = Vector2(603.00006, 364)
+scale = Vector2(0.515625, 0.515625)
+texture = ExtResource("32_dfogi")
+
+[node name="Key3" type="Sprite2D" parent="BuyKeys/Common" unique_id=60092685]
+position = Vector2(597, 430.00003)
+scale = Vector2(0.45312506, 0.45312506)
+texture = ExtResource("32_dfogi")
+
+[node name="Key" type="Sprite2D" parent="BuyKeys/Common" unique_id=150618883]
+position = Vector2(618.00006, 435.00003)
+scale = Vector2(0.515625, 0.515625)
+texture = ExtResource("32_dfogi")
+
+[node name="Key2" type="Sprite2D" parent="BuyKeys/Common" unique_id=970033906]
+position = Vector2(592.00006, 449.00006)
+scale = Vector2(0.5781254, 0.5781254)
+texture = ExtResource("32_dfogi")
+
+[node name="Rare" type="Control" parent="BuyKeys" unique_id=1740741478]
+anchors_preset = 0
+offset_left = 278.0
+offset_top = 14.0
+offset_right = 318.0
+offset_bottom = 54.0
+
+[node name="CardX2" type="Sprite2D" parent="BuyKeys/Rare" unique_id=1020221434]
+modulate = Color(1, 1, 1, 0.5882353)
+position = Vector2(506.00003, 321.56253)
+scale = Vector2(0.8169192, 0.38828215)
+texture = ExtResource("28_7fveu")
+
+[node name="ButtonBack" type="Button" parent="BuyKeys/Rare" unique_id=155304411]
+layout_mode = 0
+offset_left = 362.0
+offset_top = 333.0
+offset_right = 647.0
+offset_bottom = 391.0
+theme = ExtResource("2_4sumh")
+theme_override_colors/font_color = Color(0.31886706, 0.54044557, 0.7461982, 1)
+theme_override_colors/font_outline_color = Color(0.91764706, 0.8980392, 0.79607844, 1)
+theme_override_font_sizes/font_size = 24
+text = "_1_rare_key"
+
+[node name="ButtonBack2" type="Button" parent="BuyKeys/Rare" unique_id=808894889]
+layout_mode = 0
+offset_left = 362.0
+offset_top = 405.0
+offset_right = 647.0
+offset_bottom = 463.0
+theme = ExtResource("2_4sumh")
+theme_override_colors/font_color = Color(0.31886706, 0.54044557, 0.7461982, 1)
+theme_override_colors/font_outline_color = Color(0.91764706, 0.8980392, 0.79607844, 1)
+theme_override_font_sizes/font_size = 24
+text = "_3_rare_key"
+
+[node name="Chest" type="Sprite2D" parent="BuyKeys/Rare" unique_id=1586505139]
+position = Vector2(427.99997, 257)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("30_2s6km")
+
+[node name="Label2" type="Label" parent="BuyKeys/Rare" unique_id=892055359]
+layout_mode = 0
+offset_left = 357.0
+offset_top = 165.0
+offset_right = 654.0
+offset_bottom = 226.0
+theme_override_colors/font_color = Color(0.63425016, 0.7804511, 0.9591431, 1)
+theme_override_font_sizes/font_size = 24
+text = "_rare_loot_box"
+horizontal_alignment = 1
+
+[node name="Label3" type="Label" parent="BuyKeys/Rare" unique_id=112432895]
+layout_mode = 0
+offset_left = 489.0
+offset_top = 223.0
+offset_right = 629.0
+offset_bottom = 283.0
+text = "_rare_loot_desc"
+
+[node name="LabelNum" type="Label" parent="BuyKeys/Rare" unique_id=1558908476]
+layout_mode = 0
+offset_left = 362.0
+offset_top = 289.0
+offset_right = 422.0
+offset_bottom = 307.0
+theme_override_font_sizes/font_size = 24
+text = "(X)"
+horizontal_alignment = 1
+
+[node name="Key" type="Sprite2D" parent="BuyKeys/Rare" unique_id=730773239]
+position = Vector2(603.00006, 364)
+scale = Vector2(0.515625, 0.515625)
+texture = ExtResource("32_2s6km")
+
+[node name="Key2" type="Sprite2D" parent="BuyKeys/Rare" unique_id=797185827]
+position = Vector2(597, 430.00003)
+scale = Vector2(0.45312506, 0.45312506)
+texture = ExtResource("32_2s6km")
+
+[node name="Key3" type="Sprite2D" parent="BuyKeys/Rare" unique_id=1336475598]
+position = Vector2(618.00006, 435.00003)
+scale = Vector2(0.515625, 0.515625)
+texture = ExtResource("32_2s6km")
+
+[node name="Key4" type="Sprite2D" parent="BuyKeys/Rare" unique_id=1520775586]
+position = Vector2(592.00006, 449.00006)
+scale = Vector2(0.5781254, 0.5781254)
+texture = ExtResource("32_2s6km")
+
+[node name="Mythical" type="Control" parent="BuyKeys" unique_id=667460680]
+anchors_preset = 0
+offset_left = 582.0
+offset_top = 14.0
+offset_right = 622.0
+offset_bottom = 54.0
+
+[node name="CardX2" type="Sprite2D" parent="BuyKeys/Mythical" unique_id=455742731]
+modulate = Color(1, 1, 1, 0.5882353)
+position = Vector2(506.00003, 321.56253)
+scale = Vector2(0.8169192, 0.38828215)
+texture = ExtResource("28_7fveu")
+
+[node name="ButtonBack" type="Button" parent="BuyKeys/Mythical" unique_id=1764428039]
+layout_mode = 0
+offset_left = 362.0
+offset_top = 333.0
+offset_right = 647.0
+offset_bottom = 391.0
+theme = ExtResource("2_4sumh")
+theme_override_colors/font_color = Color(0.8509804, 0.827451, 0.07058824, 1)
+theme_override_colors/font_outline_color = Color(0.91764706, 0.8980392, 0.79607844, 1)
+theme_override_font_sizes/font_size = 24
+text = "_1_mythical_key"
+
+[node name="ButtonBack2" type="Button" parent="BuyKeys/Mythical" unique_id=798063315]
+layout_mode = 0
+offset_left = 362.0
+offset_top = 405.0
+offset_right = 647.0
+offset_bottom = 463.0
+theme = ExtResource("2_4sumh")
+theme_override_colors/font_color = Color(0.8509804, 0.827451, 0.07058824, 1)
+theme_override_colors/font_outline_color = Color(0.91764706, 0.8980392, 0.79607844, 1)
+theme_override_font_sizes/font_size = 24
+text = "_3_mythical_key"
+
+[node name="Chest" type="Sprite2D" parent="BuyKeys/Mythical" unique_id=397979462]
+position = Vector2(427.99997, 257)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("33_8y2qa")
+
+[node name="Label2" type="Label" parent="BuyKeys/Mythical" unique_id=1602573618]
+layout_mode = 0
+offset_left = 356.0
+offset_top = 165.0
+offset_right = 656.0
+offset_bottom = 221.0
+theme_override_colors/font_color = Color(0.8509804, 0.827451, 0.07058824, 1)
+theme_override_font_sizes/font_size = 24
+text = "_mythical_loot_box"
+horizontal_alignment = 1
+
+[node name="Label3" type="Label" parent="BuyKeys/Mythical" unique_id=1132853967]
+layout_mode = 0
+offset_left = 489.0
+offset_top = 223.0
+offset_right = 629.0
+offset_bottom = 283.0
+text = "_mythical_loot_desc"
+
+[node name="LabelNum" type="Label" parent="BuyKeys/Mythical" unique_id=1663224935]
+layout_mode = 0
+offset_left = 361.0
+offset_top = 296.0
+offset_right = 421.0
+offset_bottom = 314.0
+theme_override_font_sizes/font_size = 24
+text = "(X)"
+horizontal_alignment = 1
+
+[node name="Key" type="Sprite2D" parent="BuyKeys/Mythical" unique_id=1592692424]
+position = Vector2(603.00006, 364)
+scale = Vector2(0.515625, 0.515625)
+texture = ExtResource("34_tmc34")
+
+[node name="Key2" type="Sprite2D" parent="BuyKeys/Mythical" unique_id=359382595]
+position = Vector2(597, 430.00003)
+scale = Vector2(0.45312506, 0.45312506)
+texture = ExtResource("34_tmc34")
+
+[node name="Key3" type="Sprite2D" parent="BuyKeys/Mythical" unique_id=1886645557]
+position = Vector2(618.00006, 435.00003)
+scale = Vector2(0.515625, 0.515625)
+texture = ExtResource("34_tmc34")
+
+[node name="Key4" type="Sprite2D" parent="BuyKeys/Mythical" unique_id=505086867]
+position = Vector2(592.00006, 449.00006)
+scale = Vector2(0.5781254, 0.5781254)
+texture = ExtResource("34_tmc34")
+
+[node name="Label" type="Label" parent="BuyKeys" unique_id=1143761022]
+layout_mode = 0
+offset_left = 316.0
+offset_top = 117.0
+offset_right = 1252.0
+offset_bottom = 171.0
+theme_override_colors/font_color = Color(0.7433126, 0.42034402, 0.3377873, 1)
+theme_override_colors/font_shadow_color = Color(1, 0.7267186, 0.4926371, 0.9882353)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 4
+theme_override_constants/shadow_outline_size = 4
+theme_override_font_sizes/font_size = 48
+text = "_buy_keys"
+horizontal_alignment = 1
+
+[node name="ButtonOpenLootbox" type="Button" parent="BuyKeys" unique_id=1924209511]
+layout_mode = 0
+offset_left = 547.0
+offset_top = 509.0
+offset_right = 995.0
+offset_bottom = 567.0
+theme = ExtResource("2_4sumh")
+theme_override_colors/font_color = Color(0.71467483, 0.913593, 0.7229626, 1)
+theme_override_font_sizes/font_size = 32
+text = "_open_lootbox"
+
+[node name="BuyBoosters" type="Control" parent="." unique_id=1176094190]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="CardX5" type="Sprite2D" parent="BuyBoosters" unique_id=657426864]
+modulate = Color(1, 1, 1, 0.78431374)
+position = Vector2(786.0057, 333)
+scale = Vector2(1.4158112, 1.4071618)
+texture = ExtResource("15_jgmff")
+
+[node name="Label" type="Label" parent="BuyBoosters" unique_id=1711969810]
+layout_mode = 0
+offset_left = 316.0
+offset_top = 104.0
+offset_right = 1248.0
+offset_bottom = 158.0
+theme_override_colors/font_color = Color(0.21117589, 0.91058975, 1, 1)
+theme_override_colors/font_shadow_color = Color(2.8878452e-07, 0.53545856, 0.8220259, 0.9882353)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 4
+theme_override_constants/shadow_outline_size = 4
+theme_override_font_sizes/font_size = 48
+text = "_shop_buy_boosters"
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="BuyBoosters" unique_id=1859032774]
+layout_mode = 0
+offset_left = 321.0
+offset_top = 179.0
+offset_right = 781.0
+offset_bottom = 268.0
+theme = ExtResource("2_4sumh")
+theme_override_colors/font_color = Color(0.4481448, 0.71283835, 0.6418357, 1)
+theme_override_font_sizes/font_size = 24
+text = "_overdrive_desc"
+
+[node name="Label" type="Label" parent="BuyBoosters/Button" unique_id=1813051359]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 6.0
+offset_right = 411.0
+offset_bottom = 33.0
+theme_override_colors/font_color = Color(0.9734569, 0.34512734, 0.36710978, 1)
+theme_override_font_sizes/font_size = 24
+text = "_overdrive"
+horizontal_alignment = 1
+
+[node name="03" type="Sprite2D" parent="BuyBoosters/Button" unique_id=904104046]
+position = Vector2(40, 28)
+scale = Vector2(1.326087, 1.326087)
+texture = ExtResource("39_sb4vg")
+
+[node name="Button2" type="Button" parent="BuyBoosters" unique_id=2107055789]
+layout_mode = 0
+offset_left = 319.0
+offset_top = 283.0
+offset_right = 779.0
+offset_bottom = 372.0
+theme = ExtResource("2_4sumh")
+theme_override_colors/font_color = Color(0.4481448, 0.71283835, 0.6418357, 1)
+theme_override_font_sizes/font_size = 24
+text = "_asteroid_breaker_desc"
+
+[node name="Label" type="Label" parent="BuyBoosters/Button2" unique_id=1688110003]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 6.0
+offset_right = 411.0
+offset_bottom = 33.0
+theme_override_colors/font_color = Color(0.8768405, 0.60669434, 0.3959325, 1)
+theme_override_font_sizes/font_size = 24
+text = "_asteroid_breaker"
+horizontal_alignment = 1
+
+[node name="Button3" type="Button" parent="BuyBoosters" unique_id=1936272752]
+layout_mode = 0
+offset_left = 318.0
+offset_top = 389.0
+offset_right = 778.0
+offset_bottom = 478.0
+theme = ExtResource("2_4sumh")
+theme_override_colors/font_color = Color(0.4481448, 0.71283835, 0.6418357, 1)
+theme_override_font_sizes/font_size = 24
+text = "_lef_drone_desc"
+
+[node name="Label" type="Label" parent="BuyBoosters/Button3" unique_id=1475354761]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 6.0
+offset_right = 411.0
+offset_bottom = 33.0
+theme_override_colors/font_color = Color(0.8817895, 0.29895195, 0.40372777, 1)
+theme_override_font_sizes/font_size = 24
+text = "_lef_drone"
+horizontal_alignment = 1
+
+[node name="Button4" type="Button" parent="BuyBoosters" unique_id=19865370]
+layout_mode = 0
+offset_left = 787.0
+offset_top = 179.0
+offset_right = 1247.0
+offset_bottom = 268.0
+theme = ExtResource("2_4sumh")
+theme_override_colors/font_color = Color(0.4481448, 0.71283835, 0.6418357, 1)
+theme_override_font_sizes/font_size = 24
+text = "_armor_plating_desc"
+
+[node name="Label" type="Label" parent="BuyBoosters/Button4" unique_id=267228615]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 6.0
+offset_right = 411.0
+offset_bottom = 33.0
+theme_override_colors/font_color = Color(0.22533566, 0.6209777, 0.89434713, 1)
+theme_override_font_sizes/font_size = 24
+text = "_armor_plating"
+horizontal_alignment = 1
+
+[node name="Button5" type="Button" parent="BuyBoosters" unique_id=964116768]
+layout_mode = 0
+offset_left = 785.0
+offset_top = 283.0
+offset_right = 1245.0
+offset_bottom = 372.0
+theme = ExtResource("2_4sumh")
+theme_override_colors/font_color = Color(0.4481448, 0.71283835, 0.6418357, 1)
+theme_override_font_sizes/font_size = 24
+text = "_data_uplink_desc"
+
+[node name="Label" type="Label" parent="BuyBoosters/Button5" unique_id=1393982820]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 6.0
+offset_right = 411.0
+offset_bottom = 33.0
+theme_override_colors/font_color = Color(0.20668596, 0.79373676, 0.496517, 1)
+theme_override_font_sizes/font_size = 24
+text = "_data_uplink"
+horizontal_alignment = 1
+
+[node name="Button6" type="Button" parent="BuyBoosters" unique_id=1544160314]
+layout_mode = 0
+offset_left = 784.0
+offset_top = 389.0
+offset_right = 1244.0
+offset_bottom = 478.0
+theme = ExtResource("2_4sumh")
+theme_override_colors/font_color = Color(0.4481448, 0.71283835, 0.6418357, 1)
+theme_override_font_sizes/font_size = 24
+text = "_right_drone_desc"
+
+[node name="Label" type="Label" parent="BuyBoosters/Button6" unique_id=63417465]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 6.0
+offset_right = 411.0
+offset_bottom = 33.0
+theme_override_colors/font_color = Color(0.49773097, 0.95541245, 0.34694478, 1)
+theme_override_font_sizes/font_size = 24
+text = "_right_drone"
+horizontal_alignment = 1
+
+[node name="04" type="Sprite2D" parent="BuyBoosters" unique_id=783709336]
+position = Vector2(824, 219)
+texture = ExtResource("35_8y2qa")
+
+[node name="05" type="Sprite2D" parent="BuyBoosters" unique_id=1722958702]
+position = Vector2(849, 242)
+texture = ExtResource("35_8y2qa")
+
+[node name="18" type="Sprite2D" parent="BuyBoosters" unique_id=1878783120]
+position = Vector2(860, 206)
+texture = ExtResource("36_pb3fe")
+
+[node name="08" type="Sprite2D" parent="BuyBoosters" unique_id=299319398]
+position = Vector2(458, 354)
+texture = ExtResource("14_la2in")
+
+[node name="01" type="Sprite2D" parent="BuyBoosters" unique_id=267641534]
+position = Vector2(815, 308)
+texture = ExtResource("19_la2in")
+
+[node name="02" type="Sprite2D" parent="BuyBoosters" unique_id=1753449187]
+position = Vector2(1162, 347)
+texture = ExtResource("19_la2in")
+
+[node name="17" type="Sprite2D" parent="BuyBoosters" unique_id=1969318990]
+position = Vector2(402, 418)
+texture = ExtResource("37_8tx0s")
+
+[node name="19" type="Sprite2D" parent="BuyBoosters" unique_id=2102623756]
+position = Vector2(1159, 447)
+texture = ExtResource("37_8tx0s")
+
+[node name="06" type="Sprite2D" parent="BuyBoosters" unique_id=2091417401]
+position = Vector2(722, 214)
+texture = ExtResource("38_q7j3k")
+
+[node name="07" type="Sprite2D" parent="BuyBoosters" unique_id=1645016706]
+position = Vector2(737, 226)
+texture = ExtResource("38_q7j3k")
+
+[node name="PremiumShop" type="Control" parent="." unique_id=1668638083]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="CardX5" type="Sprite2D" parent="PremiumShop" unique_id=152852496]
+modulate = Color(1, 1, 1, 0.78431374)
+position = Vector2(783, 333)
+scale = Vector2(1.4071618, 1.4071618)
+texture = ExtResource("15_jgmff")
+
+[node name="Label" type="Label" parent="PremiumShop" unique_id=375169948]
+layout_mode = 0
+offset_left = 321.0
+offset_top = 104.0
+offset_right = 1249.0
+offset_bottom = 158.0
+theme_override_colors/font_color = Color(0.9999997, 0.7754602, 0.2697582, 1)
+theme_override_colors/font_shadow_color = Color(0.9479758, 0, 0.18830591, 0.9882353)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 4
+theme_override_constants/shadow_outline_size = 4
+theme_override_font_sizes/font_size = 48
+text = "_premium_shop"
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="PremiumShop" unique_id=630493981]
+layout_mode = 0
+offset_left = 320.0
+offset_top = 179.0
+offset_right = 780.0
+offset_bottom = 279.0
+theme = ExtResource("2_4sumh")
+theme_override_colors/font_color = Color(0.4481448, 0.71283835, 0.6418357, 1)
+theme_override_font_sizes/font_size = 24
+text = "_captain_ps_desc"
+
+[node name="Label" type="Label" parent="PremiumShop/Button" unique_id=688203541]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 6.0
+offset_right = 411.0
+offset_bottom = 33.0
+theme_override_colors/font_color = Color(0.9881875, 0.795229, 0.588462, 1)
+theme_override_font_sizes/font_size = 24
+text = "_captain_ps"
+horizontal_alignment = 1
+
+[node name="Button4" type="Button" parent="PremiumShop" unique_id=447725737]
+layout_mode = 0
+offset_left = 785.0
+offset_top = 179.0
+offset_right = 1245.0
+offset_bottom = 279.0
+theme = ExtResource("2_4sumh")
+theme_override_colors/font_color = Color(0.4481448, 0.71283835, 0.6418357, 1)
+theme_override_font_sizes/font_size = 24
+text = "_mission_override_1_desc"
+
+[node name="Label" type="Label" parent="PremiumShop/Button4" unique_id=1683072172]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 6.0
+offset_right = 411.0
+offset_bottom = 33.0
+theme_override_colors/font_color = Color(0.30954742, 0.7455318, 0.8107552, 1)
+theme_override_font_sizes/font_size = 24
+text = "_mission_override_1"
+horizontal_alignment = 1
+
+[node name="Button5" type="Button" parent="PremiumShop" unique_id=457103309]
+layout_mode = 0
+offset_left = 786.0
+offset_top = 299.0
+offset_right = 1246.0
+offset_bottom = 399.0
+theme = ExtResource("2_4sumh")
+theme_override_colors/font_color = Color(0.4481448, 0.71283835, 0.6418357, 1)
+theme_override_font_sizes/font_size = 24
+text = "_mission_override_2_desc"
+
+[node name="Label" type="Label" parent="PremiumShop/Button5" unique_id=1378038544]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 6.0
+offset_right = 411.0
+offset_bottom = 33.0
+theme_override_colors/font_color = Color(0.22617364, 0.6139687, 0.67085433, 1)
+theme_override_font_sizes/font_size = 24
+text = "_mission_override_2"
+horizontal_alignment = 1
+
+[node name="Button6" type="Button" parent="PremiumShop" unique_id=857136702]
+layout_mode = 0
+offset_left = 788.0
+offset_top = 413.0
+offset_right = 1248.0
+offset_bottom = 513.0
+theme = ExtResource("2_4sumh")
+theme_override_colors/font_color = Color(0.4481448, 0.71283835, 0.6418357, 1)
+theme_override_font_sizes/font_size = 24
+text = "_mission_override_3_desc"
+
+[node name="Label" type="Label" parent="PremiumShop/Button6" unique_id=1598931661]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 6.0
+offset_right = 411.0
+offset_bottom = 33.0
+theme_override_colors/font_color = Color(0.1436772, 0.43445918, 0.4767505, 1)
+theme_override_font_sizes/font_size = 24
+text = "_mission_override_3"
+horizontal_alignment = 1
+
+[node name="Button2" type="Button" parent="PremiumShop" unique_id=2118929065]
+layout_mode = 0
+offset_left = 321.0
+offset_top = 293.0
+offset_right = 781.0
+offset_bottom = 393.0
+theme = ExtResource("2_4sumh")
+theme_override_colors/font_color = Color(0.4481448, 0.71283835, 0.6418357, 1)
+theme_override_font_sizes/font_size = 24
+text = "_admiral_ps_desc"
+
+[node name="Label" type="Label" parent="PremiumShop/Button2" unique_id=967487569]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 6.0
+offset_right = 411.0
+offset_bottom = 33.0
+theme_override_colors/font_color = Color(0.9934297, 0.5884388, 1.92523e-06, 1)
+theme_override_font_sizes/font_size = 24
+text = "_admiral_ps"
+horizontal_alignment = 1
+
+[node name="Button3" type="Button" parent="PremiumShop" unique_id=1217655393]
+layout_mode = 0
+offset_left = 322.0
+offset_top = 413.0
+offset_right = 782.0
+offset_bottom = 513.0
+theme = ExtResource("2_4sumh")
+theme_override_colors/font_color = Color(0.4481448, 0.71283835, 0.6418357, 1)
+theme_override_font_sizes/font_size = 24
+text = "_combat_training_desc"
+
+[node name="Label" type="Label" parent="PremiumShop/Button3" unique_id=2117550673]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 6.0
+offset_right = 411.0
+offset_bottom = 33.0
+theme_override_colors/font_color = Color(0.5197945, 0.77774566, 0.47647858, 1)
+theme_override_font_sizes/font_size = 24
+text = "_combat_training"
+horizontal_alignment = 1
+
+[connection signal="pressed" from="ButtonBack" to="." method="_on_button_back_pressed"]
+[connection signal="pressed" from="ButtonBack2" to="." method="_on_button_back_2_pressed"]
+[connection signal="pressed" from="Default/ButtonBuyGems" to="." method="_on_button_buy_gems_pressed"]
+[connection signal="pressed" from="Default/ButtonBuyBoosters" to="." method="_on_button_buy_boosters_pressed"]
+[connection signal="pressed" from="Default/ButtonBuyCoins" to="." method="_on_button_buy_coins_pressed"]
+[connection signal="pressed" from="Default/ButtonPremiumShop" to="." method="_on_button_premium_shop_pressed"]
+[connection signal="pressed" from="Default/ButtonBuyKeys" to="." method="_on_button_buy_keys_pressed"]
+[connection signal="pressed" from="Default/ButtonRecharegeEnergy" to="." method="_on_button_recharege_energy_pressed"]
+[connection signal="pressed" from="Default/ButtonRecharegeFullEnergy2" to="." method="_on_button_recharege_full_energy_2_pressed"]
+[connection signal="pressed" from="BuyGems/Button" to="." method="_on_button_pressed_100_gems"]
+[connection signal="pressed" from="BuyGems/Button2" to="." method="_on_button_pressed_300_gems"]
+[connection signal="pressed" from="BuyGems/Button3" to="." method="_on_button_pressed_3000_gems"]
+[connection signal="pressed" from="BuyGems/Button4" to="." method="_on_button_pressed_9999_gems"]
+[connection signal="pressed" from="BuyGems/Button5" to="." method="_on_button_pressed_1000_gems"]
+[connection signal="pressed" from="BuyCoins/Button" to="." method="_on_button_pressed_1000_coins"]
+[connection signal="pressed" from="BuyCoins/Button2" to="." method="_on_button_pressed_5000_coins"]
+[connection signal="pressed" from="BuyCoins/Button3" to="." method="_on_button_pressed_12000_coins"]
+[connection signal="pressed" from="BuyCoins/Button4" to="." method="_on_button_pressed_45000_coins"]
+[connection signal="pressed" from="BuyCoins/Button5" to="." method="_on_button_pressed_25000_coins"]
+[connection signal="pressed" from="BuyKeys/Common/ButtonBack" to="." method="_on_button_pressed_1_common"]
+[connection signal="pressed" from="BuyKeys/Common/ButtonBack2" to="." method="_on_button_pressed_3_common"]
+[connection signal="pressed" from="BuyKeys/Rare/ButtonBack" to="." method="_on_button_pressed_1_rare"]
+[connection signal="pressed" from="BuyKeys/Rare/ButtonBack2" to="." method="_on_button_pressed_3_rare"]
+[connection signal="pressed" from="BuyKeys/Mythical/ButtonBack" to="." method="_on_button_pressed_1_mythical"]
+[connection signal="pressed" from="BuyKeys/Mythical/ButtonBack2" to="." method="_on_button_pressed_3_mythical"]
+[connection signal="pressed" from="BuyKeys/ButtonOpenLootbox" to="." method="_on_button_open_lootbox_pressed"]
+[connection signal="pressed" from="BuyBoosters/Button" to="." method="_on_button_pressed_booster_1"]
+[connection signal="pressed" from="BuyBoosters/Button2" to="." method="_on_button_pressed_booster_3"]
+[connection signal="pressed" from="BuyBoosters/Button3" to="." method="_on_button_pressed_booster_5"]
+[connection signal="pressed" from="BuyBoosters/Button4" to="." method="_on_button_pressed_booster_2"]
+[connection signal="pressed" from="BuyBoosters/Button5" to="." method="_on_button_pressed_booster_4"]
+[connection signal="pressed" from="BuyBoosters/Button6" to="." method="_on_button_pressed_booster_6"]
+[connection signal="pressed" from="PremiumShop/Button" to="." method="_on_button_pressed_captain_pass"]
+[connection signal="pressed" from="PremiumShop/Button4" to="." method="_on_button_skip_mission_1"]
+[connection signal="pressed" from="PremiumShop/Button5" to="." method="_on_button_skip_mission_2"]
+[connection signal="pressed" from="PremiumShop/Button6" to="." method="_on_button_skip_mission_3"]
+[connection signal="pressed" from="PremiumShop/Button2" to="." method="_on_button_pressed_admiral_pass"]
+[connection signal="pressed" from="PremiumShop/Button3" to="." method="_on_button_pressed_exp_boost"]

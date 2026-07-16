@@ -1,0 +1,163 @@
+[gd_scene format=3 uid="uid://by8kpurkim150"]
+
+[ext_resource type="Shader" uid="uid://dlqn7laqkb3q7" path="res://THEMES_SHADERS/background_slow.gdshader" id="1_mic4u"]
+[ext_resource type="Script" uid="uid://4j3muxhrea4y" path="res://SCRIPTS/scene_options.gd" id="1_ndjtk"]
+[ext_resource type="Texture2D" uid="uid://bp2ltt10e4hfk" path="res://SPRITES/Background/Blue Nebula/Blue_Nebula_08-512x512.png" id="2_ndjtk"]
+[ext_resource type="Texture2D" uid="uid://jx17fd4k5gsn" path="res://SPRITES/UI/Card X3/Card X6.png" id="3_2t301"]
+[ext_resource type="Theme" uid="uid://p0n4tv8rgdp6" path="res://THEMES_SHADERS/button.tres" id="4_t1o2m"]
+[ext_resource type="Texture2D" uid="uid://bracx5gulyr5o" path="res://SPRITES/UI/Icons/35.png" id="5_sfhms"]
+[ext_resource type="Texture2D" uid="uid://bp6u81txadd6b" path="res://SPRITES/UI/Icons/34.png" id="6_kvs5q"]
+[ext_resource type="Theme" uid="uid://cfe7ds3bklnj5" path="res://THEMES_SHADERS/slider_theme.tres" id="9_t1o2m"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_4dwr3"]
+shader = ExtResource("1_mic4u")
+
+[node name="SceneOptions" type="Control" unique_id=110974145]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ndjtk")
+
+[node name="Options" type="Control" parent="." unique_id=1374598709]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Background2" type="Sprite2D" parent="Options" unique_id=1826468421]
+modulate = Color(0.3779188, 0.37791887, 0.37791884, 1)
+texture_repeat = 3
+material = SubResource("ShaderMaterial_4dwr3")
+position = Vector2(648, 613)
+scale = Vector2(2.640625, 2.640625)
+texture = ExtResource("2_ndjtk")
+
+[node name="CardX6" type="Sprite2D" parent="Options" unique_id=1525694964]
+position = Vector2(650, 305)
+scale = Vector2(1.2694235, 1.2694236)
+texture = ExtResource("3_2t301")
+
+[node name="Label" type="Label" parent="Options" unique_id=319452439]
+layout_mode = 0
+offset_left = 411.0
+offset_top = 246.0
+offset_right = 559.0
+offset_bottom = 282.0
+theme_override_colors/font_color = Color(0.97802943, 0.6667676, 0, 1)
+theme_override_font_sizes/font_size = 32
+text = "_music"
+horizontal_alignment = 2
+
+[node name="Label2" type="Label" parent="Options" unique_id=787983227]
+layout_mode = 0
+offset_left = 420.0
+offset_top = 323.0
+offset_right = 556.0
+offset_bottom = 359.0
+theme_override_colors/font_color = Color(0.97802943, 0.6667676, 0, 1)
+theme_override_font_sizes/font_size = 32
+text = "_effects"
+horizontal_alignment = 2
+
+[node name="Label3" type="Label" parent="Options" unique_id=1027554986]
+layout_mode = 0
+offset_left = 263.0
+offset_top = 475.0
+offset_right = 425.0
+offset_bottom = 511.0
+theme_override_colors/font_color = Color(0.97802943, 0.6667676, 0, 1)
+theme_override_font_sizes/font_size = 32
+text = "_language"
+horizontal_alignment = 2
+
+[node name="ButtonTest" type="Button" parent="Options" unique_id=624583521]
+layout_mode = 0
+offset_left = 536.0
+offset_top = 359.0
+offset_right = 729.0
+offset_bottom = 436.0
+theme = ExtResource("4_t1o2m")
+theme_override_font_sizes/font_size = 24
+text = "_test_effects"
+
+[node name="ButtonLanguageEN" type="Button" parent="Options" unique_id=1746499647]
+layout_mode = 0
+offset_left = 435.0
+offset_top = 468.0
+offset_right = 567.0
+offset_bottom = 520.0
+theme = ExtResource("4_t1o2m")
+theme_override_font_sizes/font_size = 24
+text = "EN"
+
+[node name="ButtonLanguageSL" type="Button" parent="Options" unique_id=56944073]
+layout_mode = 0
+offset_left = 575.0
+offset_top = 467.0
+offset_right = 714.0
+offset_bottom = 523.0
+theme = ExtResource("4_t1o2m")
+theme_override_font_sizes/font_size = 24
+text = "SL"
+
+[node name="ButtonSound" type="Button" parent="Options" unique_id=1436450825]
+layout_mode = 0
+offset_left = 491.0
+offset_top = 135.0
+offset_right = 846.0
+offset_bottom = 212.0
+theme = ExtResource("4_t1o2m")
+text = "_mute_volume"
+
+[node name="On" type="Sprite2D" parent="Options/ButtonSound" unique_id=358749350]
+position = Vector2(37.750015, 38.100014)
+scale = Vector2(1.7, 1.7)
+texture = ExtResource("5_sfhms")
+
+[node name="Off" type="Sprite2D" parent="Options/ButtonSound" unique_id=474593601]
+position = Vector2(40.75, 38.100006)
+scale = Vector2(1.7, 1.7)
+texture = ExtResource("6_kvs5q")
+
+[node name="HSliderMusic" type="HSlider" parent="Options" unique_id=1495809889]
+layout_mode = 0
+offset_left = 573.0
+offset_top = 252.0
+offset_right = 922.0
+offset_bottom = 279.0
+theme = ExtResource("9_t1o2m")
+max_value = 1.0
+step = 0.001
+value = 0.8
+
+[node name="HSliderEffects" type="HSlider" parent="Options" unique_id=593717009]
+layout_mode = 0
+offset_left = 576.0
+offset_top = 329.0
+offset_right = 925.0
+offset_bottom = 356.0
+theme = ExtResource("9_t1o2m")
+max_value = 1.0
+step = 0.001
+value = 0.8
+
+[node name="ButtonBack" type="Button" parent="." unique_id=1709261017]
+layout_mode = 0
+offset_left = 548.22217
+offset_top = 575.0
+offset_right = 717.22217
+offset_bottom = 670.0
+theme = ExtResource("4_t1o2m")
+theme_override_font_sizes/font_size = 32
+text = "_back"
+
+[connection signal="pressed" from="Options/ButtonTest" to="." method="_on_button_test_pressed"]
+[connection signal="pressed" from="Options/ButtonLanguageEN" to="." method="_on_button_language_en_pressed"]
+[connection signal="pressed" from="Options/ButtonLanguageSL" to="." method="_on_button_language_sl_pressed"]
+[connection signal="pressed" from="Options/ButtonSound" to="." method="_on_button_sound_pressed"]
+[connection signal="value_changed" from="Options/HSliderMusic" to="." method="_on_h_slider_value_changed"]
+[connection signal="drag_ended" from="Options/HSliderEffects" to="." method="_on_h_slider_effects_drag_ended"]
+[connection signal="value_changed" from="Options/HSliderEffects" to="." method="_on_h_slider_effects_value_changed"]
+[connection signal="pressed" from="ButtonBack" to="." method="_on_button_back_pressed"]

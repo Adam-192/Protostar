@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://l176wjdeb1du"]
+
+[ext_resource type="Script" uid="uid://cwasnglidtr0n" path="res://SCRIPTS/missions_battlepass.gd" id="1_0cu7m"]
+
+[node name="MissionsBattlepass" type="Node"]
+script = ExtResource("1_0cu7m")

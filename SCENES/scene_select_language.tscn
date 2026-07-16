@@ -1,0 +1,210 @@
+[gd_scene format=3 uid="uid://cta73jp326eui"]
+
+[ext_resource type="Shader" uid="uid://dlqn7laqkb3q7" path="res://THEMES_SHADERS/background_slow.gdshader" id="1_1imiu"]
+[ext_resource type="Script" uid="uid://c2nril11ogcin" path="res://SCRIPTS/scene_select_language.gd" id="1_gojtw"]
+[ext_resource type="Texture2D" uid="uid://bgfwxd3y3uy1o" path="res://SPRITES/Background/Green Nebula/Green_Nebula_03-512x512.png" id="2_gojtw"]
+[ext_resource type="Texture2D" uid="uid://jx17fd4k5gsn" path="res://SPRITES/UI/Card X3/Card X6.png" id="3_lt6ny"]
+[ext_resource type="Theme" uid="uid://p0n4tv8rgdp6" path="res://THEMES_SHADERS/button.tres" id="4_n6koc"]
+[ext_resource type="Texture2D" uid="uid://cv1gv3xx1pgv5" path="res://SPRITES/UI/Card X2/Card X3.png" id="6_n6koc"]
+[ext_resource type="Texture2D" uid="uid://cn7x4p6g85b0y" path="res://SPRITES/UI/Icons/30.png" id="7_73fnv"]
+[ext_resource type="Texture2D" uid="uid://d0n4qoxq08a4h" path="res://SPRITES/Background/Green Nebula/Green_Nebula_08-512x512.png" id="8_73fnv"]
+[ext_resource type="Texture2D" uid="uid://db0qeqbdjejcc" path="res://icon.svg" id="9_f0843"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_73fnv"]
+shader = ExtResource("1_1imiu")
+
+[node name="SceneSelectLanguage" type="Control" unique_id=1173914926]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_gojtw")
+
+[node name="Background2" type="Sprite2D" parent="." unique_id=192695198]
+modulate = Color(0.3779188, 0.37791887, 0.37791884, 1)
+texture_repeat = 3
+material = SubResource("ShaderMaterial_73fnv")
+position = Vector2(648, 613)
+scale = Vector2(2.640625, 2.640625)
+texture = ExtResource("2_gojtw")
+
+[node name="CardX6" type="Sprite2D" parent="." unique_id=2101165686]
+position = Vector2(650, 305)
+scale = Vector2(1.2694235, 1.2694236)
+texture = ExtResource("3_lt6ny")
+
+[node name="ButtonSkip" type="Button" parent="CardX6" unique_id=385860282]
+modulate = Color(1, 1, 1, 0.8627451)
+offset_left = 167.79272
+offset_top = 224.51137
+offset_right = 459.12738
+offset_bottom = 294.51135
+theme = ExtResource("4_n6koc")
+theme_override_colors/font_color = Color(0.80049086, 0.80049074, 0.80049074, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 24
+alignment = 2
+
+[node name="CardX3" type="Sprite2D" parent="CardX6/ButtonSkip" unique_id=1737439441]
+modulate = Color(1, 1, 1, 0.8627451)
+position = Vector2(51, 34)
+scale = Vector2(0.14285716, 0.14285715)
+texture = ExtResource("6_n6koc")
+
+[node name="Check" type="Sprite2D" parent="CardX6/ButtonSkip" unique_id=1800797695]
+visible = false
+position = Vector2(51.999985, 34)
+scale = Vector2(1.5869565, 1.5869565)
+texture = ExtResource("7_73fnv")
+
+[node name="LabelBooster9" type="Label" parent="CardX6/ButtonSkip" unique_id=1220702873]
+layout_mode = 0
+offset_left = 89.804565
+offset_top = 7.0
+offset_right = 276.50348
+offset_bottom = 64.0
+theme_override_colors/font_color = Color(0.8784314, 0.60784316, 0.39607844, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.5254902)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 24
+text = "SKIP INTRO 
+PRESKOČI UVOD "
+
+[node name="Label3" type="Label" parent="." unique_id=206720142]
+layout_mode = 0
+offset_left = 509.0
+offset_top = 147.0
+offset_right = 793.0
+offset_bottom = 222.0
+theme_override_colors/font_color = Color(0.97802943, 0.6667676, 0, 1)
+theme_override_font_sizes/font_size = 32
+text = "SELECT LANGUAGE:
+IZBERI JEZIK:"
+horizontal_alignment = 1
+
+[node name="ButtonLanguageEN" type="Button" parent="." unique_id=2039734154]
+visible = false
+layout_mode = 0
+offset_left = 528.0
+offset_top = 246.0
+offset_right = 778.0
+offset_bottom = 346.0
+theme = ExtResource("4_n6koc")
+theme_override_font_sizes/font_size = 24
+text = "ENGLISH"
+
+[node name="ButtonLanguageSL" type="Button" parent="." unique_id=451791294]
+visible = false
+layout_mode = 0
+offset_left = 528.0
+offset_top = 367.0
+offset_right = 778.0
+offset_bottom = 467.0
+theme = ExtResource("4_n6koc")
+theme_override_font_sizes/font_size = 24
+text = "SLOVENSKO"
+
+[node name="Control" type="Control" parent="." unique_id=775475411]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Background2" type="Sprite2D" parent="Control" unique_id=1428771402]
+modulate = Color(0.3779188, 0.37791887, 0.37791884, 1)
+texture_repeat = 3
+material = SubResource("ShaderMaterial_73fnv")
+position = Vector2(648, 613)
+scale = Vector2(2.640625, 2.640625)
+texture = ExtResource("8_73fnv")
+
+[node name="ButtonNotice" type="Button" parent="Control" unique_id=1441272466]
+layout_mode = 0
+offset_left = 528.0
+offset_top = 574.0
+offset_right = 778.0
+offset_bottom = 674.0
+theme = ExtResource("4_n6koc")
+theme_override_font_sizes/font_size = 24
+text = "I UNDERSTAND 
+- - - - - - - - - - - - 
+RAZUMEM"
+
+[node name="CardX6" type="Sprite2D" parent="Control" unique_id=31975336]
+position = Vector2(650, 305)
+scale = Vector2(1.2694235, 1.2694236)
+texture = ExtResource("3_lt6ny")
+
+[node name="Label" type="Label" parent="Control" unique_id=1679895087]
+layout_mode = 0
+offset_left = 268.0
+offset_top = 128.0
+offset_right = 372.0
+offset_bottom = 164.0
+theme_override_font_sizes/font_size = 32
+text = "NOTICE"
+
+[node name="Label2" type="Label" parent="Control" unique_id=1437133893]
+layout_mode = 0
+offset_left = 268.0
+offset_top = 164.0
+offset_right = 796.0
+offset_bottom = 251.0
+theme_override_font_sizes/font_size = 24
+text = "THIS GAME WAS CREATED AS PART OF A MASTER'S THESIS.
+ALL SHOP PRICES SHOWN IN € ARE FICTIONAL.
+NO REAL MONEY IS USED IN THIS GAME.
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - "
+
+[node name="Label3" type="Label" parent="Control" unique_id=1509970479]
+layout_mode = 0
+offset_left = 268.0
+offset_top = 311.0
+offset_right = 424.0
+offset_bottom = 347.0
+theme_override_font_sizes/font_size = 32
+text = "OBVESTILO"
+
+[node name="Label4" type="Label" parent="Control" unique_id=1147041014]
+layout_mode = 0
+offset_left = 268.0
+offset_top = 347.0
+offset_right = 904.0
+offset_bottom = 434.0
+theme_override_font_sizes/font_size = 24
+text = "TA IGRA JE BILA USTVARJENA KOT DEL MAGISTRSKEGA DELA.
+CENE V TRGOVINI SO PRIKAZANE V €, VENDAR SO ZGOLJ INFORMATIVNE.
+V IGRI SE NE UPORABLJA PRAVI DENAR.
+"
+
+[node name="Icon" type="Sprite2D" parent="." unique_id=1014775004]
+position = Vector2(1196, 78)
+texture = ExtResource("9_f0843")
+
+[node name="Label5" type="Label" parent="." unique_id=544841430]
+layout_mode = 0
+offset_left = 980.0
+offset_top = 30.0
+offset_right = 1121.0
+offset_bottom = 87.0
+theme_override_font_sizes/font_size = 24
+text = "MADE WITH:
+NAREJENO Z:"
+horizontal_alignment = 2
+
+[node name="Label6" type="Label" parent="." unique_id=1483205743]
+layout_mode = 0
+offset_left = 1140.0
+offset_top = 131.0
+offset_right = 1260.0
+offset_bottom = 176.0
+theme_override_font_sizes/font_size = 40
+text = "GODOT"
+
+[connection signal="pressed" from="CardX6/ButtonSkip" to="." method="_on_button_skip_pressed"]
+[connection signal="pressed" from="ButtonLanguageEN" to="." method="_on_button_language_en_pressed"]
+[connection signal="pressed" from="ButtonLanguageSL" to="." method="_on_button_language_sl_pressed"]
+[connection signal="pressed" from="Control/ButtonNotice" to="." method="_on_button_notice_pressed"]

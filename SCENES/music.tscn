@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://tyoyovw45x8y"]
+
+[ext_resource type="AudioStream" uid="uid://bd53lylw2ude1" path="res://SOUNDS/GameOver.mp3" id="1_uywtx"]
+[ext_resource type="AudioStream" uid="uid://bvvaivsqfbfbd" path="res://SOUNDS/Music_Unlimited-Stranger_Things.mp3" id="2_jsnm4"]
+[ext_resource type="AudioStream" uid="uid://5g8rpc5lhqj7" path="res://SOUNDS/Psychronic-Fight_For_The_Future.mp3" id="3_cs6ia"]
+[ext_resource type="AudioStream" uid="uid://2ej7jaf0o2pm" path="res://SOUNDS/LootStart.mp3" id="4_d5x07"]
+[ext_resource type="AudioStream" uid="uid://cel163yajkp4w" path="res://SOUNDS/lootreveal.mp3" id="5_0v5qp"]
+[ext_resource type="AudioStream" uid="uid://5783yhe1xkws" path="res://SOUNDS/LootEnd.mp3" id="6_77jfl"]
+
+[node name="Music" type="Node" unique_id=1232351318]
+
+[node name="GameOver" type="AudioStreamPlayer2D" parent="." unique_id=114658233]
+process_mode = 3
+stream = ExtResource("1_uywtx")
+bus = &"Music"
+
+[node name="MusicGameStart" type="AudioStreamPlayer2D" parent="." unique_id=1778761398]
+process_mode = 3
+stream = ExtResource("2_jsnm4")
+autoplay = true
+bus = &"Music"
+parameters/looping = true
+
+[node name="MusicLevel" type="AudioStreamPlayer2D" parent="." unique_id=1394954756]
+process_mode = 3
+stream = ExtResource("3_cs6ia")
+bus = &"Music"
+parameters/looping = true
+
+[node name="LootStart" type="AudioStreamPlayer2D" parent="." unique_id=966934845]
+process_mode = 3
+stream = ExtResource("4_d5x07")
+volume_db = 3.0
+bus = &"Effects"
+
+[node name="LootBoxOpening" type="AudioStreamPlayer2D" parent="." unique_id=1617131909]
+process_mode = 3
+stream = ExtResource("5_0v5qp")
+volume_db = 3.0
+bus = &"Effects"
+
+[node name="LootEnd" type="AudioStreamPlayer2D" parent="." unique_id=1157806344]
+process_mode = 3
+stream = ExtResource("6_77jfl")
+volume_db = 3.0
+bus = &"Effects"

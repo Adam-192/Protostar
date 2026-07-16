@@ -1,0 +1,1316 @@
+[gd_scene format=3 uid="uid://c3d7cku7q41cg"]
+
+[ext_resource type="Script" uid="uid://icrato0cdvjb" path="res://SCRIPTS/scene_tutorial.gd" id="1_f2uky"]
+[ext_resource type="Shader" uid="uid://dlqn7laqkb3q7" path="res://THEMES_SHADERS/background_slow.gdshader" id="1_yqwj1"]
+[ext_resource type="Texture2D" uid="uid://cufljtwnasawi" path="res://SPRITES/Background/Purple Nebula/Purple_Nebula_08-512x512.png" id="2_del7i"]
+[ext_resource type="Texture2D" uid="uid://jx17fd4k5gsn" path="res://SPRITES/UI/Card X3/Card X6.png" id="4_5rtjb"]
+[ext_resource type="Theme" uid="uid://p0n4tv8rgdp6" path="res://THEMES_SHADERS/button.tres" id="5_5rtjb"]
+[ext_resource type="Texture2D" uid="uid://cv1gv3xx1pgv5" path="res://SPRITES/UI/Card X2/Card X3.png" id="6_gr1yk"]
+[ext_resource type="Texture2D" uid="uid://ck5diniua6f52" path="res://SPRITES/UI/Card X1/Card X1.png" id="7_e3jr1"]
+[ext_resource type="Texture2D" uid="uid://bnfjp3qgl2212" path="res://SPRITES/UI/Icons/15.png" id="8_n7es1"]
+[ext_resource type="Texture2D" uid="uid://rf5yijew1eut" path="res://SPRITES/UI/Icons/10.png" id="9_p7ed5"]
+[ext_resource type="Texture2D" uid="uid://dftdu7ilske4v" path="res://SPRITES/UI/Icons/07.png" id="10_eo3re"]
+[ext_resource type="Texture2D" uid="uid://du3y1llpc2op5" path="res://SPRITES/UI/Icons/16.png" id="11_vv7nq"]
+[ext_resource type="Texture2D" uid="uid://ci00kduwxu0av" path="res://SPRITES/UI/Card X1/Panel Empty.png" id="12_ie00q"]
+[ext_resource type="Texture2D" uid="uid://dx5kvxrw8c3m2" path="res://SPRITES/UI/Icons/01.png" id="13_kxdc1"]
+[ext_resource type="Texture2D" uid="uid://dl7pxe5olct7x" path="res://SPRITES/UI/Icons/20.png" id="14_q766h"]
+[ext_resource type="Texture2D" uid="uid://b62tnupqbpa2b" path="res://SPRITES/UI/Card X1/Panel Red.png" id="16_4mha4"]
+[ext_resource type="Texture2D" uid="uid://b6sj12f5yxkof" path="res://SPRITES/UI/Icons/21.png" id="17_4aqtv"]
+[ext_resource type="Texture2D" uid="uid://cmhk4vrfcpkpa" path="res://SPRITES/UI/Card X1/Panel Empty Green.png" id="18_mlpul"]
+[ext_resource type="Texture2D" uid="uid://m4mi1hhd1xpv" path="res://SPRITES/RESOURCES/gem.png" id="19_he4rl"]
+[ext_resource type="Texture2D" uid="uid://bg2ohqx0lwfi" path="res://SPRITES/RESOURCES/gold.png" id="20_0057y"]
+[ext_resource type="Texture2D" uid="uid://bracx5gulyr5o" path="res://SPRITES/UI/Icons/35.png" id="21_hi02a"]
+[ext_resource type="Texture2D" uid="uid://xyihaoasofeg" path="res://SPRITES/RESOURCES/battery.png" id="21_ox1nj"]
+[ext_resource type="Texture2D" uid="uid://b6aggqhtam46i" path="res://SPRITES/UI/Icons/08.png" id="22_52xm4"]
+[ext_resource type="Texture2D" uid="uid://bp6u81txadd6b" path="res://SPRITES/UI/Icons/34.png" id="22_gr1yk"]
+[ext_resource type="Texture2D" uid="uid://skkes1r7bmsx" path="res://SPRITES/Player/Ship8/skin1.png" id="23_eo3re"]
+[ext_resource type="Texture2D" uid="uid://dp2nfec4o6bou" path="res://SPRITES/UI/Card X1/Card X2.png" id="23_gr1yk"]
+[ext_resource type="Texture2D" uid="uid://15l7jgsqf73l" path="res://SPRITES/UI/Icons/02.png" id="24_e3jr1"]
+[ext_resource type="Theme" uid="uid://dnslyjo2lxxa0" path="res://THEMES_SHADERS/button_empty.tres" id="25_ie00q"]
+[ext_resource type="Texture2D" uid="uid://bov7s5g66ibjw" path="res://SPRITES/UI/Card X3/Card X5.png" id="26_ie00q"]
+[ext_resource type="Texture2D" uid="uid://gspthe40f44a" path="res://SPRITES/RESOURCES/gem_shine.png" id="27_kxdc1"]
+[ext_resource type="Texture2D" uid="uid://dh8l2pf2fgjae" path="res://SPRITES/RESOURCES/gold_shine.png" id="28_q766h"]
+[ext_resource type="Texture2D" uid="uid://521cp34a0ygx" path="res://SPRITES/RESOURCES/key_common_shine.png" id="30_q766h"]
+[ext_resource type="Texture2D" uid="uid://cn7x4p6g85b0y" path="res://SPRITES/UI/Icons/30.png" id="32_0057y"]
+[ext_resource type="Texture2D" uid="uid://5qw57kyxo8lt" path="res://SPRITES/UI/Card X2/Card X2.png" id="33_ox1nj"]
+[ext_resource type="Texture2D" uid="uid://5s78ym3lw64x" path="res://SPRITES/Background/Green Nebula/Green_Nebula_05-512x512.png" id="34_52xm4"]
+[ext_resource type="Texture2D" uid="uid://ch1clnjke1g3t" path="res://SPRITES/Background/Small 128x128/Tropical - Clouds/Tropical_Clouds_04-128x128.png" id="35_5kume"]
+[ext_resource type="Texture2D" uid="uid://b1onk8beevye5" path="res://SPRITES/Background/Small 128x128/Moons/Moon_04-128x128.png" id="36_8wyyb"]
+[ext_resource type="Texture2D" uid="uid://dvbloer27mrit" path="res://SPRITES/Background/Small 128x128/Moons/Moon_05-128x128.png" id="37_lif81"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_f2uky"]
+shader = ExtResource("1_yqwj1")
+
+[sub_resource type="Gradient" id="Gradient_eo3re"]
+interpolation_mode = 1
+offsets = PackedFloat32Array(0.48, 0.6, 0.64666665)
+colors = PackedColorArray(0, 0.61983347, 0.322261, 1, 0, 0, 0, 0.78431374, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_vv7nq"]
+gradient = SubResource("Gradient_eo3re")
+width = 50
+height = 50
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+
+[sub_resource type="Gradient" id="Gradient_ie00q"]
+interpolation_mode = 1
+offsets = PackedFloat32Array(0.48, 0.6, 0.64666665)
+colors = PackedColorArray(1.4439225e-06, 0.31629494, 0.82590806, 1, 0, 0, 0, 0.78431374, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_q766h"]
+gradient = SubResource("Gradient_ie00q")
+width = 50
+height = 50
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+
+[sub_resource type="Gradient" id="Gradient_36cag"]
+interpolation_mode = 1
+offsets = PackedFloat32Array(0.48, 0.6, 0.64666665)
+colors = PackedColorArray(0.73833835, 0.17589405, 0.30859828, 1, 0, 0, 0, 0.78431374, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_kxdc1"]
+gradient = SubResource("Gradient_36cag")
+width = 50
+height = 50
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+
+[sub_resource type="Gradient" id="Gradient_2w7s5"]
+colors = PackedColorArray(0.12610266, 0.11505241, 0.35594732, 0.81960785, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_bdhf4"]
+gradient = SubResource("Gradient_2w7s5")
+fill_from = Vector2(0.7409091, 1)
+fill_to = Vector2(0.59090906, 0)
+
+[node name="SceneTutorial" type="Control" unique_id=677740801]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_f2uky")
+
+[node name="Background" type="Sprite2D" parent="." unique_id=546954959]
+texture_repeat = 3
+material = SubResource("ShaderMaterial_f2uky")
+position = Vector2(628.9998, 95.99999)
+scale = Vector2(2.5449219, 2.5449219)
+texture = ExtResource("2_del7i")
+
+[node name="T1" type="Node2D" parent="." unique_id=215898243]
+visible = false
+
+[node name="CardX6" type="Sprite2D" parent="T1" unique_id=146092162]
+position = Vector2(637, 368.87503)
+scale = Vector2(1.2694235, 1.5645363)
+texture = ExtResource("4_5rtjb")
+
+[node name="Label" type="Label" parent="T1" unique_id=1813785110]
+offset_left = 220.0
+offset_top = 206.0
+offset_right = 1060.0
+offset_bottom = 224.0
+theme_override_font_sizes/font_size = 40
+text = "_show_how_to_play"
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="T1" unique_id=1553618033]
+offset_left = 220.0
+offset_top = 131.0
+offset_right = 1057.0
+offset_bottom = 194.0
+theme_override_font_sizes/font_size = 56
+text = "_tutorial"
+horizontal_alignment = 1
+
+[node name="Button_tut_no" type="Button" parent="T1" unique_id=883761891]
+offset_left = 392.0
+offset_top = 293.0
+offset_right = 875.0
+offset_bottom = 382.0
+theme = ExtResource("5_5rtjb")
+text = "_tutorial_no"
+
+[node name="Button_tut_yes" type="Button" parent="T1" unique_id=1010727511]
+offset_left = 346.0
+offset_top = 403.0
+offset_right = 932.0
+offset_bottom = 543.0
+theme = ExtResource("5_5rtjb")
+text = "_tutorial_yes"
+
+[node name="T2" type="Node2D" parent="." unique_id=955446044]
+visible = false
+
+[node name="CardX3" type="Sprite2D" parent="T2" unique_id=1427042902]
+modulate = Color(1, 1, 1, 0.78431374)
+position = Vector2(622, 361.49997)
+scale = Vector2(1.4497355, 1.8174602)
+texture = ExtResource("6_gr1yk")
+
+[node name="Title" type="Label" parent="T2" unique_id=257817953]
+offset_top = 50.0
+offset_right = 1280.0
+offset_bottom = 92.0
+theme_override_colors/font_color = Color(0.28887627, 0.47339523, 1, 1)
+theme_override_colors/font_outline_color = Color(0.8627451, 0.93333334, 0.98039216, 1)
+theme_override_constants/outline_size = 6
+theme_override_font_sizes/font_size = 48
+text = "_naslov"
+horizontal_alignment = 1
+
+[node name="CardX1" type="Sprite2D" parent="T2" unique_id=306011152]
+modulate = Color(1, 1, 1, 0.78431374)
+position = Vector2(173.00002, 358)
+scale = Vector2(0.70987654, 0.7098765)
+texture = ExtResource("7_e3jr1")
+
+[node name="Label" type="Label" parent="T2/CardX1" unique_id=1206991426]
+offset_left = -67.61742
+offset_top = 262.01743
+offset_right = 40.382584
+offset_bottom = 298.01743
+theme_override_colors/font_color = Color(0, 0.68663824, 0, 1)
+theme_override_font_sizes/font_size = 32
+text = "100/100"
+
+[node name="ButtonShop" type="Button" parent="T2" unique_id=1777604345]
+offset_left = 420.0
+offset_top = 111.0
+offset_right = 820.0
+offset_bottom = 171.0
+theme = ExtResource("5_5rtjb")
+theme_override_colors/font_color = Color(0.9999998, 0.86023957, 0.35310903, 1)
+text = "_shop"
+
+[node name="15" type="Sprite2D" parent="T2/ButtonShop" unique_id=1230743926]
+modulate = Color(0.9119031, 0.8120354, 0.505629, 1)
+position = Vector2(35.99999, 26.999996)
+scale = Vector2(1.4499989, 1.4499991)
+texture = ExtResource("8_n7es1")
+
+[node name="16" type="Sprite2D" parent="T2/ButtonShop" unique_id=1609185420]
+modulate = Color(0.9119031, 0.8120354, 0.505629, 1)
+position = Vector2(366, 26.999996)
+scale = Vector2(1.4499989, 1.4499991)
+texture = ExtResource("8_n7es1")
+
+[node name="ButtonStart" type="Button" parent="T2" unique_id=1595481512]
+offset_left = 420.0
+offset_top = 187.0
+offset_right = 820.0
+offset_bottom = 289.0
+theme = ExtResource("5_5rtjb")
+text = "_start"
+icon_alignment = 2
+
+[node name="10" type="Sprite2D" parent="T2/ButtonStart" unique_id=1279463414]
+position = Vector2(267, 49)
+scale = Vector2(1.7, 1.7)
+texture = ExtResource("9_p7ed5")
+
+[node name="ButtonShip" type="Button" parent="T2" unique_id=1698155983]
+offset_left = 420.0
+offset_top = 304.0
+offset_right = 820.0
+offset_bottom = 364.0
+theme = ExtResource("5_5rtjb")
+text = "_ship"
+
+[node name="07" type="Sprite2D" parent="T2/ButtonShip" unique_id=1296167632]
+position = Vector2(35, 29)
+texture = ExtResource("10_eo3re")
+
+[node name="ButtonShip2" type="Button" parent="T2" unique_id=1160868000]
+offset_left = 90.0
+offset_top = 257.0
+offset_right = 264.0
+offset_bottom = 419.0
+theme = ExtResource("5_5rtjb")
+
+[node name="Skin" type="Sprite2D" parent="T2/ButtonShip2" unique_id=1275726509]
+position = Vector2(87, 76)
+texture = ExtResource("10_eo3re")
+
+[node name="ButtonMissions" type="Button" parent="T2" unique_id=671907880]
+offset_left = 420.0
+offset_top = 375.0
+offset_right = 820.0
+offset_bottom = 460.0
+theme = ExtResource("5_5rtjb")
+text = "_missions_battlepass"
+
+[node name="17" type="Sprite2D" parent="T2/ButtonMissions" unique_id=2046775938]
+position = Vector2(35, 40)
+texture = ExtResource("11_vv7nq")
+
+[node name="ButtonLootbox" type="Button" parent="T2" unique_id=1534554758]
+offset_left = 420.0
+offset_top = 473.0
+offset_right = 820.0
+offset_bottom = 533.0
+theme = ExtResource("5_5rtjb")
+text = "_lootbox"
+
+[node name="01" type="Sprite2D" parent="T2/ButtonLootbox" unique_id=1982369265]
+position = Vector2(36, 28)
+texture = ExtResource("13_kxdc1")
+
+[node name="ButtonEnemyList" type="Button" parent="T2" unique_id=1451387914]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 420.0
+offset_top = 543.0
+offset_right = 820.0
+offset_bottom = 603.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("5_5rtjb")
+text = "_enemy_list"
+
+[node name="20" type="Sprite2D" parent="T2/ButtonEnemyList" unique_id=828162536]
+position = Vector2(29.999979, 28)
+scale = Vector2(1.3666667, 1.3666667)
+texture = ExtResource("14_q766h")
+
+[node name="PanelRed" type="Sprite2D" parent="T2" unique_id=1690147120]
+visible = false
+position = Vector2(1210, 660)
+scale = Vector2(2.5923076, 2.5923078)
+texture = ExtResource("16_4mha4")
+
+[node name="ButtonExit" type="Button" parent="T2" unique_id=587472537]
+visible = false
+offset_left = 1112.0
+offset_top = 630.0
+offset_right = 1271.0
+offset_bottom = 690.0
+theme = ExtResource("5_5rtjb")
+text = "_exit"
+
+[node name="05" type="Sprite2D" parent="T2/ButtonExit" unique_id=1514787838]
+position = Vector2(138.00003, 29)
+scale = Vector2(1.3095239, 1.3095238)
+texture = ExtResource("17_4aqtv")
+
+[node name="Gem" type="Sprite2D" parent="T2" unique_id=1607508145]
+position = Vector2(121.5, 185.5)
+scale = Vector2(0.6015625, 0.6015625)
+texture = ExtResource("19_he4rl")
+
+[node name="LabelGem" type="Label" parent="T2" unique_id=1342778616]
+offset_left = 154.5
+offset_top = 169.5
+offset_right = 256.5
+offset_bottom = 196.5
+theme_override_colors/font_color = Color(1, 0.5924633, 0.997963, 1)
+theme_override_font_sizes/font_size = 24
+text = "GEM GEM"
+
+[node name="Gold" type="Sprite2D" parent="T2" unique_id=1538054022]
+position = Vector2(118.5, 120.5)
+scale = Vector2(0.7109375, 0.7109375)
+texture = ExtResource("20_0057y")
+
+[node name="LabelGold" type="Label" parent="T2" unique_id=480008707]
+offset_left = 148.5
+offset_top = 107.5
+offset_right = 268.5
+offset_bottom = 134.5
+theme_override_colors/font_color = Color(0.7934343, 0.76077646, 3.85046e-07, 1)
+theme_override_font_sizes/font_size = 24
+text = "GOLD GOLD"
+
+[node name="Battery" type="Sprite2D" parent="T2" unique_id=2035367200]
+position = Vector2(80, 548)
+texture = ExtResource("21_ox1nj")
+
+[node name="LabelEnergy" type="Label" parent="T2/Battery" unique_id=835983210]
+anchors_preset = -1
+anchor_top = -0.46875
+anchor_bottom = -0.46875
+offset_left = 25.0
+offset_top = 19.0
+offset_right = 134.0
+offset_bottom = 76.0
+theme_override_colors/font_color = Color(0.6056103, 0.9039774, 0.62918955, 1)
+theme_override_colors/font_outline_color = Color(0.2225534, 0.27592722, 0.17825285, 1)
+theme_override_constants/outline_size = 2
+theme_override_font_sizes/font_size = 24
+text = "."
+horizontal_alignment = 1
+
+[node name="LabelEnergy2" type="Label" parent="T2/Battery" unique_id=957565219]
+anchors_preset = -1
+anchor_top = -0.46875
+anchor_bottom = -0.46875
+offset_left = 25.0
+offset_top = -5.0
+offset_right = 134.0
+offset_bottom = 22.0
+theme_override_colors/font_color = Color(0.42023718, 0.7257671, 0.44975936, 1)
+theme_override_colors/font_outline_color = Color(0.2225534, 0.27592722, 0.17825285, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 24
+text = "_energy"
+horizontal_alignment = 1
+
+[node name="PanelEmpty" type="Sprite2D" parent="T2" unique_id=1540256091]
+modulate = Color(1, 1, 1, 0.78431374)
+position = Vector2(160.00002, 550)
+rotation = 3.1415927
+scale = Vector2(2.3923078, 2.3923078)
+texture = ExtResource("12_ie00q")
+region_enabled = true
+region_rect = Rect2(0, 0, 97.65147, 65)
+
+[node name="08" type="Sprite2D" parent="T2" unique_id=2066044603]
+position = Vector2(80, 545)
+scale = Vector2(1.1190476, 1.1190476)
+texture = ExtResource("22_52xm4")
+
+[node name="ButtonSound" type="Button" parent="." unique_id=948585293]
+layout_mode = 0
+offset_left = 915.0
+offset_top = 23.0
+offset_right = 1270.0
+offset_bottom = 100.0
+theme = ExtResource("5_5rtjb")
+text = "_mute_volume"
+
+[node name="On" type="Sprite2D" parent="ButtonSound" unique_id=279358380]
+position = Vector2(37.750015, 38.100014)
+scale = Vector2(1.7, 1.7)
+texture = ExtResource("21_hi02a")
+
+[node name="Off" type="Sprite2D" parent="ButtonSound" unique_id=1526399371]
+position = Vector2(40.75, 38.100006)
+scale = Vector2(1.7, 1.7)
+texture = ExtResource("22_gr1yk")
+
+[node name="Label3" type="Label" parent="ButtonSound" unique_id=2099741250]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 133.0
+offset_right = 169.0
+offset_bottom = 169.0
+theme_override_colors/font_color = Color(0.97802943, 0.6667676, 0, 1)
+theme_override_font_sizes/font_size = 32
+text = "_language"
+horizontal_alignment = 2
+
+[node name="ButtonLanguageEN" type="Button" parent="ButtonSound" unique_id=1274068699]
+layout_mode = 0
+offset_left = 187.0
+offset_top = 97.0
+offset_right = 319.0
+offset_bottom = 149.0
+theme = ExtResource("5_5rtjb")
+theme_override_font_sizes/font_size = 24
+text = "EN"
+
+[node name="ButtonLanguageSL" type="Button" parent="ButtonSound" unique_id=90761354]
+layout_mode = 0
+offset_left = 187.0
+offset_top = 158.0
+offset_right = 326.0
+offset_bottom = 214.0
+theme = ExtResource("5_5rtjb")
+theme_override_font_sizes/font_size = 24
+text = "SL"
+
+[node name="Timer" type="Timer" parent="." unique_id=1938447435]
+one_shot = true
+
+[node name="Timer2" type="Timer" parent="." unique_id=1389591863]
+wait_time = 3.0
+one_shot = true
+
+[node name="T3" type="Node2D" parent="." unique_id=259369175]
+
+[node name="CardX4" type="Sprite2D" parent="T3" unique_id=1116087661]
+modulate = Color(1, 1, 1, 0.78431374)
+position = Vector2(622, 361)
+scale = Vector2(1.4497355, 1.931217)
+texture = ExtResource("6_gr1yk")
+
+[node name="SpriteSkin" type="Sprite2D" parent="T3" unique_id=1194500632]
+position = Vector2(623, 100)
+scale = Vector2(0.99999994, 1)
+texture = ExtResource("23_eo3re")
+
+[node name="CardX2" type="Sprite2D" parent="T3" unique_id=231628863]
+position = Vector2(630.2222, 501)
+scale = Vector2(0.44444448, 0.44444445)
+texture = ExtResource("6_gr1yk")
+
+[node name="Skin" type="Sprite2D" parent="T3/CardX2" unique_id=1675900900]
+position = Vector2(-0.00012207031, -2.25)
+scale = Vector2(2.2499998, 2.25)
+texture = ExtResource("23_eo3re")
+
+[node name="Label2" type="Label" parent="T3" unique_id=426825396]
+offset_left = 510.0
+offset_top = 370.0
+offset_right = 754.22217
+offset_bottom = 427.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 24
+text = "_selected"
+horizontal_alignment = 1
+
+[node name="ButtonSelect" type="Button" parent="T3" unique_id=709574092]
+offset_left = 542.0
+offset_top = 248.0
+offset_right = 711.0
+offset_bottom = 343.0
+theme = ExtResource("5_5rtjb")
+theme_override_font_sizes/font_size = 32
+text = "_select"
+
+[node name="Button_skin1" type="Button" parent="T3" unique_id=1518333181]
+offset_left = 551.0
+offset_top = 177.0
+offset_right = 601.0
+offset_bottom = 227.0
+theme = ExtResource("25_ie00q")
+
+[node name="Sprite2D" type="Sprite2D" parent="T3/Button_skin1" unique_id=1046618416]
+position = Vector2(25, 25)
+texture = SubResource("GradientTexture2D_vv7nq")
+
+[node name="Button_skin2" type="Button" parent="T3" unique_id=359486472]
+offset_left = 601.0
+offset_top = 177.0
+offset_right = 651.0
+offset_bottom = 227.0
+theme = ExtResource("25_ie00q")
+
+[node name="Sprite2D" type="Sprite2D" parent="T3/Button_skin2" unique_id=951153340]
+position = Vector2(25, 25)
+texture = SubResource("GradientTexture2D_q766h")
+
+[node name="Button_skin3" type="Button" parent="T3" unique_id=1945498584]
+offset_left = 651.0
+offset_top = 177.0
+offset_right = 701.0
+offset_bottom = 227.0
+theme = ExtResource("25_ie00q")
+
+[node name="Sprite2D" type="Sprite2D" parent="T3/Button_skin3" unique_id=182495220]
+position = Vector2(25, 25)
+texture = SubResource("GradientTexture2D_kxdc1")
+
+[node name="Timer" type="Timer" parent="T3" unique_id=1934003013]
+one_shot = true
+
+[node name="Timer2" type="Timer" parent="T3" unique_id=1057271196]
+wait_time = 2.0
+one_shot = true
+
+[node name="CardX3" type="Sprite2D" parent="T3" unique_id=280406063]
+position = Vector2(186.5, 290)
+scale = Vector2(0.6994949, 0.4250295)
+texture = ExtResource("23_gr1yk")
+
+[node name="Label" type="Label" parent="T3" unique_id=550663144]
+offset_left = 73.0
+offset_top = 153.99998
+offset_right = 288.0
+offset_bottom = 410.0
+theme_override_colors/font_color = Color(0.80049086, 0.80049074, 0.80049074, 1)
+theme_override_font_sizes/font_size = 24
+text = "_step_2_info"
+horizontal_alignment = 1
+
+[node name="T4" type="Node2D" parent="." unique_id=1442304743]
+
+[node name="Coins" type="Control" parent="T4" unique_id=203171978]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="CardX6" type="Sprite2D" parent="T4/Coins" unique_id=505633638]
+modulate = Color(1, 1, 1, 0.78431374)
+position = Vector2(601.0056, 364)
+scale = Vector2(0.8632931, 1.4071618)
+texture = ExtResource("26_ie00q")
+
+[node name="Label" type="Label" parent="T4/Coins" unique_id=476200057]
+layout_mode = 0
+offset_left = 321.0
+offset_top = 117.0
+offset_right = 880.0
+offset_bottom = 171.0
+theme_override_colors/font_color = Color(0.93419164, 0.810642, 0.19833556, 1)
+theme_override_colors/font_shadow_color = Color(0.7380234, 0.41459912, 7.70092e-07, 0.9882353)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 4
+theme_override_constants/shadow_outline_size = 4
+theme_override_font_sizes/font_size = 48
+text = "_shop_buy_gold"
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="T4/Coins" unique_id=204996224]
+layout_mode = 0
+offset_left = 322.0
+offset_top = 179.0
+offset_right = 881.0
+offset_bottom = 257.0
+theme = ExtResource("5_5rtjb")
+theme_override_colors/font_color = Color(0.4481448, 0.71283835, 0.6418357, 1)
+theme_override_font_sizes/font_size = 24
+text = "_tutorial_gold_price"
+
+[node name="PanelEmptyGreen" type="Sprite2D" parent="T4/Coins/Button" unique_id=1115313322]
+position = Vector2(100, 39)
+texture = ExtResource("18_mlpul")
+
+[node name="Label" type="Label" parent="T4/Coins/Button/PanelEmptyGreen" unique_id=41099463]
+offset_left = -32.0
+offset_top = -15.0
+offset_right = 16.0
+offset_bottom = 12.0
+theme_override_colors/font_color = Color(0.897506, 0.6028388, 0.30586773, 1)
+theme_override_font_sizes/font_size = 24
+text = "3000x"
+
+[node name="Gem" type="Sprite2D" parent="T4/Coins/Button/PanelEmptyGreen" unique_id=1096014319]
+position = Vector2(44.000008, -1.0000067)
+scale = Vector2(0.5019534, 0.5019534)
+texture = ExtResource("20_0057y")
+
+[node name="15" type="Sprite2D" parent="T4/Coins/Button/PanelEmptyGreen" unique_id=642510467]
+position = Vector2(-64.49997, -2.2500153)
+scale = Vector2(1.3000003, 1.3000004)
+texture = ExtResource("8_n7es1")
+
+[node name="Gems" type="Control" parent="T4" unique_id=105897382]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="CardX6" type="Sprite2D" parent="T4/Gems" unique_id=115190479]
+modulate = Color(1, 1, 1, 0.78431374)
+position = Vector2(601.0056, 364)
+scale = Vector2(0.8632931, 1.4071618)
+texture = ExtResource("26_ie00q")
+
+[node name="Label" type="Label" parent="T4/Gems" unique_id=160591059]
+layout_mode = 0
+offset_left = 317.0
+offset_top = 117.0
+offset_right = 886.0
+offset_bottom = 171.0
+theme_override_colors/font_color = Color(1, 0.40019485, 0.98532945, 1)
+theme_override_colors/font_shadow_color = Color(0.7004928, 0.37852946, 0.5869988, 0.9882353)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 4
+theme_override_constants/shadow_outline_size = 4
+theme_override_font_sizes/font_size = 48
+text = "_shop_buy_crystals"
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="T4/Gems" unique_id=1862612253]
+layout_mode = 0
+offset_left = 319.0
+offset_top = 179.0
+offset_right = 876.0
+offset_bottom = 257.0
+theme = ExtResource("5_5rtjb")
+theme_override_colors/font_color = Color(0.4481448, 0.71283835, 0.6418357, 1)
+text = "_tutorial_pack_price"
+
+[node name="PanelEmptyGreen" type="Sprite2D" parent="T4/Gems/Button" unique_id=878050260]
+position = Vector2(100, 39)
+texture = ExtResource("18_mlpul")
+
+[node name="Label" type="Label" parent="T4/Gems/Button/PanelEmptyGreen" unique_id=1807048275]
+offset_left = -32.0
+offset_top = -15.0
+offset_right = 16.0
+offset_bottom = 12.0
+theme_override_colors/font_color = Color(0.8535574, 0.5198395, 0.95155543, 1)
+theme_override_font_sizes/font_size = 24
+text = "500x"
+
+[node name="Gem" type="Sprite2D" parent="T4/Gems/Button/PanelEmptyGreen" unique_id=293213036]
+position = Vector2(40, -1)
+scale = Vector2(0.5976564, 0.5976564)
+texture = ExtResource("19_he4rl")
+
+[node name="15" type="Sprite2D" parent="T4/Gems/Button/PanelEmptyGreen" unique_id=1724474366]
+position = Vector2(-64.49997, -2.2500153)
+scale = Vector2(1.3000003, 1.3000004)
+texture = ExtResource("8_n7es1")
+
+[node name="Default" type="Control" parent="T4" unique_id=716584165]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 7.0
+offset_top = 31.0
+offset_right = 47.0
+offset_bottom = 71.0
+
+[node name="CardX5" type="Sprite2D" parent="T4/Default" unique_id=1556045909]
+modulate = Color(1, 1, 1, 0.78431374)
+position = Vector2(594.0056, 374.875)
+scale = Vector2(0.8632931, 1.6293104)
+texture = ExtResource("26_ie00q")
+
+[node name="ButtonBuyGems" type="Button" parent="T4/Default" unique_id=1693140705]
+layout_mode = 0
+offset_left = 370.0
+offset_top = 241.0
+offset_right = 788.0
+offset_bottom = 395.0
+theme = ExtResource("5_5rtjb")
+theme_override_colors/font_color = Color(0.88678586, 0.061450712, 0.9722752, 1)
+theme_override_font_sizes/font_size = 40
+text = "_shop_buy_crystals"
+
+[node name="Icon" type="Sprite2D" parent="T4/Default/ButtonBuyGems" unique_id=764157484]
+position = Vector2(376, 47)
+rotation = 1.5707964
+scale = Vector2(0.9459694, 0.9459694)
+texture = ExtResource("27_kxdc1")
+
+[node name="ButtonBuyBoosters" type="Button" parent="T4/Default" unique_id=1104954695]
+layout_mode = 0
+offset_left = 361.0
+offset_top = 434.0
+offset_right = 791.0
+offset_bottom = 516.0
+theme = ExtResource("5_5rtjb")
+theme_override_colors/font_color = Color(0.413106, 0.79983205, 0.70645505, 1)
+theme_override_font_sizes/font_size = 40
+text = "_shop_buy_boosters"
+
+[node name="Icon" type="Sprite2D" parent="T4/Default/ButtonBuyBoosters" unique_id=644355803]
+position = Vector2(6.1035156e-05, 16)
+rotation = 1.5707964
+scale = Vector2(2.2749534, 2.2749534)
+texture = ExtResource("10_eo3re")
+
+[node name="Icon2" type="Sprite2D" parent="T4/Default/ButtonBuyBoosters" unique_id=1911326645]
+position = Vector2(415, 64)
+scale = Vector2(2.2749534, 2.2749534)
+texture = ExtResource("10_eo3re")
+
+[node name="ButtonBuyCoins" type="Button" parent="T4/Default" unique_id=1956547182]
+layout_mode = 0
+offset_left = 425.0
+offset_top = 114.0
+offset_right = 725.0
+offset_bottom = 214.0
+theme = ExtResource("5_5rtjb")
+theme_override_colors/font_color = Color(0.93378454, 0.67783004, 0.31556708, 1)
+theme_override_font_sizes/font_size = 40
+text = "_shop_buy_gold"
+
+[node name="Icon" type="Sprite2D" parent="T4/Default/ButtonBuyCoins" unique_id=959740591]
+position = Vector2(28, 6)
+scale = Vector2(0.79656005, 0.79656005)
+texture = ExtResource("28_q766h")
+
+[node name="ButtonBuyKeys" type="Button" parent="T4/Default" unique_id=763965703]
+layout_mode = 0
+offset_left = 435.0
+offset_top = 520.0
+offset_right = 735.0
+offset_bottom = 620.0
+theme = ExtResource("5_5rtjb")
+theme_override_colors/font_color = Color(0.69719213, 0.41175842, 0.31406567, 1)
+theme_override_font_sizes/font_size = 40
+text = "_shop_buy_keys"
+
+[node name="Icon" type="Sprite2D" parent="T4/Default/ButtonBuyKeys" unique_id=735745077]
+position = Vector2(257, 84)
+scale = Vector2(1.0389049, 1.0389049)
+texture = ExtResource("30_q766h")
+
+[node name="CardX1" type="Sprite2D" parent="T4" unique_id=857549986]
+modulate = Color(1, 1, 1, 0.78431374)
+position = Vector2(173.00002, 358)
+scale = Vector2(0.70987654, 0.7098765)
+texture = ExtResource("7_e3jr1")
+
+[node name="Gem" type="Sprite2D" parent="T4" unique_id=153149498]
+position = Vector2(121.5, 185.5)
+scale = Vector2(0.6015625, 0.6015625)
+texture = ExtResource("19_he4rl")
+
+[node name="LabelGem" type="Label" parent="T4" unique_id=569038250]
+offset_left = 154.5
+offset_top = 169.5
+offset_right = 256.5
+offset_bottom = 196.5
+theme_override_colors/font_color = Color(1, 0.5924633, 0.997963, 1)
+theme_override_font_sizes/font_size = 24
+text = "GEM GEM"
+
+[node name="Gold" type="Sprite2D" parent="T4" unique_id=56542080]
+position = Vector2(118.5, 120.5)
+scale = Vector2(0.7109375, 0.7109375)
+texture = ExtResource("20_0057y")
+
+[node name="LabelGold" type="Label" parent="T4" unique_id=729222767]
+offset_left = 148.5
+offset_top = 107.5
+offset_right = 268.5
+offset_bottom = 134.5
+theme_override_colors/font_color = Color(0.7934343, 0.76077646, 3.85046e-07, 1)
+theme_override_font_sizes/font_size = 24
+text = "GOLD GOLD"
+
+[node name="Timer" type="Timer" parent="T4" unique_id=1145061640]
+wait_time = 2.0
+one_shot = true
+
+[node name="Timer2" type="Timer" parent="T4" unique_id=1508971322]
+wait_time = 2.0
+one_shot = true
+
+[node name="CursorC" type="Sprite2D" parent="T4" unique_id=844494297]
+position = Vector2(332, 342)
+scale = Vector2(3, 3)
+texture = ExtResource("9_p7ed5")
+
+[node name="03" type="Sprite2D" parent="T4/CursorC" unique_id=1997844046]
+position = Vector2(-15.789474, 1.4781952e-05)
+scale = Vector2(0.95516574, 0.9551657)
+texture = ExtResource("24_e3jr1")
+
+[node name="CursorG" type="Sprite2D" parent="T4" unique_id=353295342]
+position = Vector2(379, 193)
+scale = Vector2(3, 3)
+texture = ExtResource("9_p7ed5")
+
+[node name="03" type="Sprite2D" parent="T4/CursorG" unique_id=110804633]
+position = Vector2(-15.789474, 1.4781952e-05)
+scale = Vector2(0.95516574, 0.9551657)
+texture = ExtResource("24_e3jr1")
+
+[node name="STEP_1" type="Node2D" parent="." unique_id=1545980995]
+
+[node name="CardX2" type="Sprite2D" parent="STEP_1" unique_id=1169026588]
+position = Vector2(1051.5, 478.8125)
+scale = Vector2(1.1338383, 0.5402892)
+texture = ExtResource("23_gr1yk")
+
+[node name="Label" type="Label" parent="STEP_1" unique_id=888339848]
+offset_left = 852.0
+offset_top = 294.0
+offset_right = 1243.0
+offset_bottom = 688.0
+theme_override_font_sizes/font_size = 32
+text = "_step_0_text"
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="STEP_1" unique_id=776319985]
+offset_left = 932.0
+offset_top = 537.0
+offset_right = 1183.0
+offset_bottom = 637.0
+theme = ExtResource("5_5rtjb")
+text = "_step_0_button"
+
+[node name="Button2" type="Button" parent="STEP_1" unique_id=968591145]
+offset_left = 14.0
+offset_top = 15.0
+offset_right = 153.0
+offset_bottom = 42.0
+theme = ExtResource("5_5rtjb")
+theme_override_font_sizes/font_size = 24
+text = "_skip_button"
+
+[node name="Cursor1" type="Sprite2D" parent="." unique_id=1254229874]
+visible = false
+position = Vector2(389.99997, 334)
+scale = Vector2(2.4750004, 2.4990742)
+texture = ExtResource("9_p7ed5")
+
+[node name="02" type="Sprite2D" parent="Cursor1" unique_id=482162851]
+position = Vector2(-15.789474, 0.70175374)
+scale = Vector2(0.95516574, 0.9551657)
+texture = ExtResource("24_e3jr1")
+
+[node name="Cursor4" type="Sprite2D" parent="." unique_id=442775532]
+visible = false
+position = Vector2(386.99997, 139)
+scale = Vector2(2.4750004, 2.4990742)
+texture = ExtResource("9_p7ed5")
+
+[node name="02" type="Sprite2D" parent="Cursor4" unique_id=1917353350]
+position = Vector2(-15.789474, 0.70175374)
+scale = Vector2(0.95516574, 0.9551657)
+texture = ExtResource("24_e3jr1")
+
+[node name="Cursor3" type="Sprite2D" parent="." unique_id=103627985]
+visible = false
+position = Vector2(518, 197)
+scale = Vector2(2.4750004, 2.4990742)
+texture = ExtResource("9_p7ed5")
+
+[node name="02" type="Sprite2D" parent="Cursor3" unique_id=990892447]
+position = Vector2(-15.789474, 0.70175374)
+scale = Vector2(0.95516574, 0.9551657)
+texture = ExtResource("24_e3jr1")
+
+[node name="Cursor7" type="Sprite2D" parent="." unique_id=1325475313]
+visible = false
+position = Vector2(750, 297)
+rotation = 3.1415927
+scale = Vector2(2.4750004, 2.4990742)
+texture = ExtResource("9_p7ed5")
+
+[node name="02" type="Sprite2D" parent="Cursor7" unique_id=1265795484]
+position = Vector2(-15.789474, 0.70175374)
+scale = Vector2(0.95516574, 0.9551657)
+texture = ExtResource("24_e3jr1")
+
+[node name="Cursor2" type="Sprite2D" parent="." unique_id=1999467449]
+visible = false
+position = Vector2(61, 331)
+scale = Vector2(2.575, 2.4249988)
+texture = ExtResource("9_p7ed5")
+
+[node name="03" type="Sprite2D" parent="Cursor2" unique_id=1536364362]
+position = Vector2(-15.789474, 1.4781952e-05)
+scale = Vector2(0.95516574, 0.9551657)
+texture = ExtResource("24_e3jr1")
+
+[node name="Cursor6" type="Sprite2D" parent="." unique_id=933319464]
+visible = false
+position = Vector2(600, 215.99998)
+rotation = 3.1415927
+scale = Vector2(6.6306252, 5.880619)
+texture = ExtResource("9_p7ed5")
+
+[node name="03" type="Sprite2D" parent="Cursor6" unique_id=1647493514]
+position = Vector2(-15.789474, 1.4781952e-05)
+scale = Vector2(0.95516574, 0.9551657)
+texture = ExtResource("24_e3jr1")
+
+[node name="Cursor5" type="Sprite2D" parent="." unique_id=169289904]
+visible = false
+position = Vector2(388, 229)
+scale = Vector2(2.575, 2.4249988)
+texture = ExtResource("9_p7ed5")
+
+[node name="03" type="Sprite2D" parent="Cursor5" unique_id=783186127]
+position = Vector2(-15.789474, 1.4781952e-05)
+scale = Vector2(0.95516574, 0.9551657)
+texture = ExtResource("24_e3jr1")
+
+[node name="T5" type="Node2D" parent="." unique_id=1896398931]
+visible = false
+
+[node name="Label" type="Label" parent="T5" unique_id=1754320715]
+offset_left = 155.0
+offset_top = 364.0
+offset_right = 325.0
+offset_bottom = 409.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 40
+text = "_boosters"
+
+[node name="ButtonBooster1" type="Button" parent="T5" unique_id=576260589]
+modulate = Color(1, 1, 1, 0.8627451)
+offset_left = 143.0
+offset_top = 409.0
+offset_right = 443.0
+offset_bottom = 479.0
+theme = ExtResource("5_5rtjb")
+theme_override_colors/font_color = Color(0.80049086, 0.80049074, 0.80049074, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 24
+text = "(1)  "
+alignment = 2
+
+[node name="CardX3" type="Sprite2D" parent="T5/ButtonBooster1" unique_id=163917654]
+modulate = Color(1, 1, 1, 0.8627451)
+position = Vector2(51, 34)
+scale = Vector2(0.14285716, 0.14285715)
+texture = ExtResource("6_gr1yk")
+
+[node name="Check" type="Sprite2D" parent="T5/ButtonBooster1" unique_id=1513365656]
+visible = false
+position = Vector2(51.999985, 34)
+scale = Vector2(1.5869565, 1.5869565)
+texture = ExtResource("32_0057y")
+
+[node name="LabelBooster1" type="Label" parent="T5/ButtonBooster1" unique_id=491408800]
+layout_mode = 0
+offset_left = 77.0
+offset_top = 7.0
+offset_right = 251.0
+offset_bottom = 64.0
+theme_override_colors/font_color = Color(0.972549, 0.34509805, 0.36862746, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.5254902)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 24
+text = "_level_booster_1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ButtonBooster2" type="Button" parent="T5" unique_id=388066903]
+modulate = Color(1, 1, 1, 0.8627451)
+offset_left = 143.0
+offset_top = 488.0
+offset_right = 443.0
+offset_bottom = 558.0
+theme = ExtResource("5_5rtjb")
+theme_override_colors/font_color = Color(0.80049086, 0.80049074, 0.80049074, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 24
+text = "(1)  "
+alignment = 2
+
+[node name="CardX3" type="Sprite2D" parent="T5/ButtonBooster2" unique_id=842040815]
+modulate = Color(1, 1, 1, 0.8627451)
+position = Vector2(51, 34)
+scale = Vector2(0.14285716, 0.14285715)
+texture = ExtResource("6_gr1yk")
+
+[node name="Check" type="Sprite2D" parent="T5/ButtonBooster2" unique_id=334135809]
+visible = false
+position = Vector2(51.999985, 34)
+scale = Vector2(1.5869565, 1.5869565)
+texture = ExtResource("32_0057y")
+
+[node name="LabelBooster8" type="Label" parent="T5/ButtonBooster2" unique_id=1077024207]
+layout_mode = 0
+offset_left = 78.0
+offset_top = 6.0
+offset_right = 252.0
+offset_bottom = 63.0
+theme_override_colors/font_color = Color(0.22352941, 0.61960787, 0.89411765, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.5254902)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 24
+text = "_level_booster_3"
+horizontal_alignment = 1
+
+[node name="ButtonBooster4" type="Button" parent="T5" unique_id=899795885]
+modulate = Color(1, 1, 1, 0.8627451)
+offset_left = 453.0
+offset_top = 488.0
+offset_right = 753.0
+offset_bottom = 558.0
+theme = ExtResource("5_5rtjb")
+theme_override_colors/font_color = Color(0.80049086, 0.80049074, 0.80049074, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 24
+text = "(0)  "
+alignment = 2
+
+[node name="CardX3" type="Sprite2D" parent="T5/ButtonBooster4" unique_id=388787368]
+modulate = Color(1, 1, 1, 0.8627451)
+position = Vector2(51, 34)
+scale = Vector2(0.14285716, 0.14285715)
+texture = ExtResource("6_gr1yk")
+
+[node name="Check" type="Sprite2D" parent="T5/ButtonBooster4" unique_id=1722903294]
+visible = false
+position = Vector2(51.999985, 34)
+scale = Vector2(1.5869565, 1.5869565)
+texture = ExtResource("32_0057y")
+
+[node name="LabelBooster10" type="Label" parent="T5/ButtonBooster4" unique_id=2003904883]
+layout_mode = 0
+offset_left = 78.0
+offset_top = 4.0
+offset_right = 252.0
+offset_bottom = 61.0
+theme_override_colors/font_color = Color(0.20784314, 0.7921569, 0.49803922, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.5254902)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 24
+text = "_level_booster_4"
+horizontal_alignment = 1
+
+[node name="ButtonBooster3" type="Button" parent="T5" unique_id=1454202756]
+modulate = Color(1, 1, 1, 0.8627451)
+offset_left = 453.0
+offset_top = 409.0
+offset_right = 753.0
+offset_bottom = 479.0
+theme = ExtResource("5_5rtjb")
+theme_override_colors/font_color = Color(0.80049086, 0.80049074, 0.80049074, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 24
+text = "(0)  "
+alignment = 2
+
+[node name="CardX3" type="Sprite2D" parent="T5/ButtonBooster3" unique_id=57939339]
+modulate = Color(1, 1, 1, 0.8627451)
+position = Vector2(51, 34)
+scale = Vector2(0.14285716, 0.14285715)
+texture = ExtResource("6_gr1yk")
+
+[node name="Check" type="Sprite2D" parent="T5/ButtonBooster3" unique_id=279222487]
+visible = false
+position = Vector2(51.999985, 34)
+scale = Vector2(1.5869565, 1.5869565)
+texture = ExtResource("32_0057y")
+
+[node name="LabelBooster9" type="Label" parent="T5/ButtonBooster3" unique_id=1018125572]
+layout_mode = 0
+offset_left = 77.0
+offset_top = 7.0
+offset_right = 251.0
+offset_bottom = 64.0
+theme_override_colors/font_color = Color(0.8784314, 0.60784316, 0.39607844, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.5254902)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 24
+text = "_level_booster_2"
+horizontal_alignment = 1
+
+[node name="ButtonBooster5" type="Button" parent="T5" unique_id=385394746]
+modulate = Color(1, 1, 1, 0.8627451)
+offset_left = 146.0
+offset_top = 570.0
+offset_right = 446.0
+offset_bottom = 640.0
+theme = ExtResource("5_5rtjb")
+theme_override_colors/font_color = Color(0.80049086, 0.80049074, 0.80049074, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 24
+text = "(0)  "
+alignment = 2
+
+[node name="CardX3" type="Sprite2D" parent="T5/ButtonBooster5" unique_id=607639821]
+modulate = Color(1, 1, 1, 0.8627451)
+position = Vector2(51, 34)
+scale = Vector2(0.14285716, 0.14285715)
+texture = ExtResource("6_gr1yk")
+
+[node name="Check" type="Sprite2D" parent="T5/ButtonBooster5" unique_id=1003351966]
+visible = false
+position = Vector2(51.999985, 34)
+scale = Vector2(1.5869565, 1.5869565)
+texture = ExtResource("32_0057y")
+
+[node name="LabelBooster5" type="Label" parent="T5/ButtonBooster5" unique_id=1720075034]
+layout_mode = 0
+offset_left = 78.0
+offset_top = 8.0
+offset_right = 252.0
+offset_bottom = 65.0
+theme_override_colors/font_color = Color(0.88235295, 0.29803923, 0.40392157, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.5254902)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 24
+text = "_level_booster_5"
+horizontal_alignment = 1
+
+[node name="ButtonBooster6" type="Button" parent="T5" unique_id=2128192151]
+modulate = Color(1, 1, 1, 0.8627451)
+offset_left = 462.0
+offset_top = 570.0
+offset_right = 762.0
+offset_bottom = 640.0
+theme = ExtResource("5_5rtjb")
+theme_override_colors/font_color = Color(0.80049086, 0.80049074, 0.80049074, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 24
+text = "(0)  "
+alignment = 2
+
+[node name="CardX3" type="Sprite2D" parent="T5/ButtonBooster6" unique_id=28685732]
+modulate = Color(1, 1, 1, 0.8627451)
+position = Vector2(51, 34)
+scale = Vector2(0.14285716, 0.14285715)
+texture = ExtResource("6_gr1yk")
+
+[node name="Check" type="Sprite2D" parent="T5/ButtonBooster6" unique_id=513493265]
+visible = false
+position = Vector2(51.999985, 34)
+scale = Vector2(1.5869565, 1.5869565)
+texture = ExtResource("32_0057y")
+
+[node name="LabelBooster6" type="Label" parent="T5/ButtonBooster6" unique_id=1389842920]
+layout_mode = 0
+offset_left = 84.0
+offset_top = 8.0
+offset_right = 237.0
+offset_bottom = 65.0
+theme_override_colors/font_color = Color(0.49803922, 0.95686275, 0.34509805, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.5254902)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 24
+text = "_level_booster_6"
+horizontal_alignment = 1
+
+[node name="Control" type="Control" parent="T5" unique_id=579842101]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 267.0
+offset_top = 17.0
+offset_right = 307.0
+offset_bottom = 57.0
+
+[node name="ButtonEasy" type="Button" parent="T5/Control" unique_id=1538268567]
+layout_mode = 0
+offset_left = 42.0
+offset_top = 38.0
+offset_right = 328.0
+offset_bottom = 338.0
+
+[node name="CardX2" type="Sprite2D" parent="T5/Control" unique_id=1304388903]
+modulate = Color(1, 1, 1, 0.78431374)
+position = Vector2(184.33931, 187.75)
+scale = Vector2(0.7538801, 0.8320105)
+texture = ExtResource("33_ox1nj")
+
+[node name="Sprite2D" type="Sprite2D" parent="T5/Control" unique_id=1132790706]
+position = Vector2(184.5, 88)
+scale = Vector2(3.734375, 0.578125)
+texture = SubResource("GradientTexture2D_bdhf4")
+
+[node name="CardX3" type="Sprite2D" parent="T5/Control" unique_id=193016989]
+position = Vector2(180.52911, 217)
+scale = Vector2(0.58201057, 0.58201057)
+texture = ExtResource("6_gr1yk")
+
+[node name="GreenNebula05512x512" type="Sprite2D" parent="T5/Control" unique_id=2101763409]
+position = Vector2(180.5291, 216.99998)
+scale = Vector2(0.37304688, 0.37304688)
+texture = ExtResource("34_52xm4")
+
+[node name="TropicalClouds04128x128" type="Sprite2D" parent="T5/Control" unique_id=319094735]
+position = Vector2(143.52913, 182)
+scale = Vector2(0.7109375, 0.7109375)
+texture = ExtResource("35_5kume")
+
+[node name="Moon04128x128" type="Sprite2D" parent="T5/Control" unique_id=545695075]
+position = Vector2(163.5291, 277.99997)
+scale = Vector2(0.26953128, 0.26953128)
+texture = ExtResource("36_8wyyb")
+
+[node name="Moon05128x128" type="Sprite2D" parent="T5/Control" unique_id=1747679181]
+position = Vector2(228.52911, 252)
+scale = Vector2(0.48046875, 0.48046875)
+texture = ExtResource("37_lif81")
+
+[node name="PanelEmptyGreen" type="Sprite2D" parent="T5/Control" unique_id=1969391932]
+position = Vector2(96, 262)
+rotation = -3.1415925
+texture = ExtResource("18_mlpul")
+region_enabled = true
+region_rect = Rect2(0, 0, 96.01288, 65)
+
+[node name="Label2" type="Label" parent="T5/Control" unique_id=1100216327]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 70.5
+offset_right = 321.0
+offset_bottom = 106.5
+theme_override_colors/font_color = Color(0.27957115, 0.7379332, 0.613017, 1)
+theme_override_colors/font_shadow_color = Color(0.22899365, 0.50373816, 0.351201, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 4
+theme_override_constants/shadow_outline_size = 1
+theme_override_font_sizes/font_size = 32
+text = "_easy_list"
+horizontal_alignment = 1
+
+[node name="07" type="Sprite2D" parent="T5/Control" unique_id=463721864]
+position = Vector2(174, 59.5)
+texture = ExtResource("10_eo3re")
+
+[node name="Cursor" type="Sprite2D" parent="T5" unique_id=1374864119]
+position = Vector2(103, 441)
+scale = Vector2(2, 2)
+texture = ExtResource("9_p7ed5")
+
+[node name="03" type="Sprite2D" parent="T5/Cursor" unique_id=1073501770]
+position = Vector2(-15.789474, 1.4781952e-05)
+texture = ExtResource("24_e3jr1")
+
+[node name="Cursor2" type="Sprite2D" parent="T5" unique_id=1829683362]
+position = Vector2(103, 522)
+scale = Vector2(2, 2)
+texture = ExtResource("9_p7ed5")
+
+[node name="03" type="Sprite2D" parent="T5/Cursor2" unique_id=250318053]
+position = Vector2(-15.789474, 1.4781952e-05)
+scale = Vector2(0.95516574, 0.9551657)
+texture = ExtResource("24_e3jr1")
+
+[node name="Cursor3" type="Sprite2D" parent="T5" unique_id=860858421]
+position = Vector2(252, 187)
+scale = Vector2(4, 4)
+texture = ExtResource("9_p7ed5")
+
+[node name="03" type="Sprite2D" parent="T5/Cursor3" unique_id=1363214501]
+position = Vector2(-15.789474, 1.4781952e-05)
+scale = Vector2(0.95516574, 0.9551657)
+texture = ExtResource("24_e3jr1")
+
+[connection signal="pressed" from="T1/Button_tut_no" to="." method="_on_button_tut_no_pressed"]
+[connection signal="pressed" from="T1/Button_tut_yes" to="." method="_on_button_tut_yes_pressed"]
+[connection signal="pressed" from="T2/ButtonShop" to="." method="_on_button_shop_pressed"]
+[connection signal="pressed" from="T2/ButtonStart" to="." method="_on_button_start_pressed"]
+[connection signal="pressed" from="T2/ButtonShip" to="." method="_on_button_ship"]
+[connection signal="pressed" from="T2/ButtonShip2" to="." method="_on_button_ship"]
+[connection signal="pressed" from="T2/ButtonMissions" to="." method="_on_button_YES"]
+[connection signal="pressed" from="T2/ButtonLootbox" to="." method="_on_button_YES"]
+[connection signal="pressed" from="T2/ButtonEnemyList" to="." method="_on_button_YES"]
+[connection signal="pressed" from="ButtonSound" to="." method="_on_button_sound_pressed"]
+[connection signal="pressed" from="ButtonSound/ButtonLanguageEN" to="." method="_on_button_language_en_pressed"]
+[connection signal="pressed" from="ButtonSound/ButtonLanguageSL" to="." method="_on_button_language_sl_pressed"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="Timer2" to="." method="_on_timer_2_timeout"]
+[connection signal="pressed" from="T3/ButtonSelect" to="." method="_on_button_select_pressed"]
+[connection signal="pressed" from="T3/Button_skin1" to="." method="_on_button_skin_1_pressed"]
+[connection signal="pressed" from="T3/Button_skin2" to="." method="_on_button_skin_2_pressed"]
+[connection signal="pressed" from="T3/Button_skin3" to="." method="_on_button_skin_3_pressed"]
+[connection signal="timeout" from="T3/Timer" to="." method="_on_T3_timer_timeout"]
+[connection signal="timeout" from="T3/Timer2" to="." method="_on_timer_back_timeout"]
+[connection signal="pressed" from="T4/Coins/Button" to="." method="_on_button_buy_gold_pressed"]
+[connection signal="pressed" from="T4/Gems/Button" to="." method="_on_button_buy_gems_pressed"]
+[connection signal="pressed" from="T4/Default/ButtonBuyGems" to="." method="_on_button_goto_buy_gems_pressed"]
+[connection signal="pressed" from="T4/Default/ButtonBuyBoosters" to="." method="_on_button_YES"]
+[connection signal="pressed" from="T4/Default/ButtonBuyCoins" to="." method="_on_button_buy_coins_pressed"]
+[connection signal="pressed" from="T4/Default/ButtonBuyKeys" to="." method="_on_button_YES"]
+[connection signal="timeout" from="T4/Timer" to="." method="_on_timer_T4_timeout"]
+[connection signal="timeout" from="T4/Timer2" to="." method="_on_timer_gold_2_timeout"]
+[connection signal="pressed" from="STEP_1/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="STEP_1/Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="T5/ButtonBooster1" to="." method="_on_button_booster_1_pressed"]
+[connection signal="pressed" from="T5/ButtonBooster2" to="." method="_on_button_booster_2_pressed"]
+[connection signal="pressed" from="T5/ButtonBooster4" to="." method="_on_button_booster_NO"]
+[connection signal="pressed" from="T5/ButtonBooster3" to="." method="_on_button_booster_NO"]
+[connection signal="pressed" from="T5/ButtonBooster5" to="." method="_on_button_booster_NO"]
+[connection signal="pressed" from="T5/ButtonBooster6" to="." method="_on_button_booster_NO"]
+[connection signal="pressed" from="T5/Control/ButtonEasy" to="." method="_on_button_easy_pressed"]

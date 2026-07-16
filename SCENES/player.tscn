@@ -1,0 +1,103 @@
+[gd_scene format=3 uid="uid://bqvp854ywo3el"]
+
+[ext_resource type="Script" uid="uid://dwqcgi3q8ikvp" path="res://SCRIPTS/player.gd" id="1_ai16o"]
+[ext_resource type="Texture2D" uid="uid://vvpeu4ahnnum" path="res://SPRITES/Player/Ship3/skin3.png" id="2_b8es0"]
+[ext_resource type="PackedScene" uid="uid://bt8ooaabysbmf" path="res://SCENES/turret.tscn" id="3_o7tti"]
+[ext_resource type="Texture2D" uid="uid://btehrtv6famgx" path="res://SPRITES/EFFECTS/SpaceShooterAssetPack_Miscellaneous.png" id="4_b8es0"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_b8es0"]
+radius = 40.792156
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sr02u"]
+atlas = ExtResource("4_b8es0")
+region = Rect2(72, 48, 8, 8)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pod2e"]
+atlas = ExtResource("4_b8es0")
+region = Rect2(80, 48, 8, 8)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dxdai"]
+atlas = ExtResource("4_b8es0")
+region = Rect2(88, 48, 8, 8)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ragqx"]
+atlas = ExtResource("4_b8es0")
+region = Rect2(96, 48, 8, 8)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ctccd"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sr02u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pod2e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dxdai")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ragqx")
+}],
+"loop": true,
+"name": &"default",
+"speed": 7.0
+}]
+
+[node name="Player" type="CharacterBody2D" unique_id=1442303252 groups=["group_player"]]
+z_index = 5
+script = ExtResource("1_ai16o")
+
+[node name="Hitbox" type="Area2D" parent="." unique_id=583971039]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox" unique_id=1986495199]
+shape = SubResource("CircleShape2D_b8es0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=818187805]
+shape = SubResource("CircleShape2D_b8es0")
+
+[node name="Skin" type="Sprite2D" parent="." unique_id=1440841649]
+position = Vector2(0, -20)
+texture = ExtResource("2_b8es0")
+
+[node name="Turret1" parent="." unique_id=1202021773 instance=ExtResource("3_o7tti")]
+position = Vector2(-60, 61.000004)
+
+[node name="Turret2" parent="." unique_id=1911760212 instance=ExtResource("3_o7tti")]
+position = Vector2(60, 62)
+
+[node name="DeathTimer" type="Timer" parent="." unique_id=1706824532]
+wait_time = 4.0
+one_shot = true
+
+[node name="DeathAnimation" type="Node2D" parent="." unique_id=481682696]
+visible = false
+
+[node name="DeathExplosions1" type="AnimatedSprite2D" parent="DeathAnimation" unique_id=677731034]
+position = Vector2(-19, 3.999999)
+scale = Vector2(6, 6)
+sprite_frames = SubResource("SpriteFrames_ctccd")
+autoplay = "default"
+frame_progress = 0.90114903
+
+[node name="DeathExplosions2" type="AnimatedSprite2D" parent="DeathAnimation" unique_id=1391268693]
+position = Vector2(24, -18)
+scale = Vector2(4, 4)
+sprite_frames = SubResource("SpriteFrames_ctccd")
+autoplay = "default"
+frame_progress = 0.42027652
+
+[node name="DeathExplosions3" type="AnimatedSprite2D" parent="DeathAnimation" unique_id=1342671025]
+position = Vector2(-17, -45)
+scale = Vector2(4, 4)
+sprite_frames = SubResource("SpriteFrames_ctccd")
+autoplay = "default"
+frame_progress = 0.74182093
+
+[node name="FireTimer" type="Timer" parent="." unique_id=596492067]
+wait_time = 0.05
+
+[connection signal="body_entered" from="Hitbox" to="." method="_on_hitbox_body_entered"]
+[connection signal="timeout" from="DeathTimer" to="." method="_on_death_timer_timeout"]
+[connection signal="animation_looped" from="DeathAnimation/DeathExplosions1" to="." method="_on_death_explosions_1_animation_looped"]
+[connection signal="timeout" from="FireTimer" to="." method="shoot"]

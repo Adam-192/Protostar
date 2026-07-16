@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://i5x5q2ha0qu7"]
+
+[ext_resource type="Script" uid="uid://bjryd0qcf5q7y" path="res://SCRIPTS/player_ships.gd" id="1_ab7hv"]
+
+[node name="PlayerShips" type="Node" unique_id=788208831]
+script = ExtResource("1_ab7hv")

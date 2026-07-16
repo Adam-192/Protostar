@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://5d8ji7w57vvl"]
+
+[ext_resource type="Texture2D" uid="uid://btehrtv6famgx" path="res://SPRITES/EFFECTS/SpaceShooterAssetPack_Miscellaneous.png" id="1_fb0ni"]
+[ext_resource type="Script" uid="uid://bggaqgkn3e5e4" path="res://SCRIPTS/enemy_meteor.gd" id="1_sobhp"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_sobhp"]
+radius = 6.0
+height = 12.0
+
+[node name="EnemyMeteor" type="Area2D" unique_id=1685343156 groups=["group_enemy"]]
+script = ExtResource("1_sobhp")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1670991047]
+texture = ExtResource("1_fb0ni")
+region_enabled = true
+region_rect = Rect2(17, 17, 13, 13)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1885099454]
+position = Vector2(0, 1)
+shape = SubResource("CapsuleShape2D_sobhp")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

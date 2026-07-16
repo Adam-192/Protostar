@@ -1,0 +1,264 @@
+[gd_scene format=3 uid="uid://br0smhou02oxs"]
+
+[ext_resource type="Script" uid="uid://dls3pwslf5qqd" path="res://SCRIPTS/scene_loot_box.gd" id="1_b1vn7"]
+[ext_resource type="Shader" uid="uid://dlqn7laqkb3q7" path="res://THEMES_SHADERS/background_slow.gdshader" id="2_3qopm"]
+[ext_resource type="Texture2D" uid="uid://sieaatqlvhgn" path="res://SPRITES/Background/Stars/Space Background_2.png" id="3_63wko"]
+[ext_resource type="Shader" uid="uid://kcrls5kum5nn" path="res://THEMES_SHADERS/background_stars_small.gdshader" id="4_ma5b4"]
+[ext_resource type="Texture2D" uid="uid://chawuxhwxaldt" path="res://SPRITES/Background/Stars/stars_small.png" id="5_cquxb"]
+[ext_resource type="Theme" uid="uid://p0n4tv8rgdp6" path="res://THEMES_SHADERS/button.tres" id="6_63wko"]
+[ext_resource type="Texture2D" uid="uid://cv1gv3xx1pgv5" path="res://SPRITES/UI/Card X2/Card X3.png" id="7_nxa0b"]
+[ext_resource type="Texture2D" uid="uid://cyi2rmbs83e0n" path="res://SPRITES/RESOURCES/common_chest.png" id="8_cg3j4"]
+[ext_resource type="Texture2D" uid="uid://4u8v7kbtjmib" path="res://SPRITES/RESOURCES/key_common.png" id="9_ygfwx"]
+[ext_resource type="Texture2D" uid="uid://ccxsskm07xncp" path="res://SPRITES/RESOURCES/chest_rare_closed.png" id="10_c87cw"]
+[ext_resource type="Texture2D" uid="uid://bcn18wqn8cp26" path="res://SPRITES/RESOURCES/rare_gold_glow.png" id="11_nemew"]
+[ext_resource type="Texture2D" uid="uid://dthq02jydcb1" path="res://SPRITES/RESOURCES/mythical_no_glow.png" id="12_nxa0b"]
+[ext_resource type="Texture2D" uid="uid://n7f8pg4g5n5l" path="res://SPRITES/RESOURCES/mythical_purple_glow.png" id="13_sch84"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_lw24l"]
+shader = ExtResource("2_3qopm")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_0rhc3"]
+shader = ExtResource("4_ma5b4")
+
+[node name="SceneLootBox" type="Control" unique_id=1173933840]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_b1vn7")
+
+[node name="SpaceBackground2" type="Sprite2D" parent="." unique_id=315043830]
+texture_repeat = 3
+material = SubResource("ShaderMaterial_lw24l")
+position = Vector2(629, -699.99994)
+scale = Vector2(3.2238095, 3.2238095)
+texture = ExtResource("3_63wko")
+
+[node name="StarsSmall" type="Sprite2D" parent="." unique_id=75581670]
+texture_repeat = 3
+material = SubResource("ShaderMaterial_0rhc3")
+position = Vector2(642.75, -579.5)
+scale = Vector2(10.347656, 10.347656)
+texture = ExtResource("5_cquxb")
+
+[node name="ButtonBack" type="Button" parent="." unique_id=2122317105]
+layout_mode = 0
+offset_left = 548.22217
+offset_top = 575.0
+offset_right = 717.22217
+offset_bottom = 670.0
+theme = ExtResource("6_63wko")
+theme_override_font_sizes/font_size = 32
+text = "_back"
+
+[node name="CommonLootBox" type="Control" parent="." unique_id=738867662]
+anchors_preset = 0
+offset_left = -48.0
+offset_right = -8.0
+offset_bottom = 40.0
+
+[node name="Background" type="Sprite2D" parent="CommonLootBox" unique_id=2029328360]
+modulate = Color(1, 1, 1, 0.78431374)
+position = Vector2(274, 282)
+texture = ExtResource("7_nxa0b")
+
+[node name="LabelKeyNum" type="Label" parent="CommonLootBox" unique_id=2142747133]
+layout_mode = 0
+offset_left = 159.0
+offset_top = 382.0
+offset_right = 231.0
+offset_bottom = 418.0
+theme_override_font_sizes/font_size = 32
+text = "(XXX)"
+
+[node name="LabelDesc" type="Label" parent="CommonLootBox" unique_id=632152010]
+layout_mode = 0
+offset_left = 268.0
+offset_top = 214.0
+offset_right = 434.0
+offset_bottom = 305.0
+theme_override_font_sizes/font_size = 16
+text = "_common_loot_desc"
+vertical_alignment = 1
+
+[node name="CommonChest" type="Sprite2D" parent="CommonLootBox" unique_id=2053490342]
+position = Vector2(182, 255)
+texture = ExtResource("8_cg3j4")
+
+[node name="KeyCommon" type="Sprite2D" parent="CommonLootBox" unique_id=114941073]
+position = Vector2(136, 391.00003)
+scale = Vector2(0.7265625, 0.7265625)
+texture = ExtResource("9_ygfwx")
+
+[node name="Background2" type="Sprite2D" parent="CommonLootBox" unique_id=1458273331]
+visible = false
+modulate = Color(1, 1, 1, 0.78431374)
+position = Vector2(274, 282)
+texture = ExtResource("7_nxa0b")
+
+[node name="LabelName" type="Label" parent="CommonLootBox" unique_id=1239322166]
+layout_mode = 0
+offset_left = 92.0
+offset_top = 110.0
+offset_right = 456.0
+offset_bottom = 146.0
+theme_override_font_sizes/font_size = 32
+text = "_common_loot_box"
+horizontal_alignment = 1
+
+[node name="ButtonOpen" type="Button" parent="CommonLootBox" unique_id=962247309]
+layout_mode = 0
+offset_left = 257.0
+offset_top = 340.0
+offset_right = 426.0
+offset_bottom = 435.0
+theme = ExtResource("6_63wko")
+theme_override_font_sizes/font_size = 32
+text = "_open"
+
+[node name="RareLootBox" type="Control" parent="." unique_id=1031677941]
+anchors_preset = 0
+offset_left = 360.0
+offset_right = 400.0
+offset_bottom = 40.0
+
+[node name="Background" type="Sprite2D" parent="RareLootBox" unique_id=46283071]
+modulate = Color(1, 1, 1, 0.78431374)
+position = Vector2(274, 282)
+texture = ExtResource("7_nxa0b")
+
+[node name="LabelKeyNum" type="Label" parent="RareLootBox" unique_id=1711426735]
+layout_mode = 0
+offset_left = 159.0
+offset_top = 382.0
+offset_right = 231.0
+offset_bottom = 418.0
+theme_override_font_sizes/font_size = 32
+text = "(XXX)"
+
+[node name="LabelDesc" type="Label" parent="RareLootBox" unique_id=2018455619]
+layout_mode = 0
+offset_left = 281.0
+offset_top = 217.0
+offset_right = 439.0
+offset_bottom = 303.0
+theme_override_font_sizes/font_size = 16
+text = "_rare_loot_desc"
+vertical_alignment = 1
+
+[node name="RareChest" type="Sprite2D" parent="RareLootBox" unique_id=320019160]
+position = Vector2(182, 257)
+texture = ExtResource("10_c87cw")
+
+[node name="KeyRare" type="Sprite2D" parent="RareLootBox" unique_id=2059971182]
+position = Vector2(136, 391.00003)
+scale = Vector2(0.7265625, 0.7265625)
+texture = ExtResource("11_nemew")
+
+[node name="Background2" type="Sprite2D" parent="RareLootBox" unique_id=2011408470]
+visible = false
+modulate = Color(1, 1, 1, 0.78431374)
+position = Vector2(274, 282)
+texture = ExtResource("7_nxa0b")
+
+[node name="LabelName" type="Label" parent="RareLootBox" unique_id=1379387189]
+layout_mode = 0
+offset_left = 92.0
+offset_top = 110.0
+offset_right = 457.0
+offset_bottom = 146.0
+theme_override_colors/font_color = Color(0.8924013, 0.79503715, 0.5757185, 1)
+theme_override_colors/font_outline_color = Color(0.32382625, 0.25489452, 4.813075e-08, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 32
+text = "_rare_loot_box"
+horizontal_alignment = 1
+
+[node name="ButtonOpen" type="Button" parent="RareLootBox" unique_id=2140151775]
+layout_mode = 0
+offset_left = 257.0
+offset_top = 340.0
+offset_right = 426.0
+offset_bottom = 435.0
+theme = ExtResource("6_63wko")
+theme_override_font_sizes/font_size = 32
+text = "_open"
+
+[node name="MythicalLootBox" type="Control" parent="." unique_id=691276809]
+anchors_preset = 0
+offset_left = 768.0
+offset_right = 808.0
+offset_bottom = 40.0
+
+[node name="Background" type="Sprite2D" parent="MythicalLootBox" unique_id=58157313]
+modulate = Color(1, 1, 1, 0.78431374)
+position = Vector2(274, 282)
+texture = ExtResource("7_nxa0b")
+
+[node name="LabelKeyNum" type="Label" parent="MythicalLootBox" unique_id=1904355218]
+layout_mode = 0
+offset_left = 159.0
+offset_top = 382.0
+offset_right = 231.0
+offset_bottom = 418.0
+theme_override_font_sizes/font_size = 32
+text = "(XXX)"
+
+[node name="LabelDesc" type="Label" parent="MythicalLootBox" unique_id=2027480633]
+layout_mode = 0
+offset_left = 272.0
+offset_top = 220.0
+offset_right = 436.0
+offset_bottom = 303.0
+theme_override_font_sizes/font_size = 16
+text = "_mythical_loot_desc"
+vertical_alignment = 1
+
+[node name="MythicalChest" type="Sprite2D" parent="MythicalLootBox" unique_id=1591505906]
+position = Vector2(188, 256)
+texture = ExtResource("12_nxa0b")
+
+[node name="KeyMythical" type="Sprite2D" parent="MythicalLootBox" unique_id=1203014437]
+position = Vector2(136, 391.00003)
+scale = Vector2(0.7265625, 0.7265625)
+texture = ExtResource("13_sch84")
+
+[node name="Background2" type="Sprite2D" parent="MythicalLootBox" unique_id=1120894568]
+visible = false
+modulate = Color(1, 1, 1, 0.78431374)
+position = Vector2(274, 282)
+texture = ExtResource("7_nxa0b")
+
+[node name="LabelName" type="Label" parent="MythicalLootBox" unique_id=741113565]
+layout_mode = 0
+offset_left = 89.0
+offset_top = 110.0
+offset_right = 457.0
+offset_bottom = 146.0
+theme_override_colors/font_color = Color(0.99999994, 0.19868356, 0.8057313, 1)
+theme_override_colors/font_shadow_color = Color(0.99215686, 0, 0.73333335, 0.36078432)
+theme_override_colors/font_outline_color = Color(0.6069598, 0.06346018, 0, 1)
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 3
+theme_override_constants/outline_size = 2
+theme_override_constants/shadow_outline_size = 4
+theme_override_font_sizes/font_size = 32
+text = "_mythical_loot_box"
+horizontal_alignment = 1
+
+[node name="ButtonOpen" type="Button" parent="MythicalLootBox" unique_id=441809182]
+layout_mode = 0
+offset_left = 257.0
+offset_top = 340.0
+offset_right = 426.0
+offset_bottom = 435.0
+theme = ExtResource("6_63wko")
+theme_override_font_sizes/font_size = 32
+text = "_open"
+
+[connection signal="pressed" from="ButtonBack" to="." method="_on_button_back_pressed"]
+[connection signal="pressed" from="CommonLootBox/ButtonOpen" to="." method="_on_button_open_pressed_common"]
+[connection signal="pressed" from="RareLootBox/ButtonOpen" to="." method="_on_button_open_pressed_rare"]
+[connection signal="pressed" from="MythicalLootBox/ButtonOpen" to="." method="_on_button_open_pressed_mythical"]

@@ -1,0 +1,206 @@
+[gd_scene format=3 uid="uid://bqrqb88hmkhim"]
+
+[ext_resource type="Texture2D" path="res://SPRITES/Enemy/Klaed_NORMAL/Projectiles/Kla_ed - Wave.png" id="1_n40sk"]
+[ext_resource type="Script" uid="uid://x2e77xcecaae" path="res://SCRIPTS/bullet_wave.gd" id="1_nmai2"]
+[ext_resource type="Texture2D" uid="uid://bb65g1wghpntb" path="res://SPRITES/Enemy/Nautolan_EASY/Projectiles/Nautolan - Wave.png" id="2_nmai2"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_n40sk"]
+radius = 3.0
+height = 28.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g11f0"]
+atlas = ExtResource("2_nmai2")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0rdt2"]
+atlas = ExtResource("2_nmai2")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qi5x4"]
+atlas = ExtResource("2_nmai2")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vn0vi"]
+atlas = ExtResource("2_nmai2")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1rh70"]
+atlas = ExtResource("2_nmai2")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ms6l5"]
+atlas = ExtResource("2_nmai2")
+region = Rect2(320, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3fn4x"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g11f0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0rdt2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qi5x4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vn0vi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1rh70")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ms6l5")
+}],
+"loop": true,
+"name": &"default",
+"speed": 9.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fikr8"]
+atlas = ExtResource("1_n40sk")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l85xu"]
+atlas = ExtResource("1_n40sk")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oub0r"]
+atlas = ExtResource("1_n40sk")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tevwu"]
+atlas = ExtResource("1_n40sk")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g6sb0"]
+atlas = ExtResource("1_n40sk")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8hpvq"]
+atlas = ExtResource("1_n40sk")
+region = Rect2(320, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2tcmr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fikr8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l85xu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oub0r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tevwu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g6sb0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8hpvq")
+}],
+"loop": true,
+"name": &"default",
+"speed": 9.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8l7nk"]
+atlas = ExtResource("2_nmai2")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kljts"]
+atlas = ExtResource("2_nmai2")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5f36x"]
+atlas = ExtResource("2_nmai2")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dwapp"]
+atlas = ExtResource("2_nmai2")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xyj4q"]
+atlas = ExtResource("2_nmai2")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6vk65"]
+atlas = ExtResource("2_nmai2")
+region = Rect2(320, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vlkts"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8l7nk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kljts")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5f36x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dwapp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xyj4q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6vk65")
+}],
+"loop": true,
+"name": &"default",
+"speed": 9.0
+}]
+
+[node name="BulletWave" type="Area2D" unique_id=168255167 groups=["enemy_bullet"]]
+rotation = 3.1415927
+scale = Vector2(2, 2)
+script = ExtResource("1_nmai2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=873708135]
+rotation = 4.712389
+shape = SubResource("CapsuleShape2D_n40sk")
+
+[node name="Nautolan" type="Node2D" parent="." unique_id=2059469766]
+
+[node name="Bullet" type="AnimatedSprite2D" parent="Nautolan" unique_id=1953200267]
+position = Vector2(-2.3841858e-07, -2)
+sprite_frames = SubResource("SpriteFrames_3fn4x")
+autoplay = "default"
+frame_progress = 0.6284275
+
+[node name="Klaed" type="Node2D" parent="." unique_id=1994688951]
+
+[node name="Bullet" type="AnimatedSprite2D" parent="Klaed" unique_id=215782501]
+position = Vector2(-1.7881393e-07, -2)
+sprite_frames = SubResource("SpriteFrames_2tcmr")
+autoplay = "default"
+frame_progress = 0.2718088
+
+[node name="Nairan" type="Node2D" parent="." unique_id=1927557283]
+
+[node name="Bullet2" type="AnimatedSprite2D" parent="Nairan" unique_id=258191186]
+modulate = Color(0.9371535, 0.29548874, 0.6003484, 1)
+self_modulate = Color(1, 0.5317543, 0.60199785, 1)
+position = Vector2(2.755477, -2.244524)
+scale = Vector2(0.8201413, 0.8201413)
+sprite_frames = SubResource("SpriteFrames_vlkts")
+autoplay = "default"
+frame_progress = 0.7847525
+
+[node name="Bullet3" type="AnimatedSprite2D" parent="Nairan" unique_id=1827872013]
+modulate = Color(0.9371535, 0.29548874, 0.6003484, 1)
+self_modulate = Color(1, 0.5317543, 0.60199785, 1)
+position = Vector2(-2.244523, -2.2445245)
+scale = Vector2(0.8201413, 0.8201413)
+sprite_frames = SubResource("SpriteFrames_vlkts")
+autoplay = "default"
+frame_progress = 0.15860282
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
